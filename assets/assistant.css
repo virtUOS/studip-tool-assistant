@@ -1,23 +1,31 @@
+.assistant-container {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
 .assistant-section {
-    float: left;
-    margin: 0 2em 4em 2em;
-    max-width: 50em;
-    min-width: 30em;
-    width: 42%;
+    margin: 0 1em 2.5em 1em;
+    width: 440px;
 }
 
 .assistant-section h1 {
     border-bottom: 0;
+    font-size: 1.2em;
 }
 
 .accordion {
-    border: 1px solid black;
+    border: 1px solid #e2e3e4;
 }
 
 .ui-accordion .ui-accordion-header {
     font-size: inherit;
     font-weight: bold;
-    padding: 0.5em;
+    padding: 1em;
+    color: #28497c;
+    border: none;
 }
 
 .ui-accordion .ui-icon {
@@ -29,6 +37,9 @@
     padding: 1em;
 }
 
+.ui-accordion .ui-accordion-content ul {
+    padding-left: 1em;
+}
 .ui-accordion .ui-accordion-content li {
     margin: 0.5em 0;
 }
@@ -36,4 +47,22 @@
 .ui-accordion .ui-accordion-content .button {
     float: right;
     margin: 0.6em;
+}
+
+.assistant-infobox {
+    border: solid thin #ccc;
+    padding: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    .assistant-container {
+        min-width: unset;
+        max-width: unset;
+        width: 100%;
+        margin-top: 1em;
+    }
+    .assistant-section {
+        margin: 0 0.0 1.5em 0;
+        width: 100%;
+    }
 }
