@@ -1,0 +1,39 @@
+.assistant-section {
+    float: left;
+    margin: 0 2em 4em 2em;
+    max-width: 50em;
+    min-width: 30em;
+    width: 42%;
+}
+
+.assistant-section h1 {
+    border-bottom: 0;
+}
+
+.accordion {
+    border: 1px solid black;
+}
+
+.ui-accordion .ui-accordion-header {
+    font-size: inherit;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.ui-accordion .ui-icon {
+    margin-top: 0;
+    padding: 0;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 1em;
+}
+
+.ui-accordion .ui-accordion-content li {
+    margin: 0.5em 0;
+}
+
+.ui-accordion .ui-accordion-content .button {
+    float: right;
+    margin: 0.6em;
+}
