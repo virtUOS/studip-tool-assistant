@@ -70,7 +70,27 @@ class AssistantController extends StudipController
 
         $scm = new StudipScmEntry();
         $scm->tab_name = _('Corona-Info');
-        $scm->content = _('...');
+        $scm->content = _('<!--HTML-->
+<h1>Informationen zum Semesterstart</h1>
+
+<i>Klicken Sie zum Bearbeiten oben rechts auf das Zahnradsymbol!</i>
+
+<h2>Kursinhalte</h2>
+
+<p>... Beschreiben Sie hier, ob und in welcher Form Kursinhalte zur Verfügung gestellt werden, z.B. als Reader im Dateibereich, als Videoaufzeichnungen, als Courseware-Modul (s. "Online-Lehre: Materialien zusammenstellen"). ...</p>
+
+<h2>Aufgaben, Leistungsnachweis, Fristen</h2>
+
+<p>... Beschreiben Sie hier, ob und in welcher Form Aufgaben zu erledigen sind, welche Fristen dabei gelten und wie der Leistungsnachweis in der Veranstaltung erbracht werden kann. ...</p>
+
+<h2>Kommunikation im Kurs</h2>
+
+<p>... Beschreiben Sie hier, wie die Kommunikation im Kurs organisiert sein soll, z.B. in Form regelmäßiger Videokonferenzen, über ein Forum, den Blubber-Chat oder Matrix/Riot (s. "Online-Lehre: Online-Zusammenarbeit"). ...</p>
+
+<h2>Kontakt</h2>
+
+<p>... Beschreiben Sie hier, wie die Teilnehmenden am sinnvollsten Kontakt mit Ihnen aufnehmen, z.B. per E-Mail, in Online-Sprechstunden oder über die Tutor*innen. ...</p>
+');
         $scm->user_id = $GLOBALS['user']->id;
         $scm->range_id = $this->course_id;
         $scm->store();

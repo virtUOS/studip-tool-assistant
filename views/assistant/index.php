@@ -7,8 +7,10 @@
         <div class="accordion">
             <h1>
                 <?= _('Teilnehmende benachrichtigen') ?>
+                <?= _('(Stud.IP: Nachrichten)') ?>
             </h1>
             <div class="accordion_content">
+                <p>Über Stud.IP-Nachrichten können Sie allen eingetragenen Kurs-Teilnehmenden Informationen zukommen lassen.</p>
                 <?= Studip\LinkButton::create(_('Rundmail schreiben'),
                         URLHelper::getURL('dispatch.php/messages/write', [
                             'course_id'       => $course_id,
@@ -18,7 +20,7 @@
                         ]), ['data-dialog' => '']) ?>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/example') ?>" data-dialog="size=640x200"><?= _('Beispiel') ?></a>
+                        <a href="<?= $controller->link_for('assistant/mail_info/example') ?>" data-dialog="size=640x400"><?= _('Beispiel') ?></a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/mail_info/howto') ?>" data-dialog="size=640x600"><?= _('So geht\'s') ?></a>
@@ -31,35 +33,40 @@
 
             <h1>
                 <?= _('Materialien online bereitstellen') ?>
+                <?= _('(Stud.IP: Dateien)') ?>
             </h1>
             <div class="accordion_content">
+                <p> <?= _('Im Stud.IP-Dateibereich können Dateien hochgeladen und verlinkt werden. Mit dem "Courseware"-Modul können Sie verschiedene Medien zusammenführen (s. "Materialien zusammenstellen").') ?> </p>
                 <?= Studip\LinkButton::create(_('Datei hochladen'), '#', ['onclick' => "STUDIP.Files.openAddFilesWindow('$folder_id')"]) ?>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/example') ?>"><?= _('Beispiel') ?></a>
+                        <a href="<?= $controller->link_for('assistant/files_info/example') ?>" data-dialog="size=640x400"><?= _('Beispiel') ?></a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/howto') ?>"><?= _('So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/files_info/howto') ?>" data-dialog="size=640x400"><?= _('So geht\'s') ?></a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/tips') ?>"><?= _('Tipps und Tricks') ?></a>
+                        <a href="<?= $controller->link_for('assistant/files_info/tips') ?>" data-dialog="size=640x400"><?= _('Tipps und Tricks') ?></a>
                     </li>
                 </ul>
             </div>
 
             <h1>
                 <?= _('Corona-Infoseite einrichten') ?>
+                <?= _('(Stud.IP: Informationen)') ?></em>
             </h1>
             <div class="accordion_content">
+                <p><?= _('Informieren Sie Ihre Teilnehmenden gut sichtbar darüber, wie Ihr Kurs in das Semester startet.')?></p>
+                <p><?= _('Wir haben eine Vorlage für das Stud.IP-Modul "Informationen" erstellt mit der Sie die wichtigsten Informationen und Fragen strukturiert hinterlegen können.')?></p>
                 <?= Studip\LinkButton::create(_('Corona-Infoseite einrichten'), $controller->url_for('assistant/corona')) ?>
-                <ul>
+                <!--<ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/corona_info/howto') ?>" data-dialog="size=640x600"><?= _('So geht\'s') ?></a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/corona_info/tips') ?>" data-dialog="size=640x400"><?= _('Tipps und Tricks') ?></a>
                     </li>
-                </ul>
+                </ul>-->
             </div>
         </div>
     </section>
@@ -318,5 +325,8 @@
 </div>
 
 <script>
-    $('.accordion').accordion();
+    $('.accordion').accordion({
+        collapsible: true,
+        active: false
+    });
 </script>
