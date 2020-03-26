@@ -36,7 +36,7 @@ class AssistantController extends StudipController
         PageLayout::addStylesheet($this->plugin->getPluginURL() . '/assets/assistant.css?v=0.1');
 
         $widget = new SidebarWidget();
-        $widget->setTitle(_vips('Online-Lehre'));
+        $widget->setTitle(_('Online-Lehre'));
         $widget->addElement(new WidgetElement(
             _('Die Universität Osnabrück bietet über virtUOS und Rechenzentrum viele Möglichkeiten, Lehre online zu gestalten.
                Für die hier vorgestellten Tools sind verlässlicher Betrieb und persönlicher Support gewährleistet und sie
@@ -59,6 +59,46 @@ class AssistantController extends StudipController
     }
 
     public function corona_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+
+    public function oer_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+
+    public function courseware_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+
+    public function copyright_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+
+    public function meeting_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+
+    public function messenger_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+
+    public function collab_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+
+    public function lecturehall_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+
+    public function recording_info_action($view = 'example')
     {
         $this->view = $view;
     }
@@ -102,4 +142,6 @@ class AssistantController extends StudipController
 
         $this->redirect(URLHelper::getURL('dispatch.php/course/scm'));
     }
+
+
 }

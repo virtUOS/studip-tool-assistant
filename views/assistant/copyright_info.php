@@ -1,0 +1,39 @@
+<? if ($view === 'basics'): ?>
+    <h2><?= _('Urheberrecht beachten: Die absoluten Grundlagen')?></h2>
+    <div style="float:right">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/KxhL5ElJVLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p style="font-size:66%"><i>ARD-alpha: Schutz vor Ideenklau - das Urheberrecht - so geht MEDIEN</i></p>
+    </div>
+    <p>
+        <?= _('Wichtigste Grundregel: Ein Werk gehört den Personen, die es geschaffen haben. Sie bestimmen, wie das Werk genutzt werden darf.')?>
+    </p>
+    <p>
+        <?= _('Wenn Sie etwas nutzen oder z.B. an Ihre Studierenden weitergeben wollen, dass Sie nicht selbst geschaffen haben, müssen Sie immer prüfen, ob Sie denn dazu auch berechtigt sind.')?>
+    </p>
+    <p>
+        <?= _('Dabei gibt es einige häufige Missverständnisse:') ?>
+    </p>
+    <ul>
+        <li>Dinge, die Sie frei zugänglich im Internet finden, dürfen Sie deshalb noch nicht kopieren und weitergeben. Prüfen Sie, ob auf der Webseite eine Lizenz angegeben ist, die die Weitergabe erlaubt. Verlinken Sie ansonsten die Webseite.</li>
+        <li>Werke, die Studierende erstellt haben, auch Hausarbeiten, Abschlussarbeiten etc. gehören einzig und allein den Studierenden.</li>
+        <li></li>
+    </ul>
+
+<? elseif ($view === 'teaching'): ?>
+    <h2><?= _('Urheberrecht beachten: Was darf ich in der Lehre nutzen?')?></h2>
+    <p>
+        <?= _('Für Lehrveranstaltungen können Sie urheberrechtlich geschützte Werke Dritter in folgenden Fällen verwenden:')?>
+    </p>
+    <ol>
+        <li>Freie Lizenzen liegen vor (Open Access, Open Educational Ressource)</li>
+        <li>Sie verwenden kleine Teile aus Büchern (bis 12%) oder einzelne Artikel aus Fachzeitschriften (Nutzung von §§ 60a, 60c UrhG)</li>
+        <li>Sie verfügen über eine gesonderte Genehmigung oder Lizenz von den Rechteinhabern.</li>
+    </ol>
+    <p>&nbsp;<br>
+        Elektronische Ressourcen, für die über die Bibliothek Lizenzen vorliegen, können am einfachsten verlinkt, statt erneut hochgeladen werden.
+    </p>
+    <p>
+        Im Detail gibt es noch viele weitere Fragen. Wir empfehlen dazu den Leitfaden "Urheberrechts-FAQ Hochschullehre" von Achim Förster: <a href="https://urheberrecht.fhws.de/faq-urheberrecht/">https://urheberrecht.fhws.de/faq-urheberrecht/</a>.
+    </p>
+
+<? endif ?>
