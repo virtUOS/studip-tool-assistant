@@ -103,6 +103,16 @@ class AssistantController extends StudipController
         $this->view = $view;
     }
 
+    public function homework_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+
+    public function vips_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+
     public function corona_action()
     {
         $db = DBManager::get();

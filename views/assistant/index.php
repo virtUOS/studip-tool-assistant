@@ -106,9 +106,9 @@
                     <li>
                         <a href="<?= $controller->link_for('assistant/courseware_info/howto') ?>" data-dialog="size=640x400"><?= _('So geht\'s') ?></a>
                     </li>
-                    <!--<li>
-                        <a href="<?= $controller->link_for('assistant/courseware_info/tips') ?>" data-dialog="size=640x400"><?= _('Tipps und Tricks') ?></a>
-                    </li>-->
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/courseware_info/explain') ?>" data-dialog="size=640x520">Erklärvideo: Courseware und Vips</a>
+                    </li>
                 </ul>
             </div>
 
@@ -268,7 +268,7 @@
                         <a href="<?= $controller->link_for('assistant/recording_info/powerpoint') ?>" data-dialog="size=640x500"><?= _('Aufnahmen direkt in Powerpoint') ?></a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/recording_info/tips') ?>" data-dialog="size=640x400"><?= _('Tipps und Tricks') ?></a>
+                        <a href="<?= $controller->link_for('assistant/recording_info/tips') ?>" data-dialog="size=640x500"><?= _('Tipps und Tricks') ?></a>
                     </li>
                 </ul>
             </div>
@@ -290,11 +290,9 @@
                     einsammeln. Lehrende und Tutor*innen sehen alle Dateien, die Studierenden nur die eigenen.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/homework_info/howto') ?>"><?= _('So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/homework_info/howto') ?>" data-dialog="size=640x400"><?= _('So geht\'s') ?></a>
                     </li>
-                    <li>
-                        <a href="<?= $controller->link_for('assistant/homework_info/tips') ?>"><?= _('Tipps und Tricks') ?></a>
-                    </li>
+
                 </ul>
             </div>
 
@@ -303,15 +301,17 @@
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('mail')) ?>
+                Stud.IP bietet mit "Vips" umfangreiche Möglichkeiten für Übungsblätter, Aufgaben mit Abgabefrist und
+                Selbstüberprüfungsaufgaben, die automatisiert oder manuell bewertet werden können.
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('abc') ?>"><?= _('Beispiel') ?></a>
+                        <a href="<?= $controller->link_for('assistant/vips_info/example') ?>" data-dialog="size=640x500"><?= _('Beispiel') ?></a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('abc') ?>"><?= _('So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/vips_info/howto') ?>" data-dialog="size=640x400"><?= _('So geht\'s') ?></a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('abc') ?>"><?= _('Tipps und Tricks') ?></a>
+                        <a href="<?= $controller->link_for('assistant/vips_info/tips') ?>" data-dialog="size=640x400"><?= _('Tipps und Tricks') ?></a>
                     </li>
                 </ul>
             </div>

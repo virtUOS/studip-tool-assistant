@@ -37,5 +37,9 @@
 <p>
     <?= _('Weitere Informationen bekommen Sie in der Online-Hilfe (Fragezeichen oben rechts oder direkt unter <a href="https://hilfe.studip.de/help/4.2/de/MoocIP.Courseware">https://hilfe.studip.de/help/4.2/de/MoocIP.Courseware</a>).')?>
 </p>
+<? elseif ($view === 'explain'): ?>
+    <h2><?= _('Materialien zusammenstellen: Erklärvideo Courseware & Vips')?></h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Vct7UnGQ1GI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <? endif ?>
