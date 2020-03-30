@@ -163,7 +163,7 @@ class AssistantController extends StudipController
 
     public function courseware_action()
     {
-        $remote_cid = '2fff5f8bc52281d4237139fc30e7f248';
+        $remote_cid = '073b5b0cd9f74af43d5e91a875e46e87';
         $current_cid = $this->course_id;
         $plugin_manager = \PluginManager::getInstance();
         $this->coursewarePlugin = $plugin_manager->getPlugin('Courseware');
