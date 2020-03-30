@@ -1,5 +1,5 @@
 <? if ($view === 'example'): ?>
-<h2><?= _('Aufzeichnungen im Hörsaal: Beispiel')?></h2>
+<h2>Aufzeichnungen im Hörsaal: Beispiel')?></h2>
     <div style="float:right;margin-left:10px;">
         <p>
             <img src="<?= $plugin->getPluginURL() ?>/assets/opencast-beispiel.jpg" width="240">
@@ -38,7 +38,7 @@
 
 
 <? elseif ($view === 'howto'): ?>
-    <h2><?= _('Aufzeichnungen im Hörsaal: So geht\'s')?></h2>
+    <h2>Aufzeichnungen im Hörsaal: So geht\'s')?></h2>
     <p>
         Aufgrund der besonderen Situation während der Schließung bitten wir Sie um Kontaktaufnahme mit uns, wenn
         Sie Ihre Vorlesung im Hörsaal ohne Publikum aufzeichnen möchten.

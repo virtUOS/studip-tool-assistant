@@ -1,5 +1,5 @@
 <? if ($view === 'howto'): ?>
-    <h2><?= _('Einfache Abgaben: Hausaufgabenordner')?></h2>
+    <h2>Einfache Abgaben: Hausaufgabenordner')?></h2>
     <div style="float:right;margin-left:10px;">
         <p>
             <img src="<?= $plugin->getPluginURL() ?>/assets/studip-hausaufgaben-aktionen.jpg" width="240">
