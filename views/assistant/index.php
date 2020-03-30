@@ -26,7 +26,7 @@
                         <a href="<?= $controller->link_for('assistant/mail_info/howto') ?>" data-dialog="size=640x600"><?= _('So geht\'s') ?></a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/tips') ?>" data-dialog="size=640x400"><?= _('Tipps und Tricks') ?></a>
+                        <a href="<?= $controller->link_for('assistant/mail_info/tips') ?>" data-dialog="size=640x600"><?= _('Tipps und Tricks') ?></a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +43,7 @@
                         <a href="<?= $controller->link_for('assistant/files_info/example') ?>" data-dialog="size=640x400"><?= _('Beispiel') ?></a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/howto') ?>" data-dialog="size=640x400"><?= _('So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/files_info/howto') ?>" data-dialog="size=640x600"><?= _('So geht\'s') ?></a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/files_info/tips') ?>" data-dialog="size=640x400"><?= _('Tipps und Tricks') ?></a>
@@ -85,10 +85,11 @@
                 <?= Studip\LinkButton::create(_('OER-Portal Niedersachsen'), 'https://www.oernds.de', ['target'=>'_new']) ?>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/oer_info/example') ?>" data-dialog="size=640x600"><?= _('Links und Portale') ?></a>
+                        <a href="<?= $controller->link_for('assistant/oer_info/example') ?>" data-dialog="size=850x625"><?= _('Links und Portale') ?></a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/oer_info/howto') ?>" data-dialog="size=640x500"><?= _('Erklärvideo (Youtube)') ?></a>
+                        <a href="<?= $controller->link_for('assistant/oer_info/howto') ?>" data-dialog="size=640x550"><?= _('Erklärvideo (Youtube)') ?></a>
+
                     </li>
                 </ul>
             </div>
@@ -119,10 +120,10 @@
                 <p>Bei der Online-Lehre spielen urheberrechtliche Fragen immer dann eine wichtige Rolle, wenn Sie Materialien verwenden, die Dritte erstellt haben.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/copyright_info/basics') ?>" data-dialog="size=640x400"><?= _('Urheberrecht: Absolute Grundlagen') ?></a>
+                        <a href="<?= $controller->link_for('assistant/copyright_info/basics') ?>" data-dialog="size=640x650"><?= _('Urheberrecht: Absolute Grundlagen') ?></a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/copyright_info/teaching') ?>" data-dialog="size=640x400"><?= _('Was darf ich in der Lehre nutzen?') ?></a>
+                        <a href="<?= $controller->link_for('assistant/copyright_info/teaching') ?>" data-dialog="size=640x450"><?= _('Was darf ich in der Lehre nutzen?') ?></a>
                     </li>
                 </ul>
             </div>
@@ -136,17 +137,17 @@
 
         <div class="accordion">
             <h1>
-                <?= _('Online-Sitzungen und Online-Sprechstunden') ?>
+                <?= _('Online-Sitzungen und Videokonferenzen') ?>
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('mail')) ?>
                 <p>Mit Videokonferenzen führen Sie online Team-Besprechungen und Seminar-Sitzungen durch und bieten Online-Sprechstunden für Studierende an.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/meeting_info/example') ?>" data-dialog="size=640x400"><?= _('Beispiel') ?></a>
+                        <a href="<?= $controller->link_for('assistant/meeting_info/example') ?>" data-dialog="size=640x600"><?= _('Beispiel') ?></a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/meeting_info/howto') ?>" data-dialog="size=640x600"><?= _('So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/meeting_info/howto') ?>" data-dialog="size=640x650"><?= _('So geht\'s') ?></a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/meeting_info/tips') ?>" data-dialog="size=640x500"><?= _('Tipps und Tricks') ?></a>
@@ -160,13 +161,13 @@
             <div class="accordion_content">
                 <!--<?= Studip\LinkButton::create(_('Messenger öffnen'), $controller->url_for('mail')) ?>-->
                 <div style="float:right;">
-                    <img src="<?= $plugin->getPluginURL() ?>/assets/studip-riot.gif" width="160">
+                    <img src="<?= $plugin->getPluginURL() ?>/assets/studip-riot.jpg" width="160">
                 </div>
                 <p>Für Lern- und Arbeitsgruppen wird heute oft eine schnelle und niedrigschwellige Kommunikation gewünscht, auch per App vom Mobilgerät (Vorbild: Slack, Whatsapp).
                     Die Uni Osnabrück bietet dafür den Dienst "Riot".</p>
                 <ul>
                     <li>
-                        <a href="https://www.rz.uni-osnabrueck.de/homeoffice/riot.html" target="_new"><?= _('So geht\'s: Matrix-Riot einrichten (RZ)') ?></a>
+                        <a href="https://www.rz.uni-osnabrueck.de/homeoffice/riot.html" target="_blank"><?= _('So geht\'s: Matrix-Riot einrichten (RZ)') ?></a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/messenger_info/blubber') ?>" data-dialog="size=640x500"><?= _('Alternative in Stud.IP: Blubber-Chat') ?></a>
@@ -183,10 +184,10 @@
                     Arbeitsergebnisse zusammentragen. Stud.IP bietet dafür zwei gut integrierte Tools: Pads und Wikis.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/collab_info/example') ?>" data-dialog="size=640x500"><?= _('Beispiel') ?></a>
+                        <a href="<?= $controller->link_for('assistant/collab_info/example') ?>" data-dialog="size=640x650"><?= _('Beispiel') ?></a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/collab_info/howto') ?>" data-dialog="size=640x500"><?= _('So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/collab_info/howto') ?>" data-dialog="size=640x600"><?= _('So geht\'s') ?></a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/collab_info/tips') ?>" data-dialog="size=640x500"><?= _('Tipps und Tricks') ?></a>
@@ -211,7 +212,7 @@
                 für vollautomatische Videoaufzeichnungen ausgerüstet, Sie müssen nur eine Zeit buchen.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/lecturehall_info/example') ?>" data-dialog="size=640x600"><?= _('Beispiel') ?></a>
+                        <a href="<?= $controller->link_for('assistant/lecturehall_info/example') ?>" data-dialog="size=640x675"><?= _('Beispiel') ?></a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/lecturehall_info/howto') ?>" data-dialog="size=640x400"><?= _('So geht\'s') ?></a>
@@ -223,7 +224,9 @@
                 <?= _('Live-Übertragung') ?>
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Anfrage stellen'), $controller->url_for('mail')) ?>
+                <?= Studip\LinkButton::create(_('Anfrage stellen'),
+                    URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '']) ?>
+
                 <p>
                     Sie möchten Ihre Vorlesung im Hörsaal oder zu Hause abhalten und für Ihre Studierenden live
                     ins Internet übertragen?
@@ -241,7 +244,7 @@
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Weitere Informationen'),
                     'https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html',
-                    ["target"=>"_new"]) ?>
+                    ["target"=>"_blank"]) ?>
                 <p>
                     Die Universität Osnabrück betreibt zwei Videostudios in den Räumen 15/125 und 07/102 (LehrKolleg).
                     Hier können mit Unterstützung / Einweisung durch virtUOS-Mitarbeiter Videos in überdurchschnittlicher
@@ -290,7 +293,7 @@
                     einsammeln. Lehrende und Tutor*innen sehen alle Dateien, die Studierenden nur die eigenen.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/homework_info/howto') ?>" data-dialog="size=640x400"><?= _('So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/homework_info/howto') ?>" data-dialog="size=640x500"><?= _('So geht\'s') ?></a>
                     </li>
 
                 </ul>
@@ -305,10 +308,10 @@
                 Selbstüberprüfungsaufgaben, die automatisiert oder manuell bewertet werden können.
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/vips_info/example') ?>" data-dialog="size=640x500"><?= _('Beispiel') ?></a>
+                        <a href="<?= $controller->link_for('assistant/vips_info/example') ?>" data-dialog="size=640x600"><?= _('Beispiel') ?></a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/vips_info/howto') ?>" data-dialog="size=640x400"><?= _('So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/vips_info/howto') ?>" data-dialog="size=640x510"><?= _('So geht\'s') ?></a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/vips_info/tips') ?>" data-dialog="size=640x400"><?= _('Tipps und Tricks') ?></a>
@@ -332,7 +335,8 @@
                 Tel. 0541/969-6666<br>
                 <a href="https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html" class="link-extern" target="_blank"
                     >COVID-19: Hinweise zum Einsatz Digitaler Lehre
-                </a>
+                </a><br>
+                <a href="https://www.rz.uni-osnabrueck.de/homeoffice/homeoffice.html" class="link-extern" target="_blank">Homeoffice-Dienste des Rechenzentrums</a>
             </p>
 
             <?= Studip\LinkButton::create(_('Anfrage stellen'),

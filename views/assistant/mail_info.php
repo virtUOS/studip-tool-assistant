@@ -1,5 +1,5 @@
 <? if ($view === 'example'): ?>
-<h2><?= _('Teilnehmende benachrichtigen: Beispiele')?></h2>
+<h2><?= _('Teilnehmende benachrichtigen: Beispiel')?></h2>
 <p>
     <?= _('Sie wollen Ihre Teilnehmenden per E-Mail und innerhalb von Stud.IP über wichtige Regelungen und kurzfristige Änderungen in Ihrem Kurs informieren.') ?>
 </p>

@@ -1,11 +1,17 @@
 <? if ($view === 'example'): ?>
-<h2><?= _('Online-Sitzungen und -Sprechstunden: Beispiele')?></h2>
-<p>
-    <?= _('Sie verlegen geplante Meetings mit Ihren Projektteams oder regelmäßige Sitzungen in Ihrem Fachbereich in einen Online-Raum. Für Studierende bieten Sie Ihre Sprechstunden zu den geplanten Terminen online an.') ?>
+<h2><?= _('Online-Sitzungen und -Sprechstunden: Beispiel')?></h2>
+    <p>
+        <img src="<?= $plugin->getPluginURL() ?>/assets/bbb-raum.jpg">
+        <br><span style="font-size:66%">Videokonferenz mit einem "BugBlueButton"-Server der Uni Osnabrück</span>
+    </span>
+    </p>
+    <p>
+    Sie verlegen geplante Meetings mit Ihren Projektteams oder regelmäßige Sitzungen Ihres Seminars
+        in einen Online-Raum. Für Studierende können Sie z.B. Ihre Sprechstunden zu den geplanten Terminen online anbieten.
 </p>
 
 <? elseif ($view === 'howto'): ?>
-    <h2><?= _('Online-Sitzungen und -Sprechstunden: So geht\'s')?></h2>
+    <h2>Online-Sitzungen und -Sprechstunden: So geht\'s</h2>
     <div style="float:right;">
         <p>
             <img src="<?= $plugin->getPluginURL() ?>/assets/studip-menu-meetings.jpg" width="240">

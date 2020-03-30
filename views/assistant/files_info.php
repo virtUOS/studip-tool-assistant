@@ -1,5 +1,5 @@
 <? if ($view === 'example'): ?>
-    <h2><?= _('Dateien bereitstellen: Beispiele')?></h2>
+    <h2><?= _('Dateien bereitstellen: Beispiel')?></h2>
     <p>
         <?= _('Dateien bereitzustellen ist die meistgenutzte Funktion jedes Lernmanagementsystems, so auch bei Stud.IP: Über 50.000 Dateien werden an der Uni Osnabrück pro Semester in Lehrveranstaltungen hochgeladen und dann über 1,5 Mio. mal heruntergeladen..') ?>
     </p>

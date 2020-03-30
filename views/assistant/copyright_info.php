@@ -1,6 +1,6 @@
 <? if ($view === 'basics'): ?>
     <h2><?= _('Urheberrecht beachten: Die absoluten Grundlagen')?></h2>
-    <div style="float:right">
+    <div style="margin-left:10px;float:right">
         <iframe width="320" height="180" src="https://www.youtube.com/embed/KxhL5ElJVLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p style="font-size:66%"><i>ARD-alpha: Schutz vor Ideenklau - das Urheberrecht - so geht MEDIEN</i></p>
     </div>
@@ -15,8 +15,10 @@
     </p>
     <ul>
         <li>Dinge, die Sie frei zugänglich im Internet finden, dürfen Sie deshalb noch nicht kopieren und weitergeben. Prüfen Sie, ob auf der Webseite eine Lizenz angegeben ist, die die Weitergabe erlaubt. Verlinken Sie ansonsten die Webseite.</li>
-        <li>Werke, die Studierende erstellt haben, auch Hausarbeiten, Abschlussarbeiten etc. gehören einzig und allein den Studierenden.</li>
-        <li></li>
+        <li>Werke, die Studierende erstellt haben, auch Hausarbeiten, Abschlussarbeiten etc. gehören einzig und allein den Studierenden und dürfen
+            nicht ohne ihre explizite Zustimmung verwendet werden.</li>
+        <li>Auch im geschlossenen Raum einer Lehrveranstaltung dürfen Sie nicht beliebige urheberrechtlich geschützte ohne Weiteres weitergeben. Lesen
+        Sie dazu mehr unter dem Punkt "Was darf ich in der Lehre nutzen?"</li>
     </ul>
 
 <? elseif ($view === 'teaching'): ?>
@@ -26,7 +28,7 @@
     </p>
     <ol>
         <li>Freie Lizenzen liegen vor (Open Access, Open Educational Ressource)</li>
-        <li>Sie verwenden kleine Teile aus Büchern (bis 12%) oder einzelne Artikel aus Fachzeitschriften (Nutzung von §§ 60a, 60c UrhG)</li>
+        <li>Sie verwenden kleine Teile aus Büchern (bis 15%) oder einzelne Artikel aus Fachzeitschriften (Nutzung von §§ 60a, 60c UrhG)</li>
         <li>Sie verfügen über eine gesonderte Genehmigung oder Lizenz von den Rechteinhabern.</li>
     </ol>
     <p>&nbsp;<br>

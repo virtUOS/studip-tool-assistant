@@ -11,7 +11,7 @@
 </p>
 <? elseif ($view === 'howto'): ?>
     <h2><?= _('Materialien zusammenstellen: So geht\'s')?></h2>
-<div style="float:right">
+<div style="float:right;margin-left:10px;">
     <p>
         <img src="<?= $plugin->getPluginURL() ?>/assets/studip-mehr.jpg" width="240">
     </p>

@@ -1,5 +1,5 @@
 <? if ($view === 'example'): ?>
-<h2><?= _('Gemeinsam an Texten arbeiten: Beispiele')?></h2>
+<h2><?= _('Gemeinsam an Texten arbeiten: Beispiel')?></h2>
 <div style="float:right; margin-left:10px;">
     <p>
         <img src="<?= $plugin->getPluginURL() ?>/assets/studip-pad-list.jpg" width="240">

@@ -1,9 +1,7 @@
 <? if ($view === 'example'): ?>
-    <h2><?= _('OER-Portal zum Tauschen freier Materialien: Beispiele')?></h2>
+    <h2><?= _('OER-Portal zum Tauschen freier Materialien: Beispiel')?></h2>
     <p>
         <?= _('Das Rad muss nicht immer neu erfunden werden, es gibt bereits sehr viele Materialien, die Sie im Rahmen Ihrer Lehre einsetzen können. Der Begriff "OER" bezieht sich dabei auf die Lizenz, d.h. die rechtssichere Nutzung und vor allem auch Veränderung und Weitergabe von Lehrmaterialien.') ?>
-    </p>
-<p>
     <?= _('Links und Portale:') ?>
 </p>
 <table class="default">
@@ -46,7 +44,7 @@
     <tr>
         <td>Youtube</td>
         <td><a href="https://www.youtube.com">https://www.youtube.com</a></td>
-        <td><?= _('Auch bei Youtube finden Sie zahlreiche sehr gute akademische Videos. Beim Einbinden z.B. im Courseware-Modul müssen Sie nichts weiter beachten, wenn Sie aber ein Video bearbeiten wollen, müssen Sie bei Youtube-Videos auf die "Creative-Commons"-Lizenz achten.') ?></td>
+        <td><?= _('Auch bei Youtube finden Sie zahlreiche sehr gute akademische Videos. Beim Einbinden z.B. im Courseware-Modul müssen Sie nichts weiter beachten, wenn Sie aber ein Video bearbeiten wollen, achten Sie auf die "Creative-Commons"-Lizenz!') ?></td>
     </tr>
 </table>
 
@@ -54,5 +52,7 @@
     <h2><?= _('OER-Portal zum Tauschen freier Materialien: Erklärfilm')?></h2>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/dpjrmx513wk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    <p font-size="50%">Was sind OER? by OERinForm, <a href="oer.amh-ev.de">oer.amh-ev.de</a><br>
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons -
+            Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a></p>
 <? endif ?>

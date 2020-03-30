@@ -1,5 +1,5 @@
 <? if ($view === 'example'): ?>
-<h2><?= _('Aufzeichnungen im Hörsaal: Beispiele')?></h2>
+<h2><?= _('Aufzeichnungen im Hörsaal: Beispiel')?></h2>
     <div style="float:right;margin-left:10px;">
         <p>
             <img src="<?= $plugin->getPluginURL() ?>/assets/opencast-beispiel.jpg" width="240">
@@ -22,19 +22,10 @@
     <li>Vorlesung mit Mikrofon und Beamerbild halten</li>
 </ul>
 <p>&nbsp;<br>
-    Die Vorlesung wird im Hörsaal von einer fest installierten Kamera gefilmt, die auf das Vortragspult ausgerichtet ist.
-    Nach der Vorlesung werden die Aufzeichnungen voll automatisiert verarbeitet und stehen kurz nach der Vorlesung
-    über Stud.IP den Teilnehmenden zum Abruf zur Verfügung.
+    Die Vorlesung wird mit fest installierter Kamera gefilmt, die auf das Vortragspult ausgerichtet ist.
+    Die Aufzeichnungen voll automatisiert verarbeitet und stehen für die Teilnehmenden über Stud.IP bereit.
+    Auf Wunsch können die Aufzeichnungen auf öffentlich zugänglich gemacht werden.
 </p>
-<p>
-    Mit dem in Osnabrück mitentwickelten Vorlesungsaufzeichnungsssystem Opencast werden zwei Bildquellen aufgezeichnet:
-    Das Kamerabild und das Beamerbild, das üblicherweise Präsentationsfolien zeigt. Folienwechsel werden automatisch
-    erkannt und der Opencast-Player erlaubt einen schnellen Überblick über die Folien, kann wahlweise eines der beiden
-    Bilder hervorheben und hat weitere für das Lernen optimierte Funktionen.
-</p>
-    <p>
-        Auf Wunsch können die Aufzeichnungen auf öffentlich zugänglich gemacht werden.
-    </p>
     <p>
         Beispielaufzeichnung von
         Prof. Dr. Thomas Groß: <a href="https://lernfunk.de/#/recordings/cb3370ac-13cd-46ac-bbae-291ec48c9808">https://lernfunk.de/#/recordings/cb3370ac-13cd-46ac-bbae-291ec48c9808</a>.

@@ -8,10 +8,10 @@
         <p>
             <img src="<?= $plugin->getPluginURL() ?>/assets/studip-vips-example2.jpg" width="240">
         </p>
-        <hr>
+        <!--<hr>
         <p>
             <img src="<?= $plugin->getPluginURL() ?>/assets/studip-vips-beispiel3.jpg" width="240">
-        </p>
+        </p>-->
 
     </div>
     <p>
