@@ -1,5 +1,5 @@
 <? if ($view === 'example'): ?>
-<h2>Gemeinsam an Texten arbeiten: Beispiel')?></h2>
+<h2>Gemeinsam an Texten arbeiten: Beispiel</h2>
 <div style="float:right; margin-left:10px;">
     <p>
         <img src="<?= $plugin->getPluginURL() ?>/assets/studip-pad-list.jpg" width="240">
@@ -30,7 +30,7 @@
     gesichert werden</b> und sind dann im Dateibereich der Veranstaltung zu finden.
 </p>
 <? elseif ($view === 'howto'): ?>
-    <h2>Gemeinsam an Texten arbeiten: So geht\'s')?></h2>
+    <h2>Gemeinsam an Texten arbeiten: So geht's</h2>
     <div style="float:right;margin-left:10px;">
         <p>
             <img src="<?= $plugin->getPluginURL() ?>/assets/studip-menu-pad.jpg" width="240">
@@ -62,7 +62,7 @@
     </ul>
 
 <? elseif ($view === 'tips'): ?>
-    <h2>Gemeinsam an Texten arbeiten: Tipps und Tricks')?></h2>
+    <h2>Gemeinsam an Texten arbeiten: Tipps und Tricks</h2>
     <ul>
         <li>Personen können im Pad rechts oben (Icon "Personengruppe") ihren Namen eingeben und eine Farbe auswählen. Damit kann jeder sehen, wer was bearbeitet hat.<br>&nbsp;</li>
         <li>Eine Versionshistorie (Uhr-Symbol im Menü oben) ermöglich es, Änderung in ihrer zeitlichen Abfolge nachzuvollziehen.<br>&nbsp;</li>

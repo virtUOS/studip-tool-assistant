@@ -1,5 +1,5 @@
 <? if ($view === 'blubber'): ?>
-<h2>Kontinuierliche Gruppenkommunikation: Blubber-Chat in Stud.IP')?></h2>
+<h2>Kontinuierliche Gruppenkommunikation: Blubber-Chat in Stud.IP</h2>
 
     <div style="float:right;">
         <p>

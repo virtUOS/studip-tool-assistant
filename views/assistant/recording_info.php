@@ -1,5 +1,5 @@
 <? if ($view === 'opencaststudio'): ?>
-<h2>Selbst aufzeichnen: Opencast Studio')?></h2>
+<h2>Selbst aufzeichnen: Opencast Studio</h2>
     <div style="float:right;margin-left:10px;">
         <p>
             <iframe width="240" height="135" src="https://www.youtube.com/embed/oKwv0HnCCIQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -14,7 +14,7 @@
     </p>
 
 <? elseif ($view === 'powerpoint'): ?>
-    <h2>Selbst aufzeichnen: Powerpoint')?></h2>
+    <h2>Selbst aufzeichnen: Powerpoint</h2>
     <p>
         Microsoft Powerpoint bietet in aktuellen Versionen die Möglichkeit,
         vertonte Präsentationen direkt in Powerpoint aufzuzeichnen (auf Wunsch mit Webcam-Bild).
@@ -35,7 +35,7 @@
     <a href="https://support.office.com/de-de/article/aufzeichnen-einer-bildschirmpr%C3%A4sentation-mit-kommentaren-und-folienanzeigedauern-0b9502c6-5f6c-40ae-b1e7-e47d8741161c">Microsoft-Office-Support</a>.
 </p>
 <? elseif ($view === 'tips'): ?>
-    <h2>Selbst aufzeichnen: Tipps und Tricks')?></h2>
+    <h2>Selbst aufzeichnen: Tipps und Tricks</h2>
     <ul>
         <li><b>Versuchen Sie nicht, perfekt zu sein!</b> Ihre Studierenden werden Ihnen in der aktuellen Situation die eine
             oder andere Schwierigkeit nachsehen.<br>&nbsp;</li>

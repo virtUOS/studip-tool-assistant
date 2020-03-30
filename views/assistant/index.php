@@ -20,13 +20,13 @@
                         ]), ['data-dialog' => '']) ?>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/example') ?>" data-dialog="size=640x400">Beispiel') ?></a>
+                        <a href="<?= $controller->link_for('assistant/mail_info/example') ?>" data-dialog="size=640x400">Beispiel</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/howto') ?>" data-dialog="size=640x600">So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/mail_info/howto') ?>" data-dialog="size=640x600">So geht's</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/tips') ?>" data-dialog="size=640x600">Tipps und Tricks') ?></a>
+                        <a href="<?= $controller->link_for('assistant/mail_info/tips') ?>" data-dialog="size=640x600">Tipps und Tricks</a>
                     </li>
                 </ul>
             </div>
@@ -40,13 +40,13 @@
                 <?= Studip\LinkButton::create(_('Datei hochladen'), '#', ['onclick' => "STUDIP.Files.openAddFilesWindow('$folder_id')"]) ?>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/example') ?>" data-dialog="size=640x400">Beispiel') ?></a>
+                        <a href="<?= $controller->link_for('assistant/files_info/example') ?>" data-dialog="size=640x400">Beispiel</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/howto') ?>" data-dialog="size=640x600">So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/files_info/howto') ?>" data-dialog="size=640x600">So geht's</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/tips') ?>" data-dialog="size=640x400">Tipps und Tricks') ?></a>
+                        <a href="<?= $controller->link_for('assistant/files_info/tips') ?>" data-dialog="size=640x400">Tipps und Tricks</a>
                     </li>
                 </ul>
             </div>
@@ -56,12 +56,12 @@
                 (Stud.IP: Informationen)</em>
             </h1>
             <div class="accordion_content">
-                <p>Informieren Sie Ihre Teilnehmenden gut sichtbar darüber, wie Ihr Kurs in das Semester startet.')?></p>
-                <p>Wir haben eine Vorlage für das Stud.IP-Modul "Informationen" erstellt mit der Sie die wichtigsten Informationen und Fragen strukturiert hinterlegen können.')?></p>
+                <p>Informieren Sie Ihre Teilnehmenden gut sichtbar darüber, wie Ihr Kurs in das Semester startet.</p>
+                <p>Wir haben eine Vorlage für das Stud.IP-Modul "Informationen" erstellt mit der Sie die wichtigsten Informationen und Fragen strukturiert hinterlegen können.</p>
                 <?= Studip\LinkButton::create(_('Corona-Infoseite einrichten'), $controller->url_for('assistant/corona')) ?>
                 <!--<ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/corona_info/howto') ?>" data-dialog="size=640x600">So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/corona_info/howto') ?>" data-dialog="size=640x600">So geht's') ?></a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/corona_info/tips') ?>" data-dialog="size=640x400">Tipps und Tricks') ?></a>
@@ -81,14 +81,14 @@
                 OER-Portale zum Tauschen freier Materialien
             </h1>
             <div class="accordion_content">
-                <p>Open Educational Ressources sind Materialien, die von Lehrenden frei zur Verfügung gestellt werden: Frei zur Nutzung, aber auch zur Weiterbearbeitung.')?></p>
+                <p>Open Educational Ressources sind Materialien, die von Lehrenden frei zur Verfügung gestellt werden: Frei zur Nutzung, aber auch zur Weiterbearbeitung.</p>
                 <?= Studip\LinkButton::create(_('OER-Portal Niedersachsen'), 'https://www.oernds.de', ['target'=>'_new']) ?>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/oer_info/example') ?>" data-dialog="size=850x625">Links und Portale') ?></a>
+                        <a href="<?= $controller->link_for('assistant/oer_info/example') ?>" data-dialog="size=850x625">Links und Portale</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/oer_info/howto') ?>" data-dialog="size=640x550">Erklärvideo (Youtube)') ?></a>
+                        <a href="<?= $controller->link_for('assistant/oer_info/howto') ?>" data-dialog="size=640x550">Erklärvideo (Youtube)</a>
 
                     </li>
                 </ul>
@@ -102,10 +102,10 @@
                 <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('courseware')) ?>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/courseware_info/example') ?>" data-dialog="size=640x400">Beispiel') ?></a>
+                        <a href="<?= $controller->link_for('assistant/courseware_info/example') ?>" data-dialog="size=640x400">Beispiel</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/courseware_info/howto') ?>" data-dialog="size=640x400">So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/courseware_info/howto') ?>" data-dialog="size=640x550">So geht's</a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/courseware_info/explain') ?>" data-dialog="size=640x520">Erklärvideo: Courseware und Vips</a>
@@ -120,10 +120,10 @@
                 <p>Bei der Online-Lehre spielen urheberrechtliche Fragen immer dann eine wichtige Rolle, wenn Sie Materialien verwenden, die Dritte erstellt haben.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/copyright_info/basics') ?>" data-dialog="size=640x650">Urheberrecht: Absolute Grundlagen') ?></a>
+                        <a href="<?= $controller->link_for('assistant/copyright_info/basics') ?>" data-dialog="size=640x650">Urheberrecht: Absolute Grundlagen</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/copyright_info/teaching') ?>" data-dialog="size=640x450">Was darf ich in der Lehre nutzen?') ?></a>
+                        <a href="<?= $controller->link_for('assistant/copyright_info/teaching') ?>" data-dialog="size=640x450">Was darf ich in der Lehre nutzen?</a>
                     </li>
                 </ul>
             </div>
@@ -144,13 +144,13 @@
                 <p>Mit Videokonferenzen führen Sie online Team-Besprechungen und Seminar-Sitzungen durch und bieten Online-Sprechstunden für Studierende an.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/meeting_info/example') ?>" data-dialog="size=640x600">Beispiel') ?></a>
+                        <a href="<?= $controller->link_for('assistant/meeting_info/example') ?>" data-dialog="size=640x600">Beispiel</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/meeting_info/howto') ?>" data-dialog="size=640x650">So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/meeting_info/howto') ?>" data-dialog="size=640x650">So geht's</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/meeting_info/tips') ?>" data-dialog="size=640x500">Tipps und Tricks') ?></a>
+                        <a href="<?= $controller->link_for('assistant/meeting_info/tips') ?>" data-dialog="size=640x500">Tipps und Tricks</a>
                     </li>
                 </ul>
             </div>
@@ -167,10 +167,10 @@
                     Die Uni Osnabrück bietet dafür den Dienst "Riot".</p>
                 <ul>
                     <li>
-                        <a href="https://www.rz.uni-osnabrueck.de/homeoffice/riot.html" target="_blank">So geht\'s: Matrix-Riot einrichten (RZ)') ?></a>
+                        <a href="https://www.rz.uni-osnabrueck.de/homeoffice/riot.html" class="link-extern" target="_blank">So geht's: Matrix-Riot einrichten (RZ)</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/messenger_info/blubber') ?>" data-dialog="size=640x500">Alternative in Stud.IP: Blubber-Chat') ?></a>
+                        <a href="<?= $controller->link_for('assistant/messenger_info/blubber') ?>" data-dialog="size=640x500">Alternative in Stud.IP: Blubber-Chat</a>
                     </li>
                 </ul>
             </div>
@@ -184,13 +184,13 @@
                     Arbeitsergebnisse zusammentragen. Stud.IP bietet dafür zwei gut integrierte Tools: Pads und Wikis.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/collab_info/example') ?>" data-dialog="size=640x650">Beispiel') ?></a>
+                        <a href="<?= $controller->link_for('assistant/collab_info/example') ?>" data-dialog="size=640x650">Beispiel</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/collab_info/howto') ?>" data-dialog="size=640x600">So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/collab_info/howto') ?>" data-dialog="size=640x600">So geht's</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/collab_info/tips') ?>" data-dialog="size=640x500">Tipps und Tricks') ?></a>
+                        <a href="<?= $controller->link_for('assistant/collab_info/tips') ?>" data-dialog="size=640x500">Tipps und Tricks</a>
                     </li>
                 </ul>
             </div>
@@ -212,10 +212,10 @@
                 für vollautomatische Videoaufzeichnungen ausgerüstet, Sie müssen nur eine Zeit buchen.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/lecturehall_info/example') ?>" data-dialog="size=640x675">Beispiel') ?></a>
+                        <a href="<?= $controller->link_for('assistant/lecturehall_info/example') ?>" data-dialog="size=640x675">Beispiel</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/lecturehall_info/howto') ?>" data-dialog="size=640x400">So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/lecturehall_info/howto') ?>" data-dialog="size=640x400">So geht's</a>
                     </li>
                 </ul>
             </div>
@@ -268,10 +268,10 @@
                         <a href="<?= $controller->link_for('assistant/recording_info/opencaststudio') ?>" data-dialog="size=640x600">Opencast Studio (Unsere Empfehlung!)</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/recording_info/powerpoint') ?>" data-dialog="size=640x500">Aufnahmen direkt in Powerpoint') ?></a>
+                        <a href="<?= $controller->link_for('assistant/recording_info/powerpoint') ?>" data-dialog="size=640x500">Aufnahmen direkt in Powerpoint</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/recording_info/tips') ?>" data-dialog="size=640x500">Tipps und Tricks') ?></a>
+                        <a href="<?= $controller->link_for('assistant/recording_info/tips') ?>" data-dialog="size=640x500">Tipps und Tricks</a>
                     </li>
                 </ul>
             </div>
@@ -280,12 +280,12 @@
 
     <section class="assistant-section" style="clear: both;">
         <h1>
-            Aufgaben stellen') ?>
+            Aufgaben stellen
         </h1>
 
         <div class="accordion">
             <h1>
-                Einfache Abgaben: Hausaufgabenorder') ?>
+                Einfache Abgaben: Hausaufgabenorder
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Hausaufgabenorder einrichten'), $controller->url_for('mail')) ?>
@@ -293,14 +293,14 @@
                     einsammeln. Lehrende und Tutor*innen sehen alle Dateien, die Studierenden nur die eigenen.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/homework_info/howto') ?>" data-dialog="size=640x500">So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/homework_info/howto') ?>" data-dialog="size=640x500">So geht's</a>
                     </li>
 
                 </ul>
             </div>
 
             <h1>
-                Übungsblätter und Aufgaben mit Abgabefrist') ?>
+                Übungsblätter und Aufgaben mit Abgabefrist
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('mail')) ?>
@@ -308,13 +308,13 @@
                 Selbstüberprüfungsaufgaben, die automatisiert oder manuell bewertet werden können.
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/vips_info/example') ?>" data-dialog="size=640x600">Beispiel') ?></a>
+                        <a href="<?= $controller->link_for('assistant/vips_info/example') ?>" data-dialog="size=640x600">Beispiel</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/vips_info/howto') ?>" data-dialog="size=640x510">So geht\'s') ?></a>
+                        <a href="<?= $controller->link_for('assistant/vips_info/howto') ?>" data-dialog="size=640x510">So geht's</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/vips_info/tips') ?>" data-dialog="size=640x400">Tipps und Tricks') ?></a>
+                        <a href="<?= $controller->link_for('assistant/vips_info/tips') ?>" data-dialog="size=640x400">Tipps und Tricks</a>
                     </li>
                 </ul>
             </div>
@@ -324,12 +324,12 @@
     <section class="assistant-section">
         <h1>
             <?= Icon::create('question-circle', Icon::ROLE_INFO)->asImg(20, ['style' => 'vertical-align: text-bottom']) ?>
-            Fragen Sie uns...') ?>
+            Fragen Sie uns...
         </h1>
         <div class="assistant-infobox">
             <p style="text-aling:justify;">
                 Wir haben hier nur die grundlegendsten Szenarien vorgestellt. Mit Stud.IP und anderen Diensten können Sie
-                    Ihre Lehre auf viele weitere Arten unterstützen. Sprechen Sie uns einfach an:') ?>
+                    Ihre Lehre auf viele weitere Arten unterstützen. Sprechen Sie uns einfach an:
                 <br><br>
                 <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a><br>
                 Tel. 0541/969-6666<br>

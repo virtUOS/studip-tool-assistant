@@ -1,17 +1,17 @@
 <? if ($view === 'basics'): ?>
-    <h2>Urheberrecht beachten: Die absoluten Grundlagen')?></h2>
+    <h2>Urheberrecht beachten: Die absoluten Grundlagen</h2>
     <div style="margin-left:10px;float:right">
         <iframe width="320" height="180" src="https://www.youtube.com/embed/KxhL5ElJVLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p style="font-size:66%"><i>ARD-alpha: Schutz vor Ideenklau - das Urheberrecht - so geht MEDIEN</i></p>
     </div>
     <p>
-        Wichtigste Grundregel: Ein Werk gehört den Personen, die es geschaffen haben. Sie bestimmen, wie das Werk genutzt werden darf.')?>
+        Wichtigste Grundregel: Ein Werk gehört den Personen, die es geschaffen haben. Sie bestimmen, wie das Werk genutzt werden darf.
     </p>
     <p>
-        Wenn Sie etwas nutzen oder z.B. an Ihre Studierenden weitergeben wollen, dass Sie nicht selbst geschaffen haben, müssen Sie immer prüfen, ob Sie denn dazu auch berechtigt sind.')?>
+        Wenn Sie etwas nutzen oder z.B. an Ihre Studierenden weitergeben wollen, dass Sie nicht selbst geschaffen haben, müssen Sie immer prüfen, ob Sie denn dazu auch berechtigt sind.
     </p>
     <p>
-        Dabei gibt es einige häufige Missverständnisse:') ?>
+        Dabei gibt es einige häufige Missverständnisse:
     </p>
     <ul>
         <li>Dinge, die Sie frei zugänglich im Internet finden, dürfen Sie deshalb noch nicht kopieren und weitergeben. Prüfen Sie, ob auf der Webseite eine Lizenz angegeben ist, die die Weitergabe erlaubt. Verlinken Sie ansonsten die Webseite.</li>
@@ -22,9 +22,9 @@
     </ul>
 
 <? elseif ($view === 'teaching'): ?>
-    <h2>Urheberrecht beachten: Was darf ich in der Lehre nutzen?')?></h2>
+    <h2>Urheberrecht beachten: Was darf ich in der Lehre nutzen?</h2>
     <p>
-        Für Lehrveranstaltungen können Sie urheberrechtlich geschützte Werke Dritter in folgenden Fällen verwenden:')?>
+        Für Lehrveranstaltungen können Sie urheberrechtlich geschützte Werke Dritter in folgenden Fällen verwenden:
     </p>
     <ol>
         <li>Freie Lizenzen liegen vor (Open Access, Open Educational Ressource)</li>

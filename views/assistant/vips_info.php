@@ -1,5 +1,5 @@
 <? if ($view === 'example'): ?>
-    <h2>Übungsblätter und Aufgaben mit Abgabefrist: Beispiel')?></h2>
+    <h2>Übungsblätter und Aufgaben mit Abgabefrist: Beispiel</h2>
     <div style="float:right;margin-left:10px;">
         <p>
             <img src="<?= $plugin->getPluginURL() ?>/assets/studip-vips-beispiel1.jpg" width="240">
