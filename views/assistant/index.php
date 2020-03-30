@@ -99,7 +99,7 @@
             </h1>
             <div class="accordion_content">
                 <p>Mit dem Stud.IP-Plugin "Courseware" können Sie vielfältige Quellen zusammenführen und interaktive multimediale Lernmodule erstellen.</p>
-                <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('courseware')) ?>
+                <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('assistant/courseware')) ?>
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/courseware_info/example') ?>" data-dialog="size=640x400">Beispiel</a>
