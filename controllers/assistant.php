@@ -168,8 +168,8 @@ class AssistantController extends StudipController
         $plugin_manager = \PluginManager::getInstance();
         $this->coursewarePlugin = $plugin_manager->getPlugin('Courseware');
 
-        $plugin_manager->setPluginActivated($plugin_manager->getPluginInfo('Courseware')['id'], $this->course_id, true);
-        $plugin_manager->setPluginActivated($plugin_manager->getPluginInfo('VipsPlugin')['id'], $this->course_id, true);
+        $plugin_manager->setPluginActivated($this->coursewarePlugin->getPluginId(), $this->course_id, true);
+        $plugin_manager->setPluginActivated($plugin_manager->getPlugin('VipsPlugin')->getPluginId(), $this->course_id, true);
 
         $current_courseware = dbBlock::findCourseware($current_cid);
         $remote_courseware = $this->getRemoteCourseware($remote_cid);
@@ -366,5 +366,14 @@ class AssistantController extends StudipController
         $example = file_get_contents($this->plugin->getPluginPath() . '/assets/vips-example.xml');
         $assignment = VipsAssignment::importXML($example, $GLOBALS['user']->id, $this->course_id);
         $this->redirect(PluginEngine::getURL($vips, [], 'sheets'));
+    }
+
+    public function meetings_action()
+    {
+        $plugin_manager = PluginManager::getInstance();
+        $meetings = $plugin_manager->getPlugin('MeetingPlugin');
+        $plugin_manager->setPluginActivated($meetings->getPluginId(), $this->course_id, true);
+
+        $this->redirect(URLHelper::getURL('plugins.php/meetingplugin/index', array('cid' => $this->course_id)));
     }
 }
