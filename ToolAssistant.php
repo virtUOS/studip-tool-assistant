@@ -16,7 +16,7 @@ class ToolAssistant extends StudIPPlugin implements StandardPlugin
         parent::__construct();
 
         if ($this->isActivated() && Navigation::hasItem('/course/admin')) {
-            $navigation = new Navigation(_('🧍↔️🧍 Online-Lehre'), PluginEngine::getURL($this, null, 'assistant'));
+            $navigation = new Navigation(_('🧍🏠 Online-Lehre'), PluginEngine::getURL($this, null, 'assistant'));
             Navigation::insertItem('/course/assistant', $navigation, 'admin');
         }
     }
