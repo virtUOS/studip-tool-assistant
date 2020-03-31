@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test xmlns="urn:vips:test:v1.0" id="test-8776" type="practice"
+      start="2020-04-01T12:00:00+02:00"
+                end="2020-09-30T13:00:00+02:00"
+                  >
+    <title>
+        Übungsblatt mit Beispielaufgaben    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Dieses Übungsblatt enthält einige &lt;strong&gt;Beispielaufgaben&lt;/strong&gt;, die die unterschiedlichen &lt;strong&gt;Aufgabentypen verdeutlichen&lt;/strong&gt; sollen. Zum Teil enthalten die Aufgabenstellungen Kommentare, die Ihnen als Lehrenden weitere Erläuterungen geben sollen.&lt;br /&gt;&lt;br /&gt;
+Verwenden Sie die &lt;strong&gt;Studierendenansicht &lt;/strong&gt;(Unter &quot;Ansichten&quot; links), um das Blatt aus Studierendensicht zu betrachen. Unter &lt;strong&gt;&quot;Aufgabenblatt bearbeiten&lt;/strong&gt;&quot; können Sie die Aufgabenstellung bearbeiten, &lt;strong&gt;eingegangene Lösungen bewerten &lt;/strong&gt;Sie unter &quot;Ergebnisse&quot;.&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;Hinweis&lt;/strong&gt;: Die Aufgaben sind fachlich zum größten Teil unterkomplex und sollen keinesfalls typische Aufgabenstellungen der betreffenden Fächer darstellen.&lt;br /&gt;
+     </description>
+        <exercises>
+                    <exercise id="exercise-59850" points="1"
+>
+    <title>
+        Konkurrenzdienst zum Word Wide  Web    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Ungefähr zeitgleich mit Tim Berners-Lees Umsetzung des World Wide Web (WWW) wurde ein ähnlicher Hypertext-Informationsdienst (samt &quot;Browser&quot;-Client, Serversoftware, Transportprotokoll, Auszeichnungssprache und Suchmaschinen) entwickelt und praktisch eingesetzt, der sich aber auf Dauer nicht durchsetzen konnte. Wie hieß dieser Dienst?&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Information: Dies ist eine &quot;Single Choice&quot;-Frage, bei der eine von beliebig vielen vorgegebenen Antwortalternativen als richtig markiert werden muss. In dieser Umsetzung ist keine Enthaltung möglich, d.h. es wird gleich gewertet, ob ich gar nichts ankreuze oder eine falsche Antwort ankreuze.&lt;/span&gt;    </description>
+        <items>
+                    <item type="choice-single">
+                <answers>
+                                            <answer score="0">
+                            Telnet                        </answer>
+                                            <answer score="1">
+                            Gopher                        </answer>
+                                            <answer score="0">
+                            Javascript                        </answer>
+                                            <answer score="0">
+                            Projekt Xanadu                        </answer>
+                                    </answers>
+                            </item>
+            </items>
+</exercise>
+                    <exercise id="exercise-59851" points="3"
+>
+    <title>
+        Die drei Kernerfindungen des World Wide Web    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Tim Berners-Lees Vorschlag für ein &quot;World Wide Web&quot; stützt sich im Kern auf drei Erfindungen, die bis heute wichtige Grundpfeiler des WWW sind. Wie lauten die Abkürzungen und Langformen dieser drei Erfindungen?&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Information: Dies ist eine &quot;Single Choice&quot;-Aufgabe mit mehreren Antwortblöcken, d.h. es gibt einen Beschreibungstext, zu dem dann aber mehrere Blöcke von Antwortalternativen präsentiert werden, von denen jeweils eine korrekt ist. &lt;/span&gt; &lt;span style=&quot;color:#7f8c8d;&quot;&gt;In dieser Umsetzung ist keine Enthaltung möglich, d.h. es wird gleich gewertet, ob ich gar nichts ankreuze oder eine falsche Antwort ankreuze.&lt;/span&gt;    </description>
+        <items>
+                    <item type="choice-single">
+                <answers>
+                                            <answer score="0">
+                            htpp - Hypertext Publishing Protocol                        </answer>
+                                            <answer score="1">
+                            http - Hypertext Transport Protocol                        </answer>
+                                            <answer score="0">
+                            htpp - Hyper Transport Publishing Protocol                        </answer>
+                                            <answer score="0">
+                            http - Hypertransport Text Protocol                        </answer>
+                                    </answers>
+                            </item>
+                    <item type="choice-single">
+                <answers>
+                                            <answer score="1">
+                            HTML - Hypertext Markup Language                        </answer>
+                                            <answer score="0">
+                            HTLM - Hypertext Langauge Markup                        </answer>
+                                            <answer score="0">
+                            HTML - Hypertransport Model Language                        </answer>
+                                            <answer score="0">
+                            HTLM - Hypertransport Language Model                        </answer>
+                                    </answers>
+                            </item>
+                    <item type="choice-single">
+                <answers>
+                                            <answer score="0">
+                            URL - Uniform Resource Locator                        </answer>
+                                            <answer score="0">
+                            URF - Uniform Resource Finder                        </answer>
+                                            <answer score="1">
+                            URL - Universal Resource Locator                        </answer>
+                                            <answer score="0">
+                            URF - Universal Resource Finder                        </answer>
+                                    </answers>
+                            </item>
+            </items>
+</exercise>
+                    <exercise id="exercise-59852" points="1"
+>
+    <title>
+        Nullstellen von f(x)=3x+2    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Wie viele und welche Nullstellen weist die Funktion [tex]f(x)=3x+2[/tex] auf?&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Information: Die ist eine &quot;Single Choice&quot;-Aufgabe mit Enthaltung, d.h. es kann zwischen &quot;keine Antwort&quot;, &quot;korrekte Antwort&quot; und &quot;falsche Antwort&quot; unterschieden werden. Bei Single-Choice-Aufgaben hat diese Unterscheidung nur dann einen Effekt in der Bewertung, wenn die Option &quot;Falsche Antworten in Multiple- und Single-Choice-Aufgaben geben Punktabzug (negative Punkte für eine Aufgabe möglich)&quot; für das Gesamtübungsblatt aktiviert ist. In offiziellen Prüfungen ist diese Option allerdings unzulässig.&lt;/span&gt;    </description>
+        <items>
+                    <item type="choice-single">
+                <answers>
+                                            <answer score="0">
+                            Die Funktion hat keine Nullstellen.                        </answer>
+                                            <answer score="1">
+                            Die Funktion hat eine Nullstelle: [tex]x=-\frac{2}{3}[/tex]                        </answer>
+                                            <answer score="0">
+                            Die Funktion hat zwei Nullstellen: [tex]x=-\frac{2}{3}[/tex] und [tex]x=\frac{2}{3}[/tex]                        </answer>
+                                            <answer score="0">
+                            Die Funktion hat unendliche viele Nullstellen ([tex]x[/tex] ist beliebig).                        </answer>
+                                        <answer score="0" default="true">
+                        <text>
+                            keine Antwort                        </text>
+                    </answer>
+                </answers>
+                            </item>
+            </items>
+</exercise>
+                    <exercise id="exercise-59853" points="2"
+>
+    <title>
+        Umsatzsteuerberechnung    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Der umsatzsteuerpflichtige Unternehmer A kauft vom umsatzsteuerpflichtigen Unternehmer B innerhalb Deutschlands ein Brötchen zum Bruttopreis von 1,00 € ein verkauft es in Deutschland an Endverbraucher X zum Bruttopreis von 2,00€. Welche Aussagen stimmen nach Abführung der Umsatzsteuer (Satz: 7%) und eventuellem Vorsteuerabzug?&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Information: Die ist eine &quot;Single Choice&quot;-Aufgabe mit mehreren Blöcken Enthaltung, d.h. es kann zwischen &quot;keine Antwort&quot;, &quot;korrekte Antwort&quot; und &quot;falsche Antwort&quot; unterschieden werden.&lt;br /&gt;&lt;br /&gt;
+Bei Single-Choice-Aufgaben mit mehreren Blöcken hat diese Unterscheidung dann einen Effekt in der Bewertung, wenn die Option &quot;Falsche Antworten in Multiple- und Single-Choice-Aufgaben geben Punktabzug&quot; mit den Zusätzen &quot;(negative Punkte für eine Aufgabe möglich)&quot; oder &quot;(Gesamtpunktzahl pro Aufgabe mind. 0)&quot; für das gesamte Übungsblatt aktiviert ist. In offiziellen Prüfungen ist die erste Option unzulässig.&lt;/span&gt;    </description>
+        <items>
+                    <item type="choice-single">
+                <answers>
+                                            <answer score="1">
+                            A und B führen zusammen ca. 0,195 € Umsatzsteuer ab.                        </answer>
+                                            <answer score="0">
+                            A und B führen zusammen ca. 0,130 € Umsatzsteuer ab.                        </answer>
+                                            <answer score="0">
+                            A und B führen zusammen ca. 0,065 € Umsatzsteuer ab.                        </answer>
+                                            <answer score="0">
+                            A und B führen zusammen ca. 0,210 € Umsatzsteuer ab.                        </answer>
+                                        <answer score="0" default="true">
+                        <text>
+                            keine Antwort                        </text>
+                    </answer>
+                </answers>
+                            </item>
+                    <item type="choice-single">
+                <answers>
+                                            <answer score="1">
+                            B verbleiben pro verkauftem Brötchen ca. 0,925 €                        </answer>
+                                            <answer score="0">
+                            B verbleiben pro verkauftem Brötchen ca. 1,065 €                        </answer>
+                                            <answer score="0">
+                            B verbleiben pro verkauftem Brötchen ca. 0,860 €                        </answer>
+                                            <answer score="0">
+                            B verbleiben pro verkauftem Brötchen ca. 1,865 €                        </answer>
+                                        <answer score="0" default="true">
+                        <text>
+                            keine Antwort                        </text>
+                    </answer>
+                </answers>
+                            </item>
+            </items>
+</exercise>
+                    <exercise id="exercise-59854" points="1"
+ feedback="true">
+    <title>
+        Um welche Blüte handelt es sich?    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Zu welcher Pflanze gehört die hier abgebildete Blüte:&lt;br /&gt;&lt;br /&gt;&lt;img alt=&quot;bluete1.jpeg&quot; height=&quot;300&quot; src=&quot;https://studip.uni-osnabrueck.de/sendfile.php?type=0&amp;amp;file_id=10217398bb954d25fa18d1f60dfb664c&amp;amp;file_name=bluete1.jpeg&quot; width=&quot;400&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+Wenn Sie sich nicht ganz sicher sind, können Sie das Kommentarfeld nutzen, um Ihre Überlegungen zu erläutern.&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Informationen: Dies ist eine &quot;Single Choice&quot;-Aufgabe mit zugeschaltetem Kommentarfeld. Eine solche Kommentarmöglichkeit lässt sich zu jeder Aufgabe hinzuschalten. Die Aufgabe kann automatisiert ausgewertet werden, wobei es immer möglich ist, manuell abweichende Punktwerte zu vergeben - hier unter Einbeziehung eines etwaigen Kommentars.&lt;/span&gt;    </description>
+        <items>
+                    <item type="choice-single">
+                <answers>
+                                            <answer score="1">
+                            Primula vulgaris                        </answer>
+                                            <answer score="0">
+                            Primula bellidifolia                        </answer>
+                                            <answer score="0">
+                            Primula farinosa                        </answer>
+                                            <answer score="0">
+                            Primula modesta                        </answer>
+                                    </answers>
+                            </item>
+            </items>
+</exercise>
+                    <exercise id="exercise-59855" points="4"
+>
+    <title>
+        Eigenschaften von Multiple-Choice-Fragen    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Welche der folgenden Eigenschaften sind bei geschlossenen Fragetypen in Vips immer gegeben?&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Information: Dies ist eine Aufgabe des Typs &quot;Multiple Choice&quot;, bei der für jede der Antwortalternativen unabhängig voneinander festgelegt wird, ob sie als falsch oder richtig zu werten ist.&lt;/span&gt;    </description>
+            <hint>
+            &lt;!--HTML--&gt;
+
+
+
+
+
+
+
+
+Für jede Aufgabe können Hinweise zur Bearbeitung hinterlegt werden, die hervorgehoben (in &quot;Notizzettel-Gelb&quot;) angezeigt werden. Es ist nicht möglich, Hinweise nur auf Wunsch der Teilnehmenden anzuzeigen und dann Punkte abzuziehen.        </hint>
+        <items>
+        <item type="choice-multiple">
+            <answers>
+                                    <answer score="1">
+                        Die Lösung wird aus einer (typischerweise kleinen) Menge von Antwortalternativen ausgewählt.                    </answer>
+                                    <answer score="0">
+                        Mindestens eine Antwortalternative ist richtig.                    </answer>
+                                    <answer score="0">
+                        Mindestens eine Antwortalternative ist falsch.                    </answer>
+                                    <answer score="1">
+                        Geschlossene Fragen können automatisiert ausgewertet werden.                    </answer>
+                            </answers>
+                    </item>
+    </items>
+</exercise>
+                    <exercise id="exercise-59856" points="4"
+>
+    <title>
+        Eigenschaften von Mulitple-Choice-Fragen (mit Enthaltung)    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Welche der folgenden Eigenschaften sind bei Multiple-Choice-Fragen in Vips immer gegeben?&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Information: Dies ist eine Aufgabe des Typs &quot;Multiple Choice&quot;, bei der für jede der Antwortalternativen unabhängig voneinander festgelegt wird, ob sie als falsch oder richtig zu werten ist.&lt;/span&gt; &lt;span style=&quot;color:#7f8c8d;&quot;&gt;Im Unterschied zur vorherigen Aufgabe gibt es hier jeweils auch die Option, keine Antwort zu geben. Diese Variante hat nur dann Auswirkungen auf die Bewertung, wenn die Klausur-Option &quot;Falsche Antworten in Multiple- und Single-Choice-Aufgaben geben Punktabzug&quot; aktiviert ist. Hierbei ist zu unterscheiden, ob die Gesamtpunktzahl der Aufgabe negativ sein kann (in offiziellen Prüfungen unzulässig) oder immer mindestens 0 (ggf. auch unzulässig) beträgt. Bei Punktabzug wird (bei 1 Punkt pro Antwort) wie folgt bewertet: Richtige Antwort: +1 Punkt, falsche Antwort: -1 Punkt, Enthaltung: 0 Punkte. Studierende halten diesen Aufgabentyp mit Punktabzug häufig für ungerecht, weil es vielen sehr schwer fällt &quot;Enthaltung&quot; auszuwählen und damit auf mögliche Punkte zu verzichten. Das führt dann dazu, dass drei richtige, aber eine falsche Antwort bei vier Teil-Fragen zu insgesamt nur 2 Punkten führen.&lt;/span&gt;    </description>
+        <items>
+        <item type="choice-multiple">
+            <choices>
+                <choice type="yes">
+                    Ja                </choice>
+                <choice type="no">
+                    Nein                </choice>
+                <choice type="none">
+                    keine Antwort                </choice>
+            </choices>
+            <answers>
+                                    <answer score="1">
+                        Die Lösung wird aus einer (typischerweise kleinen) Menge von Antwortalternativen ausgewählt.                    </answer>
+                                    <answer score="0">
+                        Mindestens eine Antwortalternative ist richtig.                    </answer>
+                                    <answer score="0">
+                        Mindestens eine Antwortalternative ist falsch.                    </answer>
+                                    <answer score="1">
+                        Geschlossene Fragen können automatisiert ausgewertet werden.                    </answer>
+                            </answers>
+                    </item>
+    </items>
+</exercise>
+                    <exercise id="exercise-59857" points="2"
+>
+    <title>
+        Chemische Reaktionen    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Wie nennt man eine chemische Reaktion, bei der ein Reaktionspartner Elektronen auf einen anderen Reaktionspartner überträgt?&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Information: Diese Frage vom Typ &quot;Freie Antwort&quot; lässt die Eingabe eines relativ kurzen Antworttextes (eine Eingabezeile) zu. Die Auswertung erfolgt teil-automatisiert: Bei der Definition der Aufgabe können Sie Antworten angeben, die sicher richtig und sicher falsch sind. Andere Eingaben können auf Ähnlichkeit verglichen werden und somit einen Bewertungsvorschlag erhalten, oder aber die Bewertung nicht angegebener Antworten erfolgt vollständig manuell.&lt;/span&gt;    </description>
+        <items>
+        <item type="text-line">
+            <answers>
+                                    <answer score="1">
+                        Redoxreaktion                    </answer>
+                                    <answer score="1">
+                        Reduktions-Oxidations-Reaktion                    </answer>
+                                    <answer score="1">
+                        Redox-Reaktion                    </answer>
+                                    <answer score="1">
+                        Redox Reaktion                    </answer>
+                            </answers>
+                                </item>
+    </items>
+</exercise>
+                    <exercise id="exercise-59858" points="5"
+>
+    <title>
+        Entwicklung der Wahlbeteiligung bei Bundestagswahlen    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Die &lt;strong&gt;Wahlbeteiligung&lt;/strong&gt; gibt den Anteil der Wahlberechtigten wieder, die bei einer Wahl tatsächlich gewählt haben. Abhängig von der jeweiligen Gebietskörperschaft werden auch jene zu den Wählenden gezählt, die einen leeren Wahlzettel oder einen ungültigen eingelegt haben. In der Öffentlichkeit wird der Begriff meist im Zusammenhang mit politischen Wahlen gebraucht, allerdings kann er auch bezogen auf andere Wahlen benutzt werden. Bei politischen Wahlen ist sie eine Art der politischen Partizipation.&lt;br /&gt;&lt;br /&gt;
+Bestrachten Sie die unten wiedergegebene Tabelle der Wahlbeteiligungen an Bundestagswahlen und
+&lt;ol&gt;&lt;li&gt;Beschreiben Sie die aus der Tabelle ersichtliche Entwicklung der Wahlbeteiligung&lt;/li&gt;
+	&lt;li&gt;Interpretierien Sie diese Entwicklung, indem Sie Gründe für Veränderungen und Schwankungen aus Ihrem Wissen über gesellschaftliche Entwicklungen ableiten.&lt;/li&gt;
+&lt;/ol&gt;
+ 
+
+&lt;table class=&quot;content&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Bundestagswahl&lt;/th&gt;
+			&lt;th&gt;Wahlbeteiligung in %&lt;/th&gt;
+		&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;1949&lt;/td&gt;
+			&lt;td&gt;78,5&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1953&lt;/td&gt;
+			&lt;td&gt;86,0&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1957&lt;/td&gt;
+			&lt;td&gt;87,8&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1961&lt;/td&gt;
+			&lt;td&gt;87,7&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1965&lt;/td&gt;
+			&lt;td&gt;86,8&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1969&lt;/td&gt;
+			&lt;td&gt;86,7&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1972&lt;/td&gt;
+			&lt;td&gt;91,1&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1976&lt;/td&gt;
+			&lt;td&gt;90,7&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1980&lt;/td&gt;
+			&lt;td&gt;88,6&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1983&lt;/td&gt;
+			&lt;td&gt;89,1&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1987&lt;/td&gt;
+			&lt;td&gt;84,3&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1990&lt;/td&gt;
+			&lt;td&gt;77,8&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1994&lt;/td&gt;
+			&lt;td&gt;79,0&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1998&lt;/td&gt;
+			&lt;td&gt;82,2&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2002&lt;/td&gt;
+			&lt;td&gt;79,1&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2005&lt;/td&gt;
+			&lt;td&gt;77,7&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2009&lt;/td&gt;
+			&lt;td&gt;70,8&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2013&lt;/td&gt;
+			&lt;td&gt;71,5&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2017&lt;/td&gt;
+			&lt;td&gt;76,2&lt;/td&gt;
+		&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;br /&gt;&lt;em&gt;Quelle für Einleitungstext und Tabelle: &lt;a class=&quot;link-extern&quot; href=&quot;https://de.wikipedia.org/w/index.php?title=Wahlbeteiligung&amp;amp;oldid=194454599&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot;&gt;https://de.wikipedia.org/w/index.php?title=Wahlbeteiligung&amp;amp;oldid=194454599&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Information: Diese Frage vom Typ &quot;Textaufgabe&quot; lässt die Eingabe eines beliebig langen Antworttextes zu. Die Auswertung muss manuell erfolgen. Das Eingabefeld kann mit Text vorbelegt sein, z.B. wie hier zur Strukturierung.&lt;/span&gt;&lt;/p&gt;    </description>
+        <items>
+        <item type="text-area">
+            <answers>
+                                    <answer score="0" default="true">
+                        1. Beschreiben Sie die aus der Tabelle ersichtliche Entwicklung der Wahlbeteiligung (3-4 Sätze)
+
+...
+
+2. Interpretieren Sie diese Entwicklung, indem Sie Gründe für Veränderungen und Schwankungen aus Ihrem Wissen über gesellschaftliche Entwicklungen ableiten. (5-6 Sätze)
+
+...                    </answer>
+                                                    <answer score="1">
+                                            </answer>
+                            </answers>
+                                            </item>
+    </items>
+</exercise>
+                    <exercise id="exercise-59859" points="8"
+>
+    <title>
+        Korrigieren eines HTTP-Requests    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Korrigieren Sie den angegeben HTTP-Request so, dass ein wohlgeformter und RFC-konformer Request entsteht.&lt;br /&gt;&lt;br /&gt;
+Hinweise:
+&lt;ul&gt;&lt;li&gt;Dazu gehört auch die Prüfung, ob die Werte eines Header-Feldes den spezifischen Anforderungen für dieses Feld genügen.&lt;/li&gt;
+	&lt;li&gt;Korrigieren Sie falsche oder unübliche Header-Felder so, dass ein plausibler Eintrag entsteht.&lt;/li&gt;
+	&lt;li&gt;Zeilen, die nicht in einen HTTP-Request gehören, sollen entfernt werden&lt;/li&gt;
+	&lt;li&gt;Die 32 muss nicht überprüft werden&lt;/li&gt;
+&lt;/ul&gt;&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Information: Bei dieser Frage vom Typ &quot;Textaufgabe&quot; soll ein vorgegebener Text korrigiert werden. Zwar wäre von der Art der Aufgabe her eine automatische Korrektur hier vorstellbar, das ist aber eher ein Spezialfall - die Auswertung muss also auch hier manuell erfolgen.&lt;/span&gt;    </description>
+        <items>
+        <item type="text-area">
+            <answers>
+                                    <answer score="0" default="true">
+                        PUT \path\script.cgi\23456 HTTP/1.1
+200 OK
+Server: uni-osnabrueck.de
+User Agent: MyBrowser/8.8
+Accept: text/html, application/xhtml+xml
+Content-Length: 32
+title:Demo&amp;content:Something                    </answer>
+                                                    <answer score="1">
+                        &lt;!--HTML--&gt;
+PUT /path/script.cgi/23456 HTTP/1.1&lt;br /&gt;
+Host: uni-osnabrueck.de&lt;br /&gt;
+User-Agent: MyBrowser/8.8&lt;br /&gt;
+Accept: text/html, application/xhtml+xml&lt;br /&gt;
+Content-Length: 32&lt;br /&gt;&lt;br /&gt;
+title=Demo&amp;amp;content=Something                    </answer>
+                            </answers>
+                                            </item>
+    </items>
+</exercise>
+                    <exercise id="exercise-59870" points="10"
+>
+    <title>
+        Photoaufgabe: Frühlingsblumen    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Gehen Sie unter Berücksichtigung der Corona-Sicherheitsregeln an die frische Luft und suchen und fotografieren Sie eine blühende Narzisse.&lt;br /&gt;&lt;br /&gt;
+Laden Sie das Bild im jpg-Format als Lösung hoch.    </description>
+        <items>
+        <item type="text-area">
+            <answers>
+                                                    <answer score="1">
+                                            </answer>
+                            </answers>
+                            <submission-hints>
+                    <attachments upload="true"/>
+                </submission-hints>
+                                            </item>
+    </items>
+</exercise>
+                    <exercise id="exercise-59860" points="4"
+>
+    <title>
+        Emergence    </title>
+        <items>
+        <item type="cloze-select">
+            <description>
+                                    <text>&lt;!--HTML--&gt;
+The term 'emergence' denotes the </text>
+                                            <answers>
+                                                            <answer score="0">???</answer>
+                                                            <answer score="0">learning</answer>
+                                                            <answer score="0">improvement</answer>
+                                                            <answer score="1">formation</answer>
+                                                            <answer score="0">synchronisation</answer>
+                                                    </answers>
+                                                        <text> of new properties or structures of </text>
+                                            <answers>
+                                                            <answer score="0">???</answer>
+                                                            <answer score="0">an agent</answer>
+                                                            <answer score="0">an algorithm</answer>
+                                                            <answer score="0">a language</answer>
+                                                            <answer score="1">a system</answer>
+                                                    </answers>
+                                                        <text> as a consequence of the </text>
+                                            <answers>
+                                                            <answer score="0">???</answer>
+                                                            <answer score="1">interaction</answer>
+                                                            <answer score="0">logical relation</answer>
+                                                            <answer score="0">similarity</answer>
+                                                    </answers>
+                                                        <text> between its elements. The emerging properties can not </text>
+                                            <answers>
+                                                            <answer score="0">???</answer>
+                                                            <answer score="1">(obviously)</answer>
+                                                            <answer score="0">(entirely)</answer>
+                                                            <answer score="0">(algorithmically)</answer>
+                                                            <answer score="0">(exactly)</answer>
+                                                    </answers>
+                                                        <text> be reduced to properties of the elements in isolation.</text>
+                                                </description>
+                                            </item>
+    </items>
+</exercise>
+                    <exercise id="exercise-59861" points="5"
+>
+    <title>
+        Aussagen über die Wahlbeteiligung    </title>
+        <items>
+        <item type="cloze-input">
+            <description>
+                                    <text>&lt;!--HTML--&gt;
+Füllen Sie anhand der Tabelle die folgenden Lücken:&lt;br /&gt;&lt;br /&gt;
+Die höchste Wahlbeteiligung gab es bei der Wahl im Jahr </text>
+                                            <answers>
+                                                            <answer score="1">1972</answer>
+                                                    </answers>
+                                                        <text>, die niedrigste im Jahr </text>
+                                            <answers>
+                                                            <answer score="1">2009</answer>
+                                                    </answers>
+                                                        <text>.&lt;br /&gt;&lt;br /&gt;
+Die größte Veränderung gab es zwischen den Wahlen </text>
+                                            <answers>
+                                                            <answer score="1">1949</answer>
+                                                    </answers>
+                                                        <text> und </text>
+                                            <answers>
+                                                            <answer score="1">1953</answer>
+                                                    </answers>
+                                                        <text>, die Veränderung betrug </text>
+                                            <answers>
+                                                            <answer score="1">+7,5</answer>
+                                                    </answers>
+                                                        <text> Prozentpunkte (+ oder - angeben!).</text>
+                                                </description>
+                                            </item>
+    </items>
+</exercise>
+                    <exercise id="exercise-59862" points="8"
+>
+    <title>
+        Irregular english verbs    </title>
+        <items>
+        <item type="cloze-input">
+            <description>
+                                    <text>&lt;!--HTML--&gt;
+
+&lt;table class=&quot;content&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th scope=&quot;col&quot;&gt;Base form&lt;/th&gt;
+			&lt;th scope=&quot;col&quot;&gt;Past tense&lt;/th&gt;
+			&lt;th scope=&quot;col&quot;&gt;Past participle&lt;/th&gt;
+		&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;be&lt;/em&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;em&gt;was/were&lt;/em&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;em&gt;been&lt;/em&gt;&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;begin&lt;/em&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;em&gt;</text>
+                                            <answers>
+                                                            <answer score="1">began</answer>
+                                                    </answers>
+                                                        <text>&lt;/em&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;em&gt;begun&lt;/em&gt;&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;</text>
+                                            <answers>
+                                                            <answer score="1">break</answer>
+                                                    </answers>
+                                                        <text>&lt;/em&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;em&gt;broke&lt;/em&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;em&gt;broken&lt;/em&gt;&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;</text>
+                                            <answers>
+                                                            <answer score="1">buy</answer>
+                                                    </answers>
+                                                        <text>&lt;/em&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;em&gt;bought&lt;/em&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;em&gt;</text>
+                                            <answers>
+                                                            <answer score="1">bought</answer>
+                                                    </answers>
+                                                        <text>&lt;/em&gt;&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;build&lt;/em&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;em&gt;</text>
+                                            <answers>
+                                                            <answer score="1">built</answer>
+                                                    </answers>
+                                                        <text>&lt;/em&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;em&gt;</text>
+                                            <answers>
+                                                            <answer score="1">built</answer>
+                                                    </answers>
+                                                        <text>&lt;/em&gt;&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;choose&lt;/em&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;em&gt;chose&lt;/em&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;em&gt;</text>
+                                            <answers>
+                                                            <answer score="1">chosen</answer>
+                                                    </answers>
+                                                        <text>&lt;/em&gt;&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;come&lt;/em&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;em&gt;</text>
+                                            <answers>
+                                                            <answer score="1">came</answer>
+                                                    </answers>
+                                                        <text>&lt;/em&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;em&gt;come&lt;/em&gt;&lt;/td&gt;
+		&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</text>
+                                                </description>
+                                            </item>
+    </items>
+</exercise>
+                    <exercise id="exercise-59863" points="4"
+>
+    <title>
+        Breadth First Search order    </title>
+        <items>
+        <item type="cloze-select">
+            <description>
+                                    <text>&lt;!--HTML--&gt;
+Consider a spatial search problem: An agent should find a way to a goal. The problem is represented as a two-dimensional grid of positions. The agent can only move to free places, not to places occupied by walls (X).&lt;br /&gt;&lt;br /&gt;
+In one step, the agent can move:
+&lt;ol&gt;&lt;li&gt;One step to the left&lt;/li&gt;
+	&lt;li&gt;One step to the right&lt;/li&gt;
+	&lt;li&gt;One step to the top&lt;/li&gt;
+	&lt;li&gt;One step to the bottom&lt;/li&gt;
+&lt;/ol&gt;&lt;br /&gt;
+Consider the following situation and &lt;strong&gt;mark the order of the first 8 positions that are expanded when using a breadth-first search algorithm&lt;/strong&gt; with a search agenda and cycle check.&lt;br /&gt;
+ 
+&lt;table class=&quot;content&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#666666;&quot;&gt; &lt;/td&gt;
+			&lt;td&gt;GOAL&lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="1">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="1">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#666666;&quot;&gt; &lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="1">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="1">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="1">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="1">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="0">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="1">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="0">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="1">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="0">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="1">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="0">-</answer>
+                                                            <answer score="1">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td&gt;AGENT&lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="0">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="1">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="1">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="0">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="1">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="0">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="1">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="0">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="1">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="1">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="1">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="1">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td&gt;</text>
+                                            <answers>
+                                                            <answer score="1">-</answer>
+                                                            <answer score="0">1</answer>
+                                                            <answer score="0">2</answer>
+                                                            <answer score="0">3</answer>
+                                                            <answer score="0">4</answer>
+                                                            <answer score="0">5</answer>
+                                                            <answer score="0">6</answer>
+                                                            <answer score="0">7</answer>
+                                                            <answer score="0">8</answer>
+                                                    </answers>
+                                                        <text>&lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+			&lt;td style=&quot;background-color:#666666;&quot;&gt;       &lt;/td&gt;
+		&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+Assume:
+&lt;ul&gt;&lt;li&gt;The order of generated successor states (representing the possible moves) is the same as given in the list above (left, right, top, bottom).&lt;/li&gt;
+&lt;/ul&gt;&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Information: Diese etwas kreativere Form einer Lückentextaufgabe ist ein echtes Klausurbeispiel aus &quot;Introduction to Artificial Intelligence&quot;. Sie prüft, ob die Studierenden den Breitensuch-Algorithmus korrekt auf eine gegebene Problemstellung anwenden können. In der Aufgabe soll die Reihenfolge der Felder markiert werden, in der Algorithmus bei der Wegfindung vorgeht. So ist zuerst für Feld links von &quot;AGENT&quot; der Wert 1 auszuwählen, dann die 2 für das Feld rechtes von AGENT usw. Da die Lücken nicht unabhängig voneinander sind, kann die Aufgabe nicht vollständig automatisiert ausgewertet werden. Komplett richtige und komplett falsche Aufgaben werden sicher erkannt, Fehler bei Einzelschritten ebenfalls. Wenn aber z.B. der erste Schritt ausgelassen wird und alle anderen Lösungen in der richtigen Reihenfolge angegeben sind, wird trotzdem alles als falsch erkannt. Hier muss dann manuell nachkorrigiert werden.  &lt;/span&gt;</text>
+                                                </description>
+                                            </item>
+    </items>
+</exercise>
+                    <exercise id="exercise-59864" points="5"
+>
+    <title>
+        Zitate zuordnen    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Ordnen Sie die folgenden lateinischen Zitate den Personen zu, denen sie zugeschrieben werden.&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Information: Diese Frage vom Typ &quot;Zuordnung&quot; enthält zwei Mengen, deren Elemente einander zugeordnet werden müssen. Hier gibt es genauso viele zuzuordnende Elemente wie Zuordnungspartner, es bleibt also nicht &quot;übrig&quot;. Die Reihenfolge der linken Spalte ist dabei fest, die Elemente rechts werden zufällig durcheinandergewürfelt.&lt;/span&gt;    </description>
+        <items>
+        <item type="matching">
+            <choices>
+                                    <choice type="group">
+                        Alea iacta est                    </choice>
+                                    <choice type="group">
+                        Amici, diem perdidi                    </choice>
+                                    <choice type="group">
+                        Cogito, ergo sum                    </choice>
+                                    <choice type="group">
+                        Dum spiro spero                    </choice>
+                                    <choice type="group">
+                        Labor omnia vincit                    </choice>
+                            </choices>
+            <answers>
+                                    <answer score="1" correct="0">
+                        Gaius Julias Caesar                    </answer>
+                                    <answer score="1" correct="1">
+                        Titus Flavius                    </answer>
+                                    <answer score="1" correct="2">
+                        Descartes                    </answer>
+                                    <answer score="1" correct="3">
+                        Marcus Tullius Cicero                    </answer>
+                                    <answer score="1" correct="4">
+                        Vergil                    </answer>
+                            </answers>
+                    </item>
+    </items>
+</exercise>
+                    <exercise id="exercise-59865" points="5"
+>
+    <title>
+        Zitate zuordnen (2)    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Ordnen Sie die folgenden lateinischen Zitate den Personen zu, denen sie zugeschrieben werden.&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Information: Diese Frage vom Typ &quot;Zuordnung&quot; enthält zwei Mengen, deren Elemente einander zugeordnet werden müssen. Im Gegensatz zur vorherigen Aufgabe gibt es mehr zuzuordnende Elemente als Zuordnungspartner, es bleiben also vier Elemente &quot;übrig&quot;. Die Reihenfolge der linken Spalte ist dabei fest, die Elemente rechts werden zufällig durcheinandergewürfelt.&lt;/span&gt;    </description>
+        <items>
+        <item type="matching">
+            <choices>
+                                    <choice type="group">
+                        Alea iacta est                    </choice>
+                                    <choice type="group">
+                        Amici, diem perdidi                    </choice>
+                                    <choice type="group">
+                        Cogito, ergo sum                    </choice>
+                                    <choice type="group">
+                        Dum spiro spero                    </choice>
+                                    <choice type="group">
+                        Labor omnia vincit                    </choice>
+                            </choices>
+            <answers>
+                                    <answer score="1" correct="0">
+                        Gaius Julias Caesar                    </answer>
+                                    <answer score="1" correct="1">
+                        Titus Flavius                    </answer>
+                                    <answer score="1" correct="2">
+                        Descartes                    </answer>
+                                    <answer score="1" correct="3">
+                        Marcus Tullius Cicero                    </answer>
+                                    <answer score="1" correct="4">
+                        Vergil                    </answer>
+                                    <answer score="1" correct="-1">
+                        Seneca                    </answer>
+                                    <answer score="1" correct="-1">
+                        Ovid                    </answer>
+                                    <answer score="1" correct="-1">
+                        Maria di Medici                    </answer>
+                                    <answer score="1" correct="-1">
+                        Flavius Vegetius Renatus                    </answer>
+                            </answers>
+                    </item>
+    </items>
+</exercise>
+                    <exercise id="exercise-59866" points="3"
+>
+    <title>
+        Iris-Arten    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Orden Sie die Namen der drei Iris-Arten den Abbildungen zu.&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Information: Diese Frage vom Typ &quot;Zurdnung&quot; verwendet Bilder als Zuordnungspartner.&lt;/span&gt;    </description>
+        <items>
+        <item type="matching">
+            <choices>
+                                    <choice type="group">
+                        [img:250]https://studip.uni-osnabrueck.de/sendfile.php?type=0&amp;file_id=463220f314b15f9287310b2e0ef4c209                    </choice>
+                                    <choice type="group">
+                        [img:250]https://studip.uni-osnabrueck.de/sendfile.php?type=0&amp;file_id=9a3ed40b95354d678fcafe7f0307c359&amp;file_name=iris2.jpg                    </choice>
+                                    <choice type="group">
+                        [img:250]https://studip.uni-osnabrueck.de/sendfile.php?type=0&amp;file_id=d3c8c0767b5c2efacdbb74f615d9b254&amp;file_name=iris3.jpg                    </choice>
+                            </choices>
+            <answers>
+                                    <answer score="1" correct="0">
+                        Iris virginica                    </answer>
+                                    <answer score="1" correct="1">
+                        Iris setosa                    </answer>
+                                    <answer score="1" correct="2">
+                        Iris versicolor                    </answer>
+                            </answers>
+                    </item>
+    </items>
+</exercise>
+                    <exercise id="exercise-59867" points="5"
+>
+    <title>
+        Funktion finden    </title>
+    <description>
+        &lt;!--HTML--&gt;
+Geben Sie eine Funktion f(x) an, die den unten dargestellten Graphen beschreibt.&lt;br /&gt;&lt;br /&gt;&lt;img alt=&quot;graph1.jpg&quot; src=&quot;https://studip.uni-osnabrueck.de/sendfile.php?type=0&amp;amp;file_id=1f3bd3387c7ffd5149b05bbd1f1a98f4&amp;amp;file_name=graph1.jpg&quot; /&gt;&lt;div&gt;&lt;br /&gt;
+Hinweis: Geben Sie die Formel ohne den Teil &quot;f(x)=&quot; ein, also z.B. nur &lt;strong&gt;x^3+2&lt;/strong&gt;&lt;/div&gt;
+
+&lt;h2&gt;&lt;br /&gt;
+Wertetabelle&lt;/h2&gt;
+
+&lt;table class=&quot;content&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;x&lt;/td&gt;
+			&lt;td&gt;f(x)&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-10&lt;/td&gt;
+			&lt;td&gt;45,000&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-9&lt;/td&gt;
+			&lt;td&gt;35,500&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-8&lt;/td&gt;
+			&lt;td&gt;27,000&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-7&lt;/td&gt;
+			&lt;td&gt;19,500&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-6&lt;/td&gt;
+			&lt;td&gt;13,000&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-5&lt;/td&gt;
+			&lt;td&gt;7,500&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-4&lt;/td&gt;
+			&lt;td&gt;3,000&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-3&lt;/td&gt;
+			&lt;td&gt;-0,500&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-2&lt;/td&gt;
+			&lt;td&gt;-3,000&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;-1&lt;/td&gt;
+			&lt;td&gt;-4,500&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;
+			&lt;td&gt;-5,000&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;
+			&lt;td&gt;-4,500&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;
+			&lt;td&gt;-3,000&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;
+			&lt;td&gt;-0,500&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;
+			&lt;td&gt;3,000&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;
+			&lt;td&gt;7,500&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;6&lt;/td&gt;
+			&lt;td&gt;13,000&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;7&lt;/td&gt;
+			&lt;td&gt;19,500&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;8&lt;/td&gt;
+			&lt;td&gt;27,000&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;9&lt;/td&gt;
+			&lt;td&gt;35,500&lt;/td&gt;
+		&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10&lt;/td&gt;
+			&lt;td&gt;45,000&lt;/td&gt;
+		&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;color:#7f8c8d;&quot;&gt;Information: Bei dieser Frage vom Typ &quot;Algebraischer Ausdruck&quot; werden mathematische Formeln als Eingaben erwartet, die nicht exakt mit der Musterlkösung übereinstimmen müssen, sondern auf mathamtische Äquivalenz geprüft werden, d.h. die Ausdrücke &quot;1/2*x&quot;, &quot;x*0,5&quot; oder &quot;x/2&quot; würden als gleichwertig erkannt.&lt;/span&gt;    </description>
+        <items>
+        <item type="math-expression">
+            <answers>
+                                    <answer score="1">
+                        0,5*x^2-5                    </answer>
+                            </answers>
+            <evaluation-hints>
+                            </evaluation-hints>
+                    </item>
+    </items>
+</exercise>
+            </exercises>
+</test>

@@ -303,7 +303,7 @@
                 Übungsblätter und Aufgaben mit Abgabefrist
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('mail')) ?>
+                <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('assistant/vips')) ?>
                 Stud.IP bietet mit "Vips" umfangreiche Möglichkeiten für Übungsblätter, Aufgaben mit Abgabefrist und
                 Selbstüberprüfungsaufgaben, die automatisiert oder manuell bewertet werden können.
                 <ul>

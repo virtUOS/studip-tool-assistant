@@ -357,5 +357,14 @@ class AssistantController extends StudipController
      * E N D               *
      **********************/
 
+    public function vips_action()
+    {
+        $plugin_manager = PluginManager::getInstance();
+        $vips = $plugin_manager->getPlugin('VipsPlugin');
+        $plugin_manager->setPluginActivated($vips->getPluginId(), $this->course_id, true);
 
+        $example = file_get_contents($this->plugin->getPluginPath() . '/assets/vips-example.xml');
+        $assignment = VipsAssignment::importXML($example, $GLOBALS['user']->id, $this->course_id);
+        $this->redirect(PluginEngine::getURL($vips, [], 'sheets'));
+    }
 }
