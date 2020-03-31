@@ -168,8 +168,8 @@ class AssistantController extends StudipController
         $plugin_manager = \PluginManager::getInstance();
         $this->coursewarePlugin = $plugin_manager->getPlugin('Courseware');
 
-        $plugin_manager->setPluginActivated($plugin_manager->getPluginInfo('Courseware')['id'], $this->course_id, true);
-        $plugin_manager->setPluginActivated($plugin_manager->getPluginInfo('VipsPlugin')['id'], $this->course_id, true);
+        $plugin_manager->setPluginActivated($this->coursewarePlugin->getPluginId(), $this->course_id, true);
+        $plugin_manager->setPluginActivated($plugin_manager->getPlugin('VipsPlugin')->getPluginId(), $this->course_id, true);
 
         $current_courseware = dbBlock::findCourseware($current_cid);
         $remote_courseware = $this->getRemoteCourseware($remote_cid);
