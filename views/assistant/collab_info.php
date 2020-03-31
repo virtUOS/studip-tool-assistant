@@ -45,7 +45,7 @@
         </p>
     </div>
     <p>
-        Nach Aktivierung der Pad-Funktion auf "Pad einrichten" oder über die "Mehr.."-Seite können Sie beliebig viele
+        Nach Aktivierung der Pad-Funktion mit einem Klick auf "Pad einrichten" können Sie beliebig viele
         Pads anlegen. Sie öffnen ein Pad durch Klick auf den Namen. Im Pad können beliebig viele Personen gleichzeitig
         schreiben (mit bis zu 100 Personen getestet).
     </p>
@@ -54,9 +54,9 @@
     </p>
     <ul>
         <li>Einstellungen: Hier (de)aktivieren Sie bei Bedarf Optionen wie Zeilennummern, Farbsteuerelemente etc.</li>
-        <li>Aktuellen Inhalt sichern: Erzeugt eine PDF-Datei mit dem aktuellen Inhalt des Pads und legt Sie im Dateibereich des Kurses ab.</li>
+        <li>Aktuellen Inhalt sichern: Erzeugt eine PDF-Datei mit dem aktuellen Inhalt des Pads und legt sie im Dateibereich des Kurses ab.</li>
         <li>Schreibschutz aktivieren: Friert den aktuellen Zustand ein, niemand kann mehr schreiben.</li>
-        <li>Passwort festlegen: Zum Öffnen wird ein zusätzloiches Passwort benötigt (sinnvoll vor allem bei öffentlichen Pads, die per Link auch von außen zugänglich sind).</li>
+        <li>Passwort festlegen: Zum Öffnen wird ein zusätzliches Passwort benötigt (sinnvoll vor allem bei öffentlichen Pads, die per Link auch von außen zugänglich sind).</li>
         <li>Veröffentlichen: Das Pad auch außerhalb von Stud.IP per Link (wird dann angezeigt) zugänglich machen.</li>
         <li>Löschen: Löscht das Pad unwiderruflich.<br></li>
     </ul>
@@ -65,8 +65,8 @@
     <h2>Gemeinsam an Texten arbeiten: Tipps und Tricks</h2>
     <ul>
         <li>Personen können im Pad rechts oben (Icon "Personengruppe") ihren Namen eingeben und eine Farbe auswählen. Damit kann jeder sehen, wer was bearbeitet hat.<br>&nbsp;</li>
-        <li>Eine Versionshistorie (Uhr-Symbol im Menü oben) ermöglich es, Änderung in ihrer zeitlichen Abfolge nachzuvollziehen.<br>&nbsp;</li>
-        <li>Es ist technisch nicht möglich, den initial eingegebenen Namen eines Pads zu ändern. Den Inhalt des Pads kopieren und in ein neues Pad übertragen<br>&nbsp;</li>
+        <li>Eine Versionshistorie (Uhr-Symbol im Menü oben) ermöglich es, Änderungen in ihrer zeitlichen Abfolge nachzuvollziehen.<br>&nbsp;</li>
+        <li>Es ist technisch nicht möglich, den initial eingegebenen Namen eines Pads zu ändern. Den Inhalt des Pads kopieren und in ein neues Pad übertragen.<br>&nbsp;</li>
         <li>Die gleichzeitige Bearbeitung mit mehreren Personen funktioniert in der Regel sehr gut. Wenn aber mehrere
             Personen gleichzeitig widersprüchliche Änderungen an der gleichen Stelle des Textes machen, kann es wegen
             unterschiedlicher Geschwindigkeiten in der Netzanbindung zu unerwarteten Effekten kommen. Das tritt aber

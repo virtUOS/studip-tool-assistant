@@ -42,10 +42,10 @@
         <li><b>Teilen Sie Ihren Inhalte in kürzere Teile auf.</b> Es müssen nicht immer 90 Minuten sein.
             Die Unabhängigkeit von Zeitslots nutzen Sie am besten, die Inhalte in sinnvolle Abschnitte zu gliedern,
             die idealerweise nicht länger als 30 Minuten sind.<br>&nbsp;</li>
-        <li><b>Sie müssen nicht immer im Bild sein.</b> Oft ist es einfcher, nur einen Audiokommentar aufzuzeichnen.
+        <li><b>Sie müssen nicht immer im Bild sein.</b> Oft ist es einfacher, nur einen Audiokommentar aufzuzeichnen.
             Insbesondere, wenn Ihre Studierenden Sie schon kennen, ist das kein Problem.
         </li>
-        <li><b>Das Wichtigste: Guter Ton.</b> Leider auch das Schwierigste. Am besten verwenden Sie ein Headset
+        <li><b>Das Wichtigste: guter Ton.</b> Leider auch das Schwierigste. Am besten verwenden Sie ein Headset
             eines Markenherstellers (ab ca. 20-30 Euro).</li>
     </ul>
 <? endif ?>

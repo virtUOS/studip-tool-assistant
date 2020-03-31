@@ -10,7 +10,6 @@
                 (Stud.IP: Nachrichten)
             </h1>
             <div class="accordion_content">
-                <p>Über Stud.IP-Nachrichten können Sie allen eingetragenen Kurs-Teilnehmenden Informationen zukommen lassen.</p>
                 <?= Studip\LinkButton::create(_('Rundmail schreiben'),
                         URLHelper::getURL('dispatch.php/messages/write', [
                             'course_id'       => $course_id,
@@ -18,6 +17,7 @@
                             'filter'          => 'all',
                             'emailrequest'    => 1
                         ]), ['data-dialog' => '']) ?>
+                <p>Über Stud.IP-Nachrichten können Sie allen eingetragenen Kurs-Teilnehmenden Informationen zukommen lassen.</p>
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/mail_info/example') ?>" data-dialog="size=640x400">Beispiel</a>
@@ -36,8 +36,8 @@
                 (Stud.IP: Dateien)
             </h1>
             <div class="accordion_content">
-                <p> Im Stud.IP-Dateibereich können Dateien hochgeladen und verlinkt werden. Mit dem "Courseware"-Modul können Sie verschiedene Medien zusammenführen (s. "Materialien zusammenstellen"). </p>
                 <?= Studip\LinkButton::create(_('Datei hochladen'), '#', ['onclick' => "STUDIP.Files.openAddFilesWindow('$folder_id')"]) ?>
+                <p> Im Stud.IP-Dateibereich können Dateien hochgeladen und verlinkt werden. Mit dem "Courseware"-Modul können Sie verschiedene Medien zusammenführen (s. "Materialien zusammenstellen"). </p>
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/files_info/example') ?>" data-dialog="size=640x400">Beispiel</a>
@@ -56,9 +56,9 @@
                 (Stud.IP: Informationen)</em>
             </h1>
             <div class="accordion_content">
+                <?= Studip\LinkButton::create(_('Corona-Infoseite einrichten'), $controller->url_for('assistant/corona')) ?>
                 <p>Informieren Sie Ihre Teilnehmenden gut sichtbar darüber, wie Ihr Kurs in das Semester startet.</p>
                 <p>Wir haben eine Vorlage für das Stud.IP-Modul "Informationen" erstellt mit der Sie die wichtigsten Informationen und Fragen strukturiert hinterlegen können.</p>
-                <?= Studip\LinkButton::create(_('Corona-Infoseite einrichten'), $controller->url_for('assistant/corona')) ?>
                 <!--<ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/corona_info/howto') ?>" data-dialog="size=640x600">So geht's') ?></a>
@@ -67,6 +67,106 @@
                         <a href="<?= $controller->link_for('assistant/corona_info/tips') ?>" data-dialog="size=640x400">Tipps und Tricks') ?></a>
                     </li>
                 </ul>-->
+            </div>
+
+            <h1>
+                Gute Lehre ohne Präsenz!?</em>
+            </h1>
+            <div class="accordion_content">
+                <?= Studip\LinkButton::create(_('Hinweise zur Didaktik'), 'https://www.virtuos.uni-osnabrueck.de/hochschuldidaktik/gute_lehre_ohne_praesenz.html') ?>
+                <p>Wir haben einige didaktische Hinweise und Anregungen zusammengetragen, damit Sie Ihre Lehre möglichst gut an die aktuellen Gegebenheiten anpassen
+                    und den erhöhten Anforderungen an Selbstlernkompetenzen der Studierenden Rechnung tragen können. </p>
+
+                <!--<ul>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/corona_info/howto') ?>" data-dialog="size=640x600">So geht's') ?></a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/corona_info/tips') ?>" data-dialog="size=640x400">Tipps und Tricks') ?></a>
+                    </li>
+                </ul>-->
+            </div>
+
+        </div>
+    </section>
+
+    <section class="assistant-section">
+        <h1>
+            Online-Vorträge (z.B. für Vorlesungen)
+        </h1>
+
+        <div class="accordion">
+            <h1>
+                Aufzeichnungen im Hörsaal ohne Publikum
+            </h1>
+            <div class="accordion_content">
+                <?= Studip\LinkButton::create(_('Anfrage stellen'), $controller->url_for('mail')) ?>
+                <p>Die Hörsäle der Universität können für Vorlesungen ohne Publikum genutzt werden. Über 20 Räume sind
+                für vollautomatische Videoaufzeichnungen ausgerüstet, Sie müssen nur eine Zeit buchen.</p>
+                <ul>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/lecturehall_info/example') ?>" data-dialog="size=640x675">Beispiel</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/lecturehall_info/howto') ?>" data-dialog="size=640x400">So geht's</a>
+                    </li>
+                </ul>
+            </div>
+
+            <h1>
+                Live-Übertragung
+            </h1>
+            <div class="accordion_content">
+                <?= Studip\LinkButton::create(_('Anfrage stellen'),
+                    URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '']) ?>
+
+                <p>
+                    Sie möchten Ihre Vorlesung im Hörsaal oder zu Hause abhalten und für Ihre Studierenden live
+                    ins Internet übertragen?
+                </p>
+                <p>
+                    Dafür gibt es unterschiedliche Lösungsansätze, von denen wir noch keinen vollautomatisiert
+                    anbieten können. Bitte kontaktieren Sie uns mit einer E-Mail an
+                    <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a>.
+                </p>
+            </div>
+
+            <h1>
+                Aufzeichnung im Studio
+            </h1>
+            <div class="accordion_content">
+                <?= Studip\LinkButton::create(_('Weitere Informationen'),
+                    'https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html',
+                    ["target"=>"_blank"]) ?>
+                <p>
+                    Die Universität Osnabrück betreibt zwei Videostudios in den Räumen 15/125 und 07/102 (LehrKolleg).
+                    Hier können mit Unterstützung / Einweisung durch virtUOS-Mitarbeiter Videos in überdurchschnittlicher
+                    Qualität produziert werden.
+                </p>
+                <p>
+                    Bitte kontaktieren Sie uns mit einer E-Mail an
+                    <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a>.
+                </p>
+            </div>
+
+            <h1>
+                Podcasts und Videos selbst aufzeichnen
+            </h1>
+            <div class="accordion_content">
+                <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('mail')) ?>
+                <p>Sie möchten Audio- und Video-Aufnahmen am eigenen Rechner erstellen und den Teilnehmenden
+                zur Verfügung stellen? Dafür gibt es verschiedene Werkzeuge:</p>
+                <ul>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/recording_info/opencaststudio') ?>" data-dialog="size=640x600">Opencast Studio (Unsere Empfehlung!)</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/recording_info/powerpoint') ?>" data-dialog="size=640x500">Aufnahmen direkt in Powerpoint</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/recording_info/tips') ?>" data-dialog="size=640x500">Tipps und Tricks</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -81,7 +181,7 @@
                 OER-Portale zum Tauschen freier Materialien
             </h1>
             <div class="accordion_content">
-                <p>Open Educational Ressources sind Materialien, die von Lehrenden frei zur Verfügung gestellt werden: Frei zur Nutzung, aber auch zur Weiterbearbeitung.</p>
+                <p>Open Educational Ressources sind Materialien, die von Lehrenden frei zur Verfügung gestellt werden: frei zur Nutzung, aber auch zur Weiterbearbeitung.</p>
                 <?= Studip\LinkButton::create(_('OER-Portal Niedersachsen'), 'https://www.oernds.de', ['target'=>'_new']) ?>
                 <ul>
                     <li>
@@ -191,87 +291,6 @@
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/collab_info/tips') ?>" data-dialog="size=640x500">Tipps und Tricks</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="assistant-section">
-        <h1>
-            Online-Vorträge (z.B. für Vorlesungen)
-        </h1>
-
-        <div class="accordion">
-            <h1>
-                Aufzeichnungen im Hörsaal ohne Publikum
-            </h1>
-            <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Anfrage stellen'), $controller->url_for('mail')) ?>
-                <p>Es ist weiterhin möglich, die Hörsäle der Universität für Vorlesungen zu nutzen. Über 20 Räume sind
-                für vollautomatische Videoaufzeichnungen ausgerüstet, Sie müssen nur eine Zeit buchen.</p>
-                <ul>
-                    <li>
-                        <a href="<?= $controller->link_for('assistant/lecturehall_info/example') ?>" data-dialog="size=640x675">Beispiel</a>
-                    </li>
-                    <li>
-                        <a href="<?= $controller->link_for('assistant/lecturehall_info/howto') ?>" data-dialog="size=640x400">So geht's</a>
-                    </li>
-                </ul>
-            </div>
-
-            <h1>
-                Live-Übertragung
-            </h1>
-            <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Anfrage stellen'),
-                    URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '']) ?>
-
-                <p>
-                    Sie möchten Ihre Vorlesung im Hörsaal oder zu Hause abhalten und für Ihre Studierenden live
-                    ins Internet übertragen?
-                </p>
-                <p>
-                    Dafür gibt es unterschiedliche Lösungsansätze, von denen wir noch keinen vollautomatisiert
-                    anbieten können. Bitte kontaktieren Sie uns mit einer E-Mail an
-                    <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a>.
-                </p>
-            </div>
-
-            <h1>
-                Aufzeichnung im Studio
-            </h1>
-            <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Weitere Informationen'),
-                    'https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html',
-                    ["target"=>"_blank"]) ?>
-                <p>
-                    Die Universität Osnabrück betreibt zwei Videostudios in den Räumen 15/125 und 07/102 (LehrKolleg).
-                    Hier können mit Unterstützung / Einweisung durch virtUOS-Mitarbeiter Videos in überdurchschnittlicher
-                    Qualität produziert werden.
-                </p>
-                <p>
-                    Bitte kontaktieren Sie uns mit einer E-Mail an
-                    <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a>.
-                </p>
-            </div>
-
-            <h1>
-                Podcasts und Videos selbst aufzeichnen
-            </h1>
-            <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('mail')) ?>
-                <p>Sie möchten Audio- und Video-Aufnahmen am eigenen Rechner erstellen und den Teilnehmenden
-                zur Verfügung stellen? Dafür gibt es verschiedene Werkzeuge:</p>
-                <ul>
-                    <li>
-                        <a href="<?= $controller->link_for('assistant/recording_info/opencaststudio') ?>" data-dialog="size=640x600">Opencast Studio (Unsere Empfehlung!)</a>
-                    </li>
-                    <li>
-                        <a href="<?= $controller->link_for('assistant/recording_info/powerpoint') ?>" data-dialog="size=640x500">Aufnahmen direkt in Powerpoint</a>
-                    </li>
-                    <li>
-                        <a href="<?= $controller->link_for('assistant/recording_info/tips') ?>" data-dialog="size=640x500">Tipps und Tricks</a>
                     </li>
                 </ul>
             </div>

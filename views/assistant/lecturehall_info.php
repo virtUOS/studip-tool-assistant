@@ -23,7 +23,7 @@
 </ul>
 <p>&nbsp;<br>
     Die Vorlesung wird mit fest installierter Kamera gefilmt, die auf das Vortragspult ausgerichtet ist.
-    Die Aufzeichnungen voll automatisiert verarbeitet und stehen für die Teilnehmenden über Stud.IP bereit.
+    Die Aufzeichnungen werden voll automatisiert verarbeitet und stehen für die Teilnehmenden über Stud.IP bereit.
     Auf Wunsch können die Aufzeichnungen auf öffentlich zugänglich gemacht werden.
 </p>
     <p>

@@ -23,7 +23,7 @@
         </p>
     </div>
     <p>
-        Auf der Seite "Teilnehmende" können Sie mit einem Klick eine Nachricht an alle verfassen, die anschließend sowohl in Stud.IP als auch per E-Mail verschickt werden.
+        Auf der Seite "Teilnehmende" können Sie mit einem Klick eine Nachricht an alle verfassen, die anschließend sowohl in Stud.IP als auch per E-Mail verschickt wird.
     </p>
     <p>
         Hinweise:
@@ -31,12 +31,13 @@
             <li><b>Die Nachrichten werden nicht sofort als E-Mail verschickt</b>, sondern zur Entlastung der Mail-Server nach und nach ausgeliefert. Es kann biz zu einer Stunde dauern, bis alle Mails ausgeliefert wurden.<br>&nbsp;</li>
             <li>Die E-Mails werden <b>an die Adresse geschickt, die die Personen selbst in Stud.IP hinterlegt haben</b>. Standardmäßig ist das die Uni-E-Mail-Adresse.<br>&nbsp;</li>
             <li>E-Mail ist für viele Studierende <b>kein selbstverständliches Kommunikationsmedium mehr</b>. Weisen Sie Ihre Studierenden darauf hin, Ihre E-Mails regelmäßig abzurufen und rechnen Sie nicht unbedingt damit, dass E-Mails nach wenigen Stunden bereits von allen gelesen wurden.<br>&nbsp;</li>
-            <li><b>Personen, die sich erst später in die Veranstaltung eingetragen, bekommen die Nachricht nicht</b>. Hier bieten sich Ankündigungen an (s. Tipps und Tricks)<br>&nbsp;</li>
+            <li><b>Personen, die sich erst später in die Veranstaltung eingetragen, bekommen die Nachricht nicht</b>. Hier bieten sich Ankündigungen an (s. Tipps und Tricks).<br>&nbsp;</li>
         </ul>
     </p>
 <? elseif ($view === 'tips'): ?>
     <h2>Teilnehmende benachrichtigen: Tipps und Tricks</h2>
     <ul>
+        <li>E-Mail ist für viele Studierende <b>kein selbstverständliches Kommunikationsmedium mehr</b>. Weisen Sie Ihre Studierenden darauf hin, Ihre E-Mails regelmäßig abzurufen und rechnen Sie nicht unbedingt damit, dass E-Mails nach wenigen Stunden bereits von allen gelesen wurden.<br>&nbsp;</li>
         <li>Über die Seite "Teilnehmende" können Sie auch <b>Nachrichten an einzelne Personen oder Gruppen von Personen</b> (alle Lehrenden, alle Tutor/-innen, nur Studierende) schicken. Dazu klicken Sie in der Teilnehmerliste rechts auf die Briefsymbole.<br>&nbsp;</li>
         <li><b>Unter "Übersicht" können Sie Ankündigungen erstellen</b>, die für eine wählbare Zeit für alle Teilnehmenden sichtbar sind. Ankündigungen werden nicht per Mail verschickt, sind aber auch für später in den Kurs kommende zugreifbar. In wichtigen Fällen, bei denen noch mit Kursnachzügler/-innen zu rechnen ist, empfiehlt es sich, sowohl eine Rundmail als auch eine Ankündigung zu schreiben.<br>&nbsp;</li>
         <li>Im Unterpunkt "Gruppen" können Sie auf der Teilnehmenden-Seite <b>eigene Gruppen</b> frei zusammenstellen und diesen Gruppen auch Nachrichten senden.<br>&nbsp;</li>

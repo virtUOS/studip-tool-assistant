@@ -29,9 +29,9 @@
     <p>
         Hinweise:
         <ul>
-            <li><b>Auch Studierende können Dateien hochladen</b>. Es ist immer erkennbar, wer eine Datei hochgeladen hat und die verwendete IP-Adresse wird gespeichert.</li>
-            <li><b>Verlinken statt hochladen:</b> Dateien können nicht nur hochgeladen, sondern aus dem Internet oder anderen Veranstaltungen verlinkt werden. Dazu können Sie im zweiten Schritt die Quelle auswählen</li>
-        <li><b>Benutzen Sie Ordner</b>, um die Dateien in Ihrer Veranstaltung zu organisieren. Ordner können auch für unterschiedliche Rechteeinstellungen verwendet werden, z.B. als Materialordner, in dem Studierende nichts hochladen können.</li>
+            <li><b>Auch Studierende können Dateien hochladen</b>. Es ist immer erkennbar, wer eine Datei hochgeladen hat, und die verwendete IP-Adresse wird gespeichert.</li>
+            <li><b>Verlinken statt hochladen:</b> Dateien können nicht nur hochgeladen, sondern aus dem Internet oder anderen Veranstaltungen verlinkt werden. Dazu können Sie im zweiten Schritt die Quelle auswählen.</li>
+        <li><b>Benutzen Sie Ordner</b>, um die Dateien in Ihrer Veranstaltung zu organisieren. Ordner können auch für unterschiedliche Rechteeinstellungen verwendet werden, z.B. als Materialordner, in den Studierende nichts hochladen können.</li>
         </ul>
     </p>
 <? elseif ($view === 'tips'): ?>

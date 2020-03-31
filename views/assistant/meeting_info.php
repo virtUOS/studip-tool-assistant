@@ -1,5 +1,5 @@
 <? if ($view === 'example'): ?>
-<h2>Online-Sitzungen und -Sprechstunden: Beispiel</h2>
+<h2>Online-Sitzungen und Videokonferenzen: Beispiel</h2>
     <p>
         <img src="<?= $plugin->getPluginURL() ?>/assets/bbb-raum.jpg">
         <br><span style="font-size:66%">Videokonferenz mit einem "BugBlueButton"-Server der Uni Osnabrück</span>
@@ -11,7 +11,7 @@
 </p>
 
 <? elseif ($view === 'howto'): ?>
-    <h2>Online-Sitzungen und -Sprechstunden: So geht's</h2>
+    <h2>Online-Sitzungen und Videokonferenzen: So geht's</h2>
     <div style="float:right;margin-left:10px;">
         <p>
             <img src="<?= $plugin->getPluginURL() ?>/assets/studip-menu-meetings.jpg" width="240">
@@ -26,7 +26,7 @@
         <li>Legen Sie in Stud.IP eine Veranstaltung an, z.B. "Meetings Fachbereich" oder "Sprechstunde XY". Über den Menüpunkt "Mehr" aktivieren Sie das Plugin "Meetings".</li>
         <li>Sie können verschiedene Online-Konferenz-Räume erstellen und frei benennen.</li>
         <li>Anschließend mit Klick auf den Meeting-Namen die Online-Konferenz starten. Der Konferenzraum öffnet sich in einem neuen Browser-Tab.
-Sie werden aufgefordert, zu entscheiden, ob Sie Ihr Mikrophon aktiveren oder nur zuhören möchten.</li>
+Sie werden aufgefordert, zu entscheiden, ob Sie Ihr Mikrofon aktiveren oder nur zuhören möchten.</li>
         <li>Im Online-Raum können Sie sich jederzeit stumm schalten und zusätzlich Ihre Kamera aktiveren.</li>
     </ol>
 <p>&nbsp;</p>
@@ -39,7 +39,7 @@ Sie werden aufgefordert, zu entscheiden, ob Sie Ihr Mikrophon aktiveren oder nur
         </ul>
     </p>
 <? elseif ($view === 'tips'): ?>
-    <h2>Online-Sitzungen und -Sprechstunden: Tipps und Tricks</h2>
+    <h2>Online-Sitzungen und Videokonferenzen: Tipps und Tricks</h2>
     <ul>
         <li>Für gute Audio-Qualität im Videokonferenz-Raum sollten Sie ein Headset verwenden.<br>&nbsp;</li>
         <li>Während des Meetings empfiehlt es sich, nur das Mikro des/der jeweiligen Sprechers/Sprecherin offen zu lassen. Die übrigen Teilnehmenden sollten ihre Mikros stumm schalten, um Nebengeräusche zu vermeiden.<br>&nbsp;</li>

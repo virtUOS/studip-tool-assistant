@@ -1,7 +1,8 @@
 <? if ($view === 'example'): ?>
     <h2>OER-Portal zum Tauschen freier Materialien: Beispiel</h2>
     <p>
-        Das Rad muss nicht immer neu erfunden werden, es gibt bereits sehr viele Materialien, die Sie im Rahmen Ihrer Lehre einsetzen können. Der Begriff "OER" bezieht sich dabei auf die Lizenz, d.h. die rechtssichere Nutzung und vor allem auch Veränderung und Weitergabe von Lehrmaterialien.
+        Das Rad muss nicht immer neu erfunden werden, es gibt bereits sehr viele Materialien, die Sie im Rahmen Ihrer Lehre einsetzen können.
+        Der Begriff "OER" bezieht sich dabei auf die Lizenz, d.h. die rechtssichere Nutzung und vor allem auch Veränderung und Weitergabe von Lehrmaterialien.
     Links und Portale:
 </p>
 <table class="default">
