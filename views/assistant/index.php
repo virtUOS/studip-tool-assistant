@@ -140,7 +140,7 @@
                 Online-Sitzungen und Videokonferenzen
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('mail')) ?>
+                <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('assistant/meetings')) ?>
                 <p>Mit Videokonferenzen führen Sie online Team-Besprechungen und Seminar-Sitzungen durch und bieten Online-Sprechstunden für Studierende an.</p>
                 <ul>
                     <li>
