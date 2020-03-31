@@ -367,4 +367,13 @@ class AssistantController extends StudipController
         $assignment = VipsAssignment::importXML($example, $GLOBALS['user']->id, $this->course_id);
         $this->redirect(PluginEngine::getURL($vips, [], 'sheets'));
     }
+
+    public function meetings_action()
+    {
+        $plugin_manager = PluginManager::getInstance();
+        $meetings = $plugin_manager->getPlugin('MeetingPlugin');
+        $plugin_manager->setPluginActivated($meetings->getPluginId(), $this->course_id, true);
+
+        $this->redirect(URLHelper::getURL('plugins.php/meetingplugin/index', array('cid' => $this->course_id)));
+    }
 }
