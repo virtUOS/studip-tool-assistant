@@ -41,13 +41,14 @@ class ToolAssistantBaseController extends StudipController
 
     protected function trackVisit($action)
     {
+        $action = preg_replace('/[^\w.]/', '', $action);
+        Metrics::increment('plugin.toolassistant.visit.' . $action);
         Metrics::increment(
-            'plugin.toolassistant.visit.action.' .
-                preg_replace('/[^\w.]/', '', $action)
-        );
-        Metrics::increment(
-            'plugin.toolassistant.visit.institute.' .
-                preg_replace('/[^\w]/', '', Context::get()->institut_id)
+            sprintf(
+                'plugin.toolassistant.visit_by_institute.%s.%s',
+                preg_replace('/[^\w]/', '', Context::get()->institut_id),
+                $action
+            )
         );
     }
 }
