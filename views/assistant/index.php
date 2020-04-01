@@ -73,7 +73,7 @@
                 Gute Lehre ohne Präsenz!?</em>
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Hinweise zur Didaktik'), 'https://www.virtuos.uni-osnabrueck.de/hochschuldidaktik/gute_lehre_ohne_praesenz.html', ['data-action' => 'tips/gute_lehre']) ?>
+                <?= Studip\LinkButton::create(_('Hinweise zur Didaktik'), 'https://www.virtuos.uni-osnabrueck.de/hochschuldidaktik/gute_lehre_ohne_praesenz.html', ['target' => '_new', 'data-action' => 'tips/gute_lehre']) ?>
                 <p>Wir haben einige didaktische Hinweise und Anregungen zusammengetragen, damit Sie Ihre Lehre möglichst gut an die aktuellen Gegebenheiten anpassen
                     und den erhöhten Anforderungen an Selbstlernkompetenzen der Studierenden Rechnung tragen können. </p>
 
@@ -100,7 +100,22 @@
                 Aufzeichnungen im Hörsaal ohne Publikum
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Anfrage stellen'), $controller->url_for('mail')) ?>
+                <?= Studip\LinkButton::create(_('Anfrage stellen'),
+                    URLHelper::getURL('dispatch.php/messages/write',
+                        ['rec_uname' => 'virtuos@studip',
+                        'default_subject' => _('Anfrage Hörsaalaufzeichnung für '.Context::get()->Name),
+                        'default_body' => _('Liebes virtUOS-Team,
+ich möchte im Hörsaal aufzeichnen.
+
+Mein Terminwunsch: (Datum/Wochentag, Uhrzeit, einmalig/regelmäßig)
+Mein Hörsaalwunsch: (Raum oder Stadtbereich)
+
+Veranstaltung: '.Context::get()->Name.' ('.$course_id.')
+
+Telefonnummer für Rückfragen:
+
+')]),
+                    ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
                 <p>Die Hörsäle der Universität können für Vorlesungen ohne Publikum genutzt werden. Über 20 Räume sind
                 für vollautomatische Videoaufzeichnungen ausgerüstet, Sie müssen nur eine Zeit buchen.</p>
                 <ul>
@@ -118,7 +133,22 @@
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Anfrage stellen'),
-                    URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '', 'data-action' => 'messages/write_live_stream']) ?>
+                    URLHelper::getURL('dispatch.php/messages/write',
+                        ['rec_uname' => 'virtuos@studip',
+                            'default_subject' => _('Anfrage für Live-Übertragung für '.Context::get()->Name),
+                            'default_body' => _('Liebes virtUOS-Team,
+ich möchte meine Veranstaltung live übertragen.
+
+Mein Terminwunsch: (Datum/Wochentag, Uhrzeit, einmalig/regelmäßig)
+Mein Hörsaalwunsch: (Raum oder Stadtbereich bzw. von zu Hause)
+Erwartete Anzahl an Teilnehmenden: 
+
+Veranstaltung: '.Context::get()->Name.' ('.$course_id.')
+
+Telefonnummer für Rückfragen:
+
+')]),
+                    ['data-dialog' => '', 'data-action' => 'messages/write_live_stream']) ?>
 
                 <p>
                     Sie möchten Ihre Vorlesung im Hörsaal oder zu Hause abhalten und für Ihre Studierenden live
@@ -198,8 +228,8 @@
                 Materialien zusammenstellen (Stud.IP: Courseware)
             </h1>
             <div class="accordion_content">
-                <p>Mit dem Stud.IP-Plugin "Courseware" können Sie vielfältige Quellen zusammenführen und interaktive multimediale Lernmodule erstellen.</p>
                 <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('assistant/courseware')) ?>
+                <p>Mit dem Stud.IP-Plugin "Courseware" können Sie vielfältige Quellen zusammenführen und interaktive multimediale Lernmodule erstellen.</p>
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/courseware_info/example') ?>" data-dialog="size=640x400">Beispiel</a>
@@ -260,14 +290,14 @@
             </h1>
             <div class="accordion_content">
                 <!--<?= Studip\LinkButton::create(_('Messenger öffnen'), $controller->url_for('mail')) ?>-->
-                <div style="float:right;">
+                <div style="float:right;margin-left:10px;">
                     <img src="<?= $plugin->getPluginURL() ?>/assets/studip-riot.jpg" width="160">
                 </div>
                 <p>Für Lern- und Arbeitsgruppen wird heute oft eine schnelle und niedrigschwellige Kommunikation gewünscht, auch per App vom Mobilgerät (Vorbild: Slack, Whatsapp).
                     Die Uni Osnabrück bietet dafür den Dienst "Riot".</p>
                 <ul>
                     <li>
-                        <a href="https://www.rz.uni-osnabrueck.de/homeoffice/riot.html" class="link-extern" target="_blank">So geht's: Matrix-Riot einrichten (RZ)</a>
+                        <a href="https://www.rz.uni-osnabrueck.de/homeoffice/riot.html" class="link-extern" target="_blank">So geht's: Matrix/Riot einrichten (RZ)</a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/messenger_info/blubber') ?>" data-dialog="size=640x500">Alternative in Stud.IP: Blubber-Chat</a>
@@ -323,8 +353,8 @@
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('assistant/vips')) ?>
-                Stud.IP bietet mit "Vips" umfangreiche Möglichkeiten für Übungsblätter, Aufgaben mit Abgabefrist und
-                Selbstüberprüfungsaufgaben, die automatisiert oder manuell bewertet werden können.
+                <p>Stud.IP bietet mit "Vips" umfangreiche Möglichkeiten für Übungsblätter, Aufgaben mit Abgabefrist und
+                    Selbstüberprüfungsaufgaben, die automatisiert oder manuell bewertet werden können.</p>
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/vips_info/example') ?>" data-dialog="size=640x600">Beispiel</a>
