@@ -181,8 +181,8 @@
                 OER-Portale zum Tauschen freier Materialien
             </h1>
             <div class="accordion_content">
-                <p>Open Educational Ressources sind Materialien, die von Lehrenden frei zur Verfügung gestellt werden: frei zur Nutzung, aber auch zur Weiterbearbeitung.</p>
                 <?= Studip\LinkButton::create(_('OER-Portal Niedersachsen'), 'https://www.oernds.de', ['target'=>'_new', 'data-action' => 'tips/oer']) ?>
+                <p>Open Educational Ressources sind Materialien, die von Lehrenden frei zur Verfügung gestellt werden: frei zur Nutzung, aber auch zur Weiterbearbeitung.</p>
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/oer_info/example') ?>" data-dialog="size=850x625">Links und Portale</a>
