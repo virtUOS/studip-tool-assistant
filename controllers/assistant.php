@@ -1,4 +1,7 @@
 <?php
+
+require_once __DIR__.'/ToolAssistantBaseController.php';
+
 use Mooc\DB\Block as dbBlock;
 
 /**
@@ -12,23 +15,8 @@ use Mooc\DB\Block as dbBlock;
  * @license     http://www.gnu.org/licenses/gpl-2.0.html GPL version 2
  */
 
-class AssistantController extends StudipController
+class AssistantController extends ToolAssistantBaseController
 {
-    /**
-     * Callback function being called before an action is executed.
-     */
-    public function before_filter(&$action, &$args)
-    {
-        parent::before_filter($action, $args);
-
-        $this->course_id = Context::getId();
-        $this->plugin = $this->dispatcher->current_plugin;
-
-        if (!$GLOBALS['perm']->have_studip_perm('tutor', $this->course_id)) {
-            throw new AccessDeniedException(_('Sie besitzen keine Berechtigung, um die Veranstaltung zu konfigurieren.'));
-        }
-    }
-
     /**
      * Default action: show the tool assistant.
      */
@@ -49,6 +37,13 @@ class AssistantController extends StudipController
         Sidebar::get()->addWidget($widget);
 
         $this->folder_id = Folder::findTopFolder($this->course_id)->id;
+    }
+
+    public function track_action($action)
+    {
+        $this->trackVisit(join(".", func_get_args()));
+        $this->set_content_type('image/svg+xml');
+        $this->render_text('<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="geometricPrecision" fill="#24437c"><path d="M16 4.592l-2.807-2.809-6.819 6.82-3.571-3.568L0 7.841l6.377 6.376z"/></svg>');
     }
 
     public function mail_info_action($view = 'example')

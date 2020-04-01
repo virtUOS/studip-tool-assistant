@@ -16,7 +16,7 @@
                             'default_subject' => sprintf('[%s]', Context::get()->Name),
                             'filter'          => 'all',
                             'emailrequest'    => 1
-                        ]), ['data-dialog' => '']) ?>
+                        ]), ['data-dialog' => '', 'data-action' => 'messages/write_all']) ?>
                 <p>Über Stud.IP-Nachrichten können Sie allen eingetragenen Kurs-Teilnehmenden Informationen zukommen lassen.</p>
                 <ul>
                     <li>
@@ -36,7 +36,7 @@
                 (Stud.IP: Dateien)
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Datei hochladen'), '#', ['onclick' => "STUDIP.Files.openAddFilesWindow('$folder_id')"]) ?>
+                <?= Studip\LinkButton::create(_('Datei hochladen'), '#', ['onclick' => "STUDIP.Files.openAddFilesWindow('$folder_id')", 'data-action' => 'files/upload']) ?>
                 <p> Im Stud.IP-Dateibereich können Dateien hochgeladen und verlinkt werden. Mit dem "Courseware"-Modul können Sie verschiedene Medien zusammenführen (s. "Materialien zusammenstellen"). </p>
                 <ul>
                     <li>
@@ -73,7 +73,7 @@
                 Gute Lehre ohne Präsenz!?</em>
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Hinweise zur Didaktik'), 'https://www.virtuos.uni-osnabrueck.de/hochschuldidaktik/gute_lehre_ohne_praesenz.html') ?>
+                <?= Studip\LinkButton::create(_('Hinweise zur Didaktik'), 'https://www.virtuos.uni-osnabrueck.de/hochschuldidaktik/gute_lehre_ohne_praesenz.html', ['data-action' => 'tips/gute_lehre']) ?>
                 <p>Wir haben einige didaktische Hinweise und Anregungen zusammengetragen, damit Sie Ihre Lehre möglichst gut an die aktuellen Gegebenheiten anpassen
                     und den erhöhten Anforderungen an Selbstlernkompetenzen der Studierenden Rechnung tragen können. </p>
 
@@ -118,7 +118,7 @@
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Anfrage stellen'),
-                    URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '']) ?>
+                    URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '', 'data-action' => 'messages/write_live_stream']) ?>
 
                 <p>
                     Sie möchten Ihre Vorlesung im Hörsaal oder zu Hause abhalten und für Ihre Studierenden live
@@ -137,7 +137,7 @@
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Weitere Informationen'),
                     'https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html',
-                    ["target"=>"_blank"]) ?>
+                    ["target"=>"_blank", 'data-action' => 'tips/covid']) ?>
                 <p>
                     Die Universität Osnabrück betreibt zwei Videostudios in den Räumen 15/125 und 07/102 (LehrKolleg).
                     Hier können mit Unterstützung / Einweisung durch virtUOS-Mitarbeiter Videos in überdurchschnittlicher
@@ -182,7 +182,7 @@
             </h1>
             <div class="accordion_content">
                 <p>Open Educational Ressources sind Materialien, die von Lehrenden frei zur Verfügung gestellt werden: frei zur Nutzung, aber auch zur Weiterbearbeitung.</p>
-                <?= Studip\LinkButton::create(_('OER-Portal Niedersachsen'), 'https://www.oernds.de', ['target'=>'_new']) ?>
+                <?= Studip\LinkButton::create(_('OER-Portal Niedersachsen'), 'https://www.oernds.de', ['target'=>'_new', 'data-action' => 'tips/oer']) ?>
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/oer_info/example') ?>" data-dialog="size=850x625">Links und Portale</a>
@@ -359,7 +359,7 @@
             </p>
 
             <?= Studip\LinkButton::create(_('Anfrage stellen'),
-                    URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '']) ?>
+                    URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
         </div>
     </section>
 </div>
