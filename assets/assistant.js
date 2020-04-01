@@ -20,8 +20,6 @@
       button.classList.remove("disabled");
     }, 1000);
     button.dataset.timer = timer;
-
-    return false;
   });
 })(jQuery);
 
