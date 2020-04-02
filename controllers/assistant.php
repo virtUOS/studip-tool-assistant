@@ -22,18 +22,30 @@ class AssistantController extends ToolAssistantBaseController
      */
     public function index_action()
     {
+        $preferredLang = mb_substr($GLOBALS['user']->preferred_language, 0, 2);
+        if ($preferredLang=='en') {
+            $name='Teach Online';
+        } else {
+            $name='Online-Lehre';
+        }
         Navigation::activateItem('/course/assistant');
-        PageLayout::setTitle(Context::getHeaderLine() . ' - ' . _('Online-Lehre'));
+        PageLayout::setTitle(Context::getHeaderLine() . ' - ' . $name);
         PageLayout::addStylesheet($this->plugin->getPluginURL() . '/assets/assistant.css?v=0.1');
 
         $widget = new SidebarWidget();
-        $widget->setTitle(_('Online-Lehre'));
-        $widget->addElement(new WidgetElement(
-            _('Die Universität Osnabrück bietet über virtUOS und Rechenzentrum viele Möglichkeiten, Lehre online zu gestalten.
-               Für die hier vorgestellten Tools sind verlässlicher Betrieb und persönlicher Support gewährleistet und sie
-               ermöglichen eine datenschutzrechtlich unbedenkliche Nutzung.<br><br>
-               Hier finden Sie erste Informationen und können weitere Schritte direkt von hier aus starten.')
-        ));
+        $widget->setTitle($name);
+        if ($preferredLang=='en') {
+            $widget->addElement(new WidgetElement('Osnabrück University offers many opportunities to design teaching online via virtUOS and the computing center (Rechenzentrum).
+                Reliable operation and personal support are guaranteed for the tools presented here and they allow for a use that is unobjectionable in terms of data protection law.<br><br>
+                On this page, you will find initial information and you can start further steps directly from here.'));
+        } else {
+            $widget->addElement(new WidgetElement(
+                'Die Universität Osnabrück bietet über virtUOS und Rechenzentrum viele Möglichkeiten, Lehre online zu gestalten.
+                 Für die hier vorgestellten Tools sind verlässlicher Betrieb und persönlicher Support gewährleistet und sie
+                 ermöglichen eine datenschutzrechtlich unbedenkliche Nutzung.<br><br>
+                 Hier finden Sie erste Informationen und können weitere Schritte direkt von hier aus starten.')
+            );
+        }
         Sidebar::get()->addWidget($widget);
 
         $this->folder_id = Folder::findTopFolder($this->course_id)->id;
@@ -101,6 +113,11 @@ class AssistantController extends ToolAssistantBaseController
         $this->view = $view;
     }
 
+    public function studio_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+
     public function homework_info_action($view = 'example')
     {
         $this->view = $view;
@@ -119,25 +136,29 @@ class AssistantController extends ToolAssistantBaseController
         $scm = new StudipScmEntry();
         $scm->tab_name = _('Corona-Info');
         $scm->content = _('<!--HTML-->
-            <h1>Informationen zum Semesterstart</h1>
+            <h1>Informationen zum Semesterstart / Information about the start of the semester</h1>
 
-            <i>Klicken Sie zum Bearbeiten oben rechts auf das Zahnradsymbol!</i>
+            <i>Klicken Sie zum Bearbeiten oben rechts auf das Zahnradsymbol! / To edit, click on the gear symbol in the upper right corner!</i>
 
-            <h2>Kursinhalte</h2>
+            <h2>Kursinhalte / Course materials</h2>
 
             <p>... Beschreiben Sie hier, ob und in welcher Form Kursinhalte zur Verfügung gestellt werden, z.B. als Reader im Dateibereich, als Videoaufzeichnungen, als Courseware-Modul (s. "Online-Lehre: Materialien zusammenstellen"). ...</p>
+            <p>... Describe here whether and in which form course contents are made available, e.g. in the Files section, as video recordings,  or as a courseware module (see "Online teaching: compiling materials"). ...</p>
 
-            <h2>Aufgaben, Leistungsnachweis, Fristen</h2>
+            <h2>Aufgaben, Leistungsnachweis, Fristen / Tasks, exams, deadlines</h2>
 
             <p>... Beschreiben Sie hier, ob und in welcher Form Aufgaben zu erledigen sind, welche Fristen dabei gelten und wie der Leistungsnachweis in der Veranstaltung erbracht werden kann. ...</p>
+            <p>... Describe here whether and in which form tasks have to be completed, which deadlines apply and how the proof of performance has to be provided in the course. ...</p>
 
-            <h2>Kommunikation im Kurs</h2>
+            <h2>Kommunikation im Kurs / Communication in the course</h2>
 
             <p>... Beschreiben Sie hier, wie die Kommunikation im Kurs organisiert sein soll, z.B. in Form regelmäßiger Videokonferenzen, über ein Forum, den Blubber-Chat oder Matrix/Riot (s. "Online-Lehre: Online-Zusammenarbeit"). ...</p>
+            <p>... Describe here how communication in the course will be organised, e.g. in the form of regular video conferences, via a forum, the blubber chat or Matrix/Riot (see "Online teaching: online collaboration"). ...</p>
 
-            <h2>Kontakt</h2>
+            <h2>Kontakt / Contact</h2>
 
             <p>... Beschreiben Sie hier, wie die Teilnehmenden am sinnvollsten Kontakt mit Ihnen aufnehmen, z.B. per E-Mail, in Online-Sprechstunden oder über die Tutor*innen. ...</p>
+            <p>... Describe here how the participants can most effectively contact you, e.g. by e-mail, in online consultation hours, or via the tutors. ...</p>
         ');
         $scm->user_id = $GLOBALS['user']->id;
         $scm->range_id = $this->course_id;
@@ -376,7 +397,12 @@ class AssistantController extends ToolAssistantBaseController
 
     public function homework_action()
     {
-        $folder = $this->createFolder('Hausaufgaben-Abgabe', '', 'HomeworkFolder');
+        $foldername = 'Hausaufgaben-Abgabe';
+        $preferredLang = mb_substr($GLOBALS['user']->preferred_language, 0, 2);
+        if ($preferredLang=='en') {
+            $foldername = 'Homework Folder';
+        }
+        $folder = $this->createFolder($foldername, '', 'HomeworkFolder');
 
         $this->redirect(URLHelper::getURL('dispatch.php/course/files/index/' . $folder->id, array('cid' => $this->course_id)));
     }

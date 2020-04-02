@@ -173,6 +173,10 @@ Telefonnummer für Rückfragen:
                     Hier können mit Unterstützung / Einweisung durch virtUOS-Mitarbeiter Videos in überdurchschnittlicher
                     Qualität produziert werden.
                 </p>
+                <ul>
+                    <li><a href="<?= $controller->link_for('assistant/studio_info/selfrecording') ?>" data-dialog="size=640x500">Impressionen aus dem Self-Recording-Studio im Lehrkolleg</a></li>
+                </ul>
+
                 <p>
                     Bitte kontaktieren Sie uns mit einer E-Mail an
                     <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a>.
@@ -189,6 +193,9 @@ Telefonnummer für Rückfragen:
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/recording_info/opencaststudio') ?>" data-dialog="size=640x600">Opencast Studio (Unsere Empfehlung!)</a>
+                    </li>
+                    <li>
+                        <a href="https://lernfunk.de/#/recordings/4222b950-6107-4d4c-a3ed-00dd8d5fac6e" class="link-extern" target="_blank">Opencast-Studio: Anleitungsvideo</a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/recording_info/powerpoint') ?>" data-dialog="size=640x500">Aufnahmen direkt in Powerpoint</a>
@@ -211,7 +218,7 @@ Telefonnummer für Rückfragen:
                 OER-Portale zum Tauschen freier Materialien
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('OER-Portal Niedersachsen'), 'https://www.oernds.de', ['target'=>'_new', 'data-action' => 'tips/oer']) ?>
+                <!--<?= Studip\LinkButton::create(_('OER-Portal Niedersachsen'), 'https://www.oernds.de', ['target'=>'_new', 'data-action' => 'tips/oer']) ?>-->
                 <p>Open Educational Ressources sind Materialien, die von Lehrenden frei zur Verfügung gestellt werden: frei zur Nutzung, aber auch zur Weiterbearbeitung.</p>
                 <ul>
                     <li>

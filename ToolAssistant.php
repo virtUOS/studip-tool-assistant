@@ -15,8 +15,15 @@ class ToolAssistant extends StudIPPlugin implements StandardPlugin
     {
         parent::__construct();
 
+        $preferredLang = mb_substr($GLOBALS['user']->preferred_language, 0, 2);
+        if ($preferredLang=='en') {
+            $name='🧍🏠 Teach Online';
+        } else {
+            $name='🧍🏠 Online-Lehre';
+        }
+
         if ($this->isActivated() && Navigation::hasItem('/course/admin')) {
-            $navigation = new Navigation(_('🧍🏠 Online-Lehre'), PluginEngine::getURL($this, null, 'assistant'));
+            $navigation = new Navigation($name, PluginEngine::getURL($this, null, 'assistant'));
             Navigation::insertItem('/course/assistant', $navigation, 'admin');
         }
     }

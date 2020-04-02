@@ -19,7 +19,7 @@
     Der "Blubber"-Chat eigenet sich besonders gut, um Fragen zur Veranstaltung zu ermöglichen, ohne ein strukturiertes Forum aufzubauen.
 </p>
 <p>
-    Die Nutzung mit externen Apps ist nicht möglich, blubber ist nur innerhalb von Stud.IP erreichbar.
+    Die Nutzung mit externen Apps ist nicht möglich, Blubber ist nur innerhalb von Stud.IP erreichbar.
 </p>
 <? endif ?>
 
