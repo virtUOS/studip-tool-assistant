@@ -183,7 +183,7 @@ Telefonnummer für Rückfragen:
                 Podcasts und Videos selbst aufzeichnen
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('mail')) ?>
+                <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('opencast_plugin')) ?>
                 <p>Sie möchten Audio- und Video-Aufnahmen am eigenen Rechner erstellen und den Teilnehmenden
                 zur Verfügung stellen? Dafür gibt es verschiedene Werkzeuge:</p>
                 <ul>
