@@ -215,7 +215,7 @@ Telefonnummer für Rückfragen:
                 <p>Open Educational Ressources sind Materialien, die von Lehrenden frei zur Verfügung gestellt werden: frei zur Nutzung, aber auch zur Weiterbearbeitung.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/oer_info/example') ?>" data-dialog="size=850x625">Links und Portale</a>
+                        <a href="<?= $controller->link_for('assistant/oer_info/example') ?>" data-dialog="size=850x630">Links und Portale</a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/oer_info/howto') ?>" data-dialog="size=640x550">Erklärvideo (Youtube)</a>
@@ -357,7 +357,7 @@ Telefonnummer für Rückfragen:
                     Selbstüberprüfungsaufgaben, die automatisiert oder manuell bewertet werden können.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/vips_info/example') ?>" data-dialog="size=640x600">Beispiel</a>
+                        <a href="<?= $controller->link_for('assistant/vips_info/example') ?>" data-dialog="size=640x610">Beispiel</a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/vips_info/howto') ?>" data-dialog="size=640x510">So geht's</a>
