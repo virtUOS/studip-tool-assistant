@@ -169,7 +169,7 @@ class AssistantController extends ToolAssistantBaseController
         $current_courseware = dbBlock::findCourseware($current_cid);
         $remote_courseware = $this->getRemoteCourseware($remote_cid);
 
-        $import_folder = $this->createImportFolder($current_cid);
+        $import_folder = $this->createFolder('Courseware-Tutorial', 'Dateien für das Courseware Tutorial');
 
         // import remote course
         //chapters
@@ -328,29 +328,31 @@ class AssistantController extends ToolAssistantBaseController
         return $block;
     }
 
-    private function createImportFolder($cid = null)
-    {
-        if($cid == null) {
-            $root_folder = Folder::findTopFolder($GLOBALS['SessionSeminar']);
-        } else {
-            $root_folder = Folder::findTopFolder($cid);
-        }
-        $parent_folder = FileManager::getTypedFolder($root_folder->id);
-
-        // create new folder for import
-        $request = array('name' => 'Courseware-Tutorial', 'description' => _('Dateien für das Courseware Tutorial'));
-        $new_folder = new StandardFolder();
-        $new_folder->setDataFromEditTemplate($request);
-        $new_folder->user_id = User::findCurrent()->id;
-        $courseware_folder = $parent_folder->createSubfolder($new_folder);
-
-        return FileManager::getTypedFolder($courseware_folder->id);
-    }
-
     /***********************
      * C O U R S E W A R E *
      * E N D               *
      **********************/
+
+    private function createFolder($name, $description, $type = 'StandardFolder')
+    {
+        $root_folder = Folder::findTopFolder($this->course_id);
+        $parent_folder = FileManager::getTypedFolder($root_folder->id);
+
+        $request = array('name' => $name, 'description' => $description);
+        switch($type) {
+            case 'HomeworkFolder':
+                $new_folder = new HomeworkFolder();
+                break;
+            case 'StandardFolder':
+            default: 
+                $new_folder = new StandardFolder();
+        }
+        $new_folder->setDataFromEditTemplate($request);
+        $new_folder->user_id = User::findCurrent()->id;
+        $folder = $parent_folder->createSubfolder($new_folder);
+
+        return FileManager::getTypedFolder($folder->id);
+    }
 
     public function vips_action()
     {
@@ -370,5 +372,12 @@ class AssistantController extends ToolAssistantBaseController
         $plugin_manager->setPluginActivated($meetings->getPluginId(), $this->course_id, true);
 
         $this->redirect(URLHelper::getURL('plugins.php/meetingplugin/index', array('cid' => $this->course_id)));
+    }
+
+    public function homework_action()
+    {
+        $folder = $this->createFolder('Hausaufgaben-Abgabe', '', 'HomeworkFolder');
+
+        $this->redirect(URLHelper::getURL('dispatch.php/course/files/index/' . $folder->id, array('cid' => $this->course_id)));
     }
 }

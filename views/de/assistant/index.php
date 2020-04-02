@@ -337,7 +337,7 @@ Telefonnummer für Rückfragen:
                 Einfache Abgaben: Hausaufgabenorder
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Hausaufgabenorder einrichten'), $controller->url_for('mail')) ?>
+                <?= Studip\LinkButton::create(_('Hausaufgabenorder einrichten'), $controller->url_for('assistant/homework')) ?>
                 <p>Über die Dateiablage von Stud.IP können Sie Hausaufgaben / Dateien von Kurs-Teilnehmenden
                     einsammeln. Lehrende und Tutor*innen sehen alle Dateien, die Studierenden nur die eigenen.</p>
                 <ul>
