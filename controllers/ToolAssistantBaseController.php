@@ -51,4 +51,43 @@ class ToolAssistantBaseController extends StudipController
             )
         );
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    function get_template_factory()
+    {
+        return new \L10NTemplateFactory(
+            $this->dispatcher->trails_root . '/views/'
+        );
+    }
+}
+
+/**
+ * Diese TemplateFactory sucht Templates lokalisiert (mit Fallback).
+ *
+ * {@inheritdoc}
+ */
+class L10NTemplateFactory extends \Flexi_TemplateFactory
+{
+    /**
+     * {@inheritdoc}
+     */
+    function open($template)
+    {
+        if (!is_string($template) || preg_match('#^(/|\w+://)#', $template)) {
+            return parent::open($template);
+        }
+
+        $preferredLang = mb_substr($GLOBALS['user']->preferred_language, 0, 2);
+        $fallbackLang = 'de';
+
+        try {
+            // try preferred language first
+            return parent::open($preferredLang . '/' . $template);
+        } catch (\Flexi_TemplateNotFoundException $exception) {
+            // retry fallback language
+            return parent::open($fallbackLang . '/' . $template);
+        }
+    }
 }
