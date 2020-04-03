@@ -218,11 +218,11 @@ class AssistantController extends ToolAssistantBaseController
                         $remote_db_block = dbBlock::find($block['id']);
                         $remote_ui_block = $this->coursewarePlugin->getBlockFactory()->makeBlock($remote_db_block);
 
-                        $data = array('title' => $remote_db_block->title, 'cid' => $cid, 'publication_date' => null, 'withdraw_date' => null);
+                        $data = array('title' => $remote_db_block->title, 'cid' => $current_cid, 'publication_date' => null, 'withdraw_date' => null);
                         $new_block = $this->createAnyBlock($current_section->id, $remote_db_block->type, $data, $remote_db_block->sub_type);
 
                         $new_ui_block = $this->coursewarePlugin->getBlockFactory()->makeBlock($new_block);
-                        if (gettype($new_ui_block) != 'object') { 
+                        if (gettype($new_ui_block) != 'object') {
                             $new_block->delete();
                             break 2;
                         }
@@ -232,7 +232,7 @@ class AssistantController extends ToolAssistantBaseController
 
                             if ($remote_file != null) {
                                 $file = FileManager::copyFileRef($remote_file, $import_folder, \User::findCurrent());
-                                
+
                             }
                         }
 
