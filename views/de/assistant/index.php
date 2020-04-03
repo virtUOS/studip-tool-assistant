@@ -123,42 +123,9 @@ Telefonnummer für Rückfragen:
                         <a href="<?= $controller->link_for('assistant/lecturehall_info/example') ?>" data-dialog="size=640x675">Beispiel</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/lecturehall_info/howto') ?>" data-dialog="size=640x400">So geht's</a>
+                        <a href="<?= $controller->link_for('assistant/lecturehall_info/howto') ?>" data-dialog="size=640x650">So geht's</a>
                     </li>
                 </ul>
-            </div>
-
-            <h1>
-                Live-Übertragung
-            </h1>
-            <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Anfrage stellen'),
-                    URLHelper::getURL('dispatch.php/messages/write',
-                        ['rec_uname' => 'virtuos@studip',
-                            'default_subject' => _('Anfrage für Live-Übertragung für '.Context::get()->Name),
-                            'default_body' => _('Liebes virtUOS-Team,
-ich möchte meine Veranstaltung live übertragen.
-
-Mein Terminwunsch: (Datum/Wochentag, Uhrzeit, einmalig/regelmäßig)
-Mein Hörsaalwunsch: (Raum oder Stadtbereich bzw. von zu Hause)
-Erwartete Anzahl an Teilnehmenden: 
-
-Veranstaltung: '.Context::get()->Name.' ('.$course_id.')
-
-Telefonnummer für Rückfragen:
-
-')]),
-                    ['data-dialog' => '', 'data-action' => 'messages/write_live_stream']) ?>
-
-                <p>
-                    Sie möchten Ihre Vorlesung im Hörsaal oder zu Hause abhalten und für Ihre Studierenden live
-                    ins Internet übertragen?
-                </p>
-                <p>
-                    Dafür gibt es unterschiedliche Lösungsansätze, von denen wir noch keinen vollautomatisiert
-                    anbieten können. Bitte kontaktieren Sie uns mit einer E-Mail an
-                    <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a>.
-                </p>
             </div>
 
             <h1>

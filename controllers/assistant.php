@@ -38,6 +38,7 @@ class AssistantController extends ToolAssistantBaseController
             $widget->addElement(new WidgetElement('Osnabrück University offers many opportunities to design teaching online via virtUOS and the computing center (Rechenzentrum).
                 Reliable operation and personal support are guaranteed for the tools presented here and they allow for a use that is unobjectionable in terms of data protection law.<br><br>
                 On this page, you will find initial information and you can start further steps directly from here.'));
+            $widget->addElement(new WidgetElement(Studip\LinkButton::create(_('Download cheat sheet'), $this->plugin->getPluginURL().'/assets/cheatsheet-teach-online.pdf')));
         } else {
             $widget->addElement(new WidgetElement(
                 'Die Universität Osnabrück bietet über virtUOS und Rechenzentrum viele Möglichkeiten, Lehre online zu gestalten.
@@ -45,6 +46,7 @@ class AssistantController extends ToolAssistantBaseController
                  ermöglichen eine datenschutzrechtlich unbedenkliche Nutzung.<br><br>
                  Hier finden Sie erste Informationen und können weitere Schritte direkt von hier aus starten.')
             );
+            $widget->addElement(new WidgetElement(Studip\LinkButton::create(_('"Spickzettel" herunterladen'), $this->plugin->getPluginURL().'/assets/spickzettel-online-lehre.pdf')));
         }
         Sidebar::get()->addWidget($widget);
 

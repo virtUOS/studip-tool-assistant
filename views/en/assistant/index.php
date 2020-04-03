@@ -130,38 +130,6 @@ Phone number for questions:
             </div>
 
             <h1>
-                Live broadcasting
-            </h1>
-            <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Send a request'),
-                    URLHelper::getURL('dispatch.php/messages/write',
-                        ['rec_uname' => 'virtuos@studip',
-                            'default_subject' => _('Request for Anfrage für Live-Übertragung für '.Context::get()->Name),
-                            'default_body' => _('Dear virtUOS team,
-I would like to broadcast my lecture live.
-
-My desired date: (Date/weekday, time, once/regularly)
-My lecture hall wish: (room or city area or from home)
-Expected number of participants: 
-
-Event: '.context::get()->name.' ('.$course_id.')
-
-Phone number for questions:
-
-')]),
-                    ['data-dialog' => '', 'data-action' => 'messages/write_live_stream']) ?>
-
-                <p>
-                    You would like to hold your lecture in the lecture hall or at home and present it live to your students
-                    on the internet?
-                </p>
-                <p>
-                    There are various approaches to solve this problem, but we have not fully automated them yet. Please contact us with an e-mail to
-                    <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a> or "Send a request" above.
-                </p>
-            </div>
-
-            <h1>
                 Recording in the studio
             </h1>
             <div class="accordion_content">

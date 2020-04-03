@@ -39,12 +39,32 @@
 
 <? elseif ($view === 'howto'): ?>
     <h2>Aufzeichnungen im Hörsaal: So geht's</h2>
+<p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UAe4Z4LTz_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
     <p>
         Aufgrund der besonderen Situation während der Schließung bitten wir Sie um Kontaktaufnahme mit uns, wenn
         Sie Ihre Vorlesung im Hörsaal ohne Publikum aufzeichnen möchten.
     </p>
 <p>
-    Schreiben Sie dazu eine E-Mail an: <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a>.
+    <?= Studip\LinkButton::create(_('Anfrage stellen'),
+        URLHelper::getURL('dispatch.php/messages/write',
+            ['rec_uname' => 'virtuos@studip',
+                'default_subject' => _('Anfrage Hörsaalaufzeichnung für '.Context::get()->Name),
+                'default_body' => _('Liebes virtUOS-Team,
+ich möchte im Hörsaal aufzeichnen.
+
+Mein Terminwunsch: (Datum/Wochentag, Uhrzeit, einmalig/regelmäßig)
+Mein Hörsaalwunsch: (Raum oder Stadtbereich)
+
+Veranstaltung: '.Context::get()->Name.' ('.$course_id.')
+
+Telefonnummer für Rückfragen:
+
+')]),
+        ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
+    oder schreiben Sie eine E-Mail an: <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a>.
 </p>
 <p>
     Aufzeichnungen sind auch kurzfristig möglich!
