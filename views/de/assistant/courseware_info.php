@@ -36,7 +36,7 @@
     Die Aktivierung ist aber auch über "Mehr..." -> "Courseware" möglich. Rufen Sie danach den neuen Reiter auf und aktivieren Sie den Bearbeitungsmodus.
 </p>
 <p>
-    Weitere Informationen bekommen Sie in der Online-Hilfe (Fragezeichen oben rechts oder direkt unter <a href="https://hilfe.studip.de/help/4.2/de/MoocIP.Courseware">https://hilfe.studip.de/help/4.2/de/MoocIP.Courseware</a>).
+    Weitere Informationen bekommen Sie in der Online-Hilfe (Fragezeichen oben rechts oder direkt unter <a href="https://hilfe.studip.de/help/4.2/de/MoocIP.Courseware" class="link-extern" target="_blank">https://hilfe.studip.de/help/4.2/de/MoocIP.Courseware</a>).
 </p>
 <? elseif ($view === 'explain'): ?>
     <h2>Materialien zusammenstellen: Erklärvideo Courseware & Vips</h2>

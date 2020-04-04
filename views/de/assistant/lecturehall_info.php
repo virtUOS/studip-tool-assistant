@@ -28,7 +28,7 @@
 </p>
     <p>
         Beispielaufzeichnung von
-        Prof. Dr. Thomas Groß: <a href="https://lernfunk.de/#/recordings/cb3370ac-13cd-46ac-bbae-291ec48c9808">https://lernfunk.de/#/recordings/cb3370ac-13cd-46ac-bbae-291ec48c9808</a>.
+        Prof. Dr. Thomas Groß: <a href="https://lernfunk.de/#/recordings/cb3370ac-13cd-46ac-bbae-291ec48c9808"  class="link-extern" target="_blank">https://lernfunk.de/#/recordings/cb3370ac-13cd-46ac-bbae-291ec48c9808</a>.
     </p>
 <p>
     Aufzeichnungen sind in folgenden Räumen möglich:<br>

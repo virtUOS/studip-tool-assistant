@@ -30,8 +30,8 @@ Sie werden aufgefordert, zu entscheiden, ob Sie Ihr Mikrofon aktiveren oder nur 
         <li>Im Online-Raum können Sie sich jederzeit stumm schalten und zusätzlich Ihre Kamera aktiveren.</li>
     </ol>
 <p>&nbsp;</p>
-    <p><b>Weitere Informationen zur Nutzung von BigBlueButton finden Sie unter <br>
-            <a href="https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html">https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html</a></b></p>
+    <p>Weitere Informationen zur Nutzung von BigBlueButton finden Sie unter <br>
+            <a href="https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html">https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html</a></p>
     <p>
         Hinweise:
         <ul>
@@ -45,8 +45,8 @@ Sie werden aufgefordert, zu entscheiden, ob Sie Ihr Mikrofon aktiveren oder nur 
         <li>Während des Meetings empfiehlt es sich, nur das Mikro des/der jeweiligen Sprechers/Sprecherin offen zu lassen. Die übrigen Teilnehmenden sollten ihre Mikros stumm schalten, um Nebengeräusche zu vermeiden.<br>&nbsp;</li>
         <li>Über die Videokonferenz können Sie Ihren Bildschirm allen Teilnehmenden sichtbar machen, z.B. für Präsentationen, gemeinsame Dokumente etc.<br>&nbsp;</li>
     </ul>
-    <p><b>Weitere Informationen zur Nutzung von BigBlueButton finden Sie unter <br>
-            <a href="https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html">https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html</a></b></p>
+    <p>Weitere Informationen zur Nutzung von BigBlueButton finden Sie unter <br>
+            <a href="https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html">https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html</a></p>
 <? endif ?>
 
 

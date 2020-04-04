@@ -30,8 +30,8 @@
         <li>In the online room you can always mute yourself and additionally activate your camera.</li>
     </ol>
 <p>&nbsp;</p>
-    <p><b>Further information on the use of BigBlueButton can be found at <br>
-            <a href="https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html">https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html</a></b></p>
+    <p>Further information on the use of BigBlueButton can be found at <br>
+            <a href="https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html">https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html</a></p>
     <p>
         Notes:
         <ul>
@@ -45,8 +45,8 @@
         <li>During the meeting it is recommended to leave only the microphone of the respective speaker open. The other participants should mute their microphones to avoid background noise.<br>&nbsp;</li>
         <li>Via the video conference you can make your screen visible to all participants, e.g. for presentations, shared documents etc.<br>&nbsp;</li>
     </ul>
-    <p><b>Further information on the use of BigBlueButton can be found at <br>
-            <a href="https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html">https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html</a></b></p>
+    <p>Further information on the use of BigBlueButton can be found at <br>
+            <a href="https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html">https://www.rz.uni-osnabrueck.de/homeoffice/bigbluebutton.html</a></p>
 <? endif ?>
 
 

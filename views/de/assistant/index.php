@@ -20,13 +20,13 @@
                 <p>Über Stud.IP-Nachrichten können Sie allen eingetragenen Kurs-Teilnehmenden Informationen zukommen lassen.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/example') ?>" data-dialog="size=640x400">Beispiel</a>
+                        <a href="<?= $controller->link_for('assistant/mail_info/example') ?>" data-dialog="size=640x400;title='Online-Lehre: Teilnehmende benachrichtigen'">Beispiel</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/howto') ?>" data-dialog="size=640x600">So geht's</a>
+                        <a href="<?= $controller->link_for('assistant/mail_info/howto') ?>" data-dialog="size=640x600;title='Online-Lehre: Teilnehmende benachrichtigen'">So geht's</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/tips') ?>" data-dialog="size=640x600">Tipps und Tricks</a>
+                        <a href="<?= $controller->link_for('assistant/mail_info/tips') ?>" data-dialog="size=640x600;title='Online-Lehre: Teilnehmende benachrichtigen'">Tipps und Tricks</a>
                     </li>
                 </ul>
             </div>
@@ -40,13 +40,13 @@
                 <p> Im Stud.IP-Dateibereich können Dateien hochgeladen und verlinkt werden. Mit dem "Courseware"-Modul können Sie verschiedene Medien zusammenführen (s. "Materialien zusammenstellen"). </p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/example') ?>" data-dialog="size=640x400">Beispiel</a>
+                        <a href="<?= $controller->link_for('assistant/files_info/example') ?>" data-dialog="size=640x400;title='Online-Lehre: Material onloine bereitstellen'">Beispiel</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/howto') ?>" data-dialog="size=640x600">So geht's</a>
+                        <a href="<?= $controller->link_for('assistant/files_info/howto') ?>" data-dialog="size=640x600;title='Online-Lehre: Material onloine bereitstellen'">So geht's</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/tips') ?>" data-dialog="size=640x400">Tipps und Tricks</a>
+                        <a href="<?= $controller->link_for('assistant/files_info/tips') ?>" data-dialog="size=640x400;title='Online-Lehre: Material onloine bereitstellen'">Tipps und Tricks</a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +73,7 @@
                 Gute Lehre ohne Präsenz!?</em>
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Hinweise zur Didaktik'), 'https://www.virtuos.uni-osnabrueck.de/hochschuldidaktik/gute_lehre_ohne_praesenz.html', ['target' => '_new', 'data-action' => 'tips/gute_lehre']) ?>
+                <?= Studip\LinkButton::create(_('Hinweise zur Didaktik'), 'https://www.virtuos.uni-osnabrueck.de/hochschuldidaktik/gute_lehre_ohne_praesenz.html', ['target' => '_blank', 'data-action' => 'tips/gute_lehre']) ?>
                 <p>Wir haben einige didaktische Hinweise und Anregungen zusammengetragen, damit Sie Ihre Lehre möglichst gut an die aktuellen Gegebenheiten anpassen
                     und den erhöhten Anforderungen an Selbstlernkompetenzen der Studierenden Rechnung tragen können. </p>
 
@@ -185,7 +185,7 @@ Telefonnummer für Rückfragen:
                 OER-Portale zum Tauschen freier Materialien
             </h1>
             <div class="accordion_content">
-                <!--<?= Studip\LinkButton::create(_('OER-Portal Niedersachsen'), 'https://www.oernds.de', ['target'=>'_new', 'data-action' => 'tips/oer']) ?>-->
+                <!--<?= Studip\LinkButton::create(_('OER-Portal Niedersachsen'), 'https://www.oernds.de', ['target'=>'_blank', 'data-action' => 'tips/oer']) ?>-->
                 <p>Open Educational Ressources sind Materialien, die von Lehrenden frei zur Verfügung gestellt werden: frei zur Nutzung, aber auch zur Weiterbearbeitung.</p>
                 <ul>
                     <li>

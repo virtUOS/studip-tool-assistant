@@ -20,13 +20,13 @@
                 <p>You can send information to all registered course participants via Stud.IP messages.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/example') ?>" data-dialog="size=640x400">Example</a>
+                        <a href="<?= $controller->link_for('assistant/mail_info/example') ?>" data-dialog="size=640x400;title='Teach online: Notify participants'">Example</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/howto') ?>" data-dialog="size=640x600">This is how it works</a>
+                        <a href="<?= $controller->link_for('assistant/mail_info/howto') ?>" data-dialog="size=640x600;title='Teach online: Notify participants'">This is how it works</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/tips') ?>" data-dialog="size=640x600">Tips and tricks</a>
+                        <a href="<?= $controller->link_for('assistant/mail_info/tips') ?>" data-dialog="size=640x600;title='Teach online: Notify participants'">Tips and tricks</a>
                     </li>
                 </ul>
             </div>
@@ -41,13 +41,13 @@
                     you can merge and compile different media (see "Compiling materials"). </p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/example') ?>" data-dialog="size=640x400">Example</a>
+                        <a href="<?= $controller->link_for('assistant/files_info/example') ?>" data-dialog="size=640x400;title='Teach online: Provide materials online'">Example</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/howto') ?>" data-dialog="size=640x600">This is how it works</a>
+                        <a href="<?= $controller->link_for('assistant/files_info/howto') ?>" data-dialog="size=640x600;title='Teach online: Provide materials online'">This is how it works</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/tips') ?>" data-dialog="size=640x400">Tips and tricks</a>
+                        <a href="<?= $controller->link_for('assistant/files_info/tips') ?>" data-dialog="size=640x400;title='Teach online: Provide materials online'">Tips and tricks</a>
                     </li>
                 </ul>
             </div>
@@ -74,7 +74,7 @@
                 Good teaching without a classroom!?</em>
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Notes on didactics'), 'https://www.virtuos.uni-osnabrueck.de/hochschuldidaktik/gute_lehre_ohne_praesenz.html', ['target' => '_new', 'data-action' => 'tips/gute_lehre']) ?>
+                <?= Studip\LinkButton::create(_('Didactical remarks'), 'https://www.virtuos.uni-osnabrueck.de/hochschuldidaktik/gute_lehre_ohne_praesenz.html', ['target' => '_blank', 'data-action' => 'tips/gute_lehre']) ?>
                 <p>We have put together some didactic hints and suggestions so that you can adapt your teaching to the current conditions
                     and the increased demands on the students' self-learning skills as well as possible. </p>
 
@@ -178,7 +178,7 @@ Phone number for questions:
                 OER portals for exchanging free materials
             </h1>
             <div class="accordion_content">
-                <!-- <?= Studip\LinkButton::create(_('OER-Portal Lower Saxony'), 'https://www.oernds.de', ['target'=>'_new', 'data-action' => 'tips/oer']) ?> -->
+                <!-- <?= Studip\LinkButton::create(_('OER-Portal Lower Saxony'), 'https://www.oernds.de', ['target'=>'_blank', 'data-action' => 'tips/oer']) ?> -->
                 <p>Open Educational Resources are materials that are freely provided by teachers: free for use, but also for further processing.</p>
                 <ul>
                     <li>
@@ -340,7 +340,7 @@ Phone number for questions:
     <section class="assistant-section">
         <h1>
             <?= Icon::create('question-circle', Icon::ROLE_INFO)->asImg(20, ['style' => 'vertical-align: text-bottom']) ?>
-            Talk to us...
+            Contact us...
         </h1>
         <div class="assistant-infobox">
             <p style="text-aling:justify;">

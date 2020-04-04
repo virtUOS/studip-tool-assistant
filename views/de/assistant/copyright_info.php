@@ -35,7 +35,7 @@
         Elektronische Ressourcen, für die über die Bibliothek Lizenzen vorliegen, können am einfachsten verlinkt statt erneut hochgeladen werden.
     </p>
     <p>
-        Im Detail gibt es noch viele weitere Fragen. Wir empfehlen dazu den Leitfaden "Urheberrechts-FAQ Hochschullehre" von Achim Förster: <a href="https://urheberrecht.fhws.de/faq-urheberrecht/">https://urheberrecht.fhws.de/faq-urheberrecht/</a>.
+        Im Detail gibt es noch viele weitere Fragen. Wir empfehlen dazu den Leitfaden "Urheberrechts-FAQ Hochschullehre" von Achim Förster: <a href="https://urheberrecht.fhws.de/faq-urheberrecht/"  class="link-extern" target="_blank">https://urheberrecht.fhws.de/faq-urheberrecht/</a>.
     </p>
 
 <? endif ?>
