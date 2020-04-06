@@ -40,8 +40,7 @@
 <? elseif ($view === 'howto'): ?>
     <h2>Aufzeichnungen im Hörsaal: So geht's</h2>
 <p>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/UAe4Z4LTz_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kg80_XU8TGw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
     <p>
         Aufgrund der besonderen Situation während der Schließung bitten wir Sie um Kontaktaufnahme mit uns, wenn

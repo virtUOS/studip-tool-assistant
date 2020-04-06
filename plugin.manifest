@@ -1,6 +1,10 @@
 pluginname=Online-Lehre
 pluginclassname=ToolAssistant
 origin=virtUOS
-version=0.2
+version=1.0
 studipMinVersion=4.2
 studipMaxVersion=4.5.99
+category=Sonstiges
+descriptionshort=Übersicht wichtiger Werkzeuge und Szenarien für die Online-Lehre
+descriptionlong=Mit dieser Übersicht gibt einen Überblick über wichtige Werkzeuge und Szenarien und bietet neben Beispielen, Schritt-für-Schritt-Anleitungen und Tipps und Tricks auch die Möglchkeit, Kurse auf einen Klick für das jeweilige Szenario einzurichten.
+screenshot=assets/toolassistant_thumb.jpg
