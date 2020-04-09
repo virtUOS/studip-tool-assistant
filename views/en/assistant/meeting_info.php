@@ -25,6 +25,7 @@
     <ol>
         <li>Create a course in Stud.IP, e.g. "Department meetings" or "Consultation hours XY". Use the menu item "More" to activate the plugin "Meetings".</li>
         <li>You can create different online conference rooms and name them freely.</li>
+        <li>The new room has to made available to students by selecting the "share" option.</li>
         <li>Then click on the meeting name to start the online conference. The conference room opens in a new browser tab.
             You are prompted to decide whether you want to activate your microphone or just listen.</li>
         <li>In the online room you can always mute yourself and additionally activate your camera.</li>

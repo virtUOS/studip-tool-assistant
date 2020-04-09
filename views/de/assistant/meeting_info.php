@@ -25,6 +25,7 @@
     <ol>
         <li>Legen Sie in Stud.IP eine Veranstaltung an, z.B. "Meetings Fachbereich" oder "Sprechstunde XY". Über den Menüpunkt "Mehr" aktivieren Sie das Plugin "Meetings".</li>
         <li>Sie können verschiedene Online-Konferenz-Räume erstellen und frei benennen.</li>
+        <li>Damit ein Meeting-Raum für Studierende sichtbar ist, müssen Sie ihn noch per Klick auf "freigeben" sichtbar machen.</li>
         <li>Anschließend mit Klick auf den Meeting-Namen die Online-Konferenz starten. Der Konferenzraum öffnet sich in einem neuen Browser-Tab.
 Sie werden aufgefordert, zu entscheiden, ob Sie Ihr Mikrofon aktiveren oder nur zuhören möchten.</li>
         <li>Im Online-Raum können Sie sich jederzeit stumm schalten und zusätzlich Ihre Kamera aktiveren.</li>
