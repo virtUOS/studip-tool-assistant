@@ -151,7 +151,7 @@ Phone number for questions:
                 Record podcasts and videos yourself
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Set up course for this'), $controller->url_for('mail')) ?>
+                <?= Studip\LinkButton::create(_('Set up course for this'), $controller->url_for('opencast_plugin')) ?>
                 <p>Would you like to make audio and video recordings on your computer and provide them to the participants? There are various tools for this:</p>
                 <ul>
                     <li>
