@@ -1,7 +1,7 @@
 pluginname=Online-Lehre
 pluginclassname=ToolAssistant
 origin=virtUOS
-version=1.0
+version=1.0.1
 studipMinVersion=4.2
 studipMaxVersion=4.5.99
 category=Sonstiges
