@@ -190,6 +190,10 @@ class AssistantController extends ToolAssistantBaseController
         $plugin_manager->setPluginActivated($plugin_manager->getPlugin('VipsPlugin')->getPluginId(), $this->course_id, true);
 
         $current_courseware = dbBlock::findCourseware($current_cid);
+        if (!$current_courseware) {
+            $data = array('title' => 'Courseware', 'cid' => $current_cid);
+            $this->createAnyBlock(null, 'Courseware', $data);
+        }
         $remote_courseware = $this->getRemoteCourseware($remote_cid);
 
         $import_folder = $this->createFolder('Courseware-Tutorial', 'Dateien für das Courseware Tutorial');
