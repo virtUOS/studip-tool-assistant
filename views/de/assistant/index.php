@@ -1,6 +1,56 @@
 <div class="assistant-container">
     <section class="assistant-section">
         <h1>
+            Einstellungen für die Veranstaltungsform
+        </h1>
+        <form class="default assistant-form" action="<?= $controller->link_for('assistant/set_type') ?>" method="POST">
+            <?= CSRFProtection::tokenTag() ?>
+                <div class="assistant-infobox">
+                    <?= $datafields['aee5626da96ab9c37976b2fc454d88b4']->getHTML('df') ?>
+                    <?= $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->getHTML('df') ?>
+                </div>
+                <?= Studip\Button::createAccept(_vips('Speichern'), 'save') ?>
+        </form>
+    </section>
+
+    <section class="assistant-section assistant-section-big">
+        <h1>
+            Information zur Veranstaltungsform
+        </h1>
+        <div class="assistant-infobox">
+            <div class="course-type-info course-type-info-digital">
+                <header>
+                    Digitale Veranstaltung
+                </header>
+                <p>
+                    lorem ipsum dolor
+                </p>
+            </div>
+            <div class="course-type-info course-type-info-hybrid">
+                <header>
+                    Hybrideveranstaltung
+                </header>
+                <p>
+                    lorem ipsum dolor
+                </header>
+            </div>
+            <div class="course-type-info course-type-info-presence">
+                <header>
+                    Präsenzveranstaltung
+                </header>
+                <p>
+                    lorem ipsum dolor
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="assistant-container">
+
+
+    <section class="assistant-section">
+        <h1>
             Zum Einstieg
         </h1>
 
@@ -361,11 +411,11 @@ Telefonnummer für Rückfragen:
                 </a><br>
                 <a href="https://www.rz.uni-osnabrueck.de/homeoffice/homeoffice.html" class="link-extern" target="_blank">Homeoffice-Dienste des Rechenzentrums</a>
             </p>
-
-            <?= Studip\LinkButton::create(_('Anfrage stellen'),
-                    URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
         </div>
+        <?= Studip\LinkButton::create(_('Anfrage stellen'),
+                URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
     </section>
+
 </div>
 
 <script>
@@ -373,4 +423,21 @@ Telefonnummer für Rückfragen:
         collapsible: true,
         active: false
     });
+    
+    $("input[name='df[aee5626da96ab9c37976b2fc454d88b4]']").on('change',(event)=>{
+        $('.course-type-info').hide();
+        switch($(event.currentTarget).val()) {
+        case 'Hybridveranstaltung':
+            $('.course-type-info-hybrid').show();
+            break;
+        case 'Digitale Veranstaltung':
+            $('.course-type-info-digital').show();
+            break;
+        case 'Präsenzveranstaltung':
+            $('.course-type-info-presence').show();
+            break;
+        }
+    });
+    $("input[name='df[aee5626da96ab9c37976b2fc454d88b4]']:checked").trigger('change');
+
 </script>

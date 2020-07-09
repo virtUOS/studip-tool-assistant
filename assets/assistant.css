@@ -7,13 +7,17 @@
 }
 
 .assistant-section {
-    margin: 0 1em 2.5em 1em;
+    margin: 0 1em 2em 1em;
     width: 440px;
+}
+.assistant-section-big {
+    width: 908px;
 }
 
 .assistant-section h1 {
     border-bottom: 0;
     font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 .accordion {
@@ -52,6 +56,16 @@
 .assistant-infobox {
     border: solid thin #ccc;
     padding: 1em;
+    min-height: 186px;
+}
+.assistant-infobox header {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1717px) {
+    .assistant-section-big {
+        width: 440px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
