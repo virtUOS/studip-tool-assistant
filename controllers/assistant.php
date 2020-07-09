@@ -50,7 +50,28 @@ class AssistantController extends ToolAssistantBaseController
         }
         Sidebar::get()->addWidget($widget);
 
+        $this->datafields = DataFieldEntry::getDataFieldEntries($this->course_id, 'sem');
         $this->folder_id = Folder::findTopFolder($this->course_id)->id;
+    }
+
+    public function set_type_action()
+    {
+        CSRFProtection::verifyUnsafeRequest();
+
+        $df = Request::getArray('df');
+        $ids = ['aee5626da96ab9c37976b2fc454d88b4', 'a8af8d7ef4a67cc38d7ca6a21fe1bc73'];
+        $datafields = DataFieldEntry::getDataFieldEntries($this->course_id, 'sem');
+
+        foreach ($ids as $id) {
+            $datafields[$id]->setValueFromSubmit($df[$id]);
+
+            if ($datafields[$id]->isValid()) {
+                $datafields[$id]->store();
+            }
+        }
+
+        PageLayout::postSuccess('Die Einstellungen für die Veranstaltungsform wurden gespeichert');
+        $this->redirect('assistant');
     }
 
     public function track_action($action)
