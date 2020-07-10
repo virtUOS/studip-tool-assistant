@@ -96,6 +96,16 @@ class AssistantController extends ToolAssistantBaseController
         $this->view = $view;
     }
 
+    public function szenarien_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+
+    public function hybrid_info_action($view = 'example')
+    {
+        $this->view = $view;
+    }
+
     public function oer_info_action($view = 'example')
     {
         $this->view = $view;

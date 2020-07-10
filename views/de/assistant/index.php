@@ -148,84 +148,57 @@
         <div class="accordion">
 
             <h1>
-                Herausforderungen bei der Hybrid-Lehre
+                Herausforderungen der Hybriden Lehre
             </h1>
             <div class="accordion_content">
-                <p>Bei der Hybriden Lehre werden Elemente der Online Lehre mit Elementen der Präsenzlehre kombiniert. Je nach Szenarion geschieht dieses ggf. sogar zeitgleich. Neben technischen Besonderheiten gibt es einige inhaltliche Faktoren zu beachten. Wir haben Ihnen ein paar Tipps und Hinweise zusammengestellt, um Ihnen den Einstieg zu erleichtern:</p>
+                <p>In der Hybriden Lehre werden Elemente der Online Lehre mit Elementen der Präsenzlehre kombiniert.
+                    Je nach Szenarion geschieht dieses ggf. sogar zeitgleich.
+                    Neben technischen Besonderheiten gibt es einige inhaltliche Faktoren zu beachten.
+                    Wir haben Ihnen ein paar Tipps und Hinweise zusammengestellt, um Ihnen den Einstieg zu erleichtern:</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/example') ?>" data-dialog="size=640x400;title='Unterschiedlichee Zuhörendengruppen'">Zwei unterschiedliche Zuhörendengruppen adäquat bespielen</a>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/different_groups') ?>" data-dialog="size=640x400;title='Unterschiedlichee Zuhörendengruppen'">Zwei unterschiedliche Zuhörendengruppen adäquat bespielen</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/howto') ?>" data-dialog="size=640x600;title='Aufnahmefähigkeit'">Reduzierte Aufnahmefähigkeit im digitalen Kanal beachten</a>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/attention') ?>" data-dialog="size=640x600;title='Aufnahmefähigkeit'">Reduzierte Aufnahmefähigkeit im digitalen Kanal beachten</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/tips') ?>" data-dialog="size=640x600;title='Teilnehmende gleichmäßig belasten'">Präsenz- und Online-Teilnehmende gleichmäßig belasten</a>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/burden') ?>" data-dialog="size=640x600;title='Teilnehmende gleichmäßig belasten'">Präsenz- und Online-Teilnehmende gleichmäßig belasten</a>
                     </li>
                 </ul>
             </div>
 
 
             <h1>
-                Szenario 1: Live-Zuschaltung
+                Beispielzenarien
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Rundmail schreiben'),
-                    URLHelper::getURL('dispatch.php/messages/write', [
-                        'course_id'       => $course_id,
-                        'default_subject' => sprintf('[%s]', Context::get()->Name),
-                        'filter'          => 'all',
-                        'emailrequest'    => 1
-                    ]), ['data-dialog' => '', 'data-action' => 'messages/write_all']) ?>
-                <p>Über Stud.IP-Nachrichten können Sie allen eingetragenen Kurs-Teilnehmenden Informationen zukommen lassen.</p>
+                <p>Unter Berücksichtigung der Prämisse, dass nicht alle Teilnehmenden gleichzeitig vor Ort
+                    anwesend sein können, ergeben sich trotzdem verschiedene Varianten um dies zu kompensieren.</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/example') ?>" data-dialog="size=640x400;title='Online-Lehre: Teilnehmende benachrichtigen'">Beispiel</a>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/live') ?>" data-dialog="size=640x400;title='Szenario 1: Live-Zuschaltung'">Szenario 1: Live-Zuschaltung</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/howto') ?>" data-dialog="size=640x600;title='Online-Lehre: Teilnehmende benachrichtigen'">So geht's</a>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/interactive') ?>" data-dialog="size=640x600;title='Szenario 2: Interaktive Live-Zuschaltung'">Szenario 2: Interaktive Live-Zuschaltung</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/mail_info/tips') ?>" data-dialog="size=640x600;title='Online-Lehre: Teilnehmende benachrichtigen'">Tipps und Tricks</a>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/asynchron') ?>" data-dialog="size=640x600;title='Szenario 3: Rotierende Gruppen'">Szenario 3: Rotierende Gruppen</a>
                     </li>
                 </ul>
             </div>
 
             <h1>
-                Szenario 2: Interaktive Live-Zuschaltung
+                Vorbereitung
             </h1>
             <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Datei hochladen'), '#', ['onclick' => "STUDIP.Files.openAddFilesWindow('$folder_id')", 'data-action' => 'files/upload']) ?>
-                <p> Im Stud.IP-Dateibereich können Dateien hochgeladen und verlinkt werden. Mit dem "Courseware"-Modul können Sie verschiedene Medien zusammenführen (s. "Materialien zusammenstellen"). </p>
+                <p>Hinweise zur Vorbereitung </p>
                 <ul>
-                    <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/example') ?>" data-dialog="size=640x400;title='Online-Lehre: Material onloine bereitstellen'">Beispiel</a>
-                    </li>
-                    <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/howto') ?>" data-dialog="size=640x600;title='Online-Lehre: Material onloine bereitstellen'">So geht's</a>
-                    </li>
-                    <li>
-                        <a href="<?= $controller->link_for('assistant/files_info/tips') ?>" data-dialog="size=640x400;title='Online-Lehre: Material onloine bereitstellen'">Tipps und Tricks</a>
-                    </li>
+                    <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Technik testen'">Technik testen</a></li>
+                    <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Gewähltes Szenario mit Test-TN üben'">Gewähltes Szenario mit Test-TN üben</a></li>
+                    <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Hybride Situation produktiv nutzen'"> Hybride Situation produktiv nutzen</a></li>
                 </ul>
-            </div>
 
-            <h1>
-                Szenario 3: Rotierende Gruppen
-            </h1>
-            <div class="accordion_content">
-                <?= Studip\LinkButton::create(_('Corona-Infoseite einrichten'), $controller->url_for('assistant/corona')) ?>
-                <p>Szenario 1 und 2 basieren auf der Annahme, dass alle Teilnehmenden zeitgleich aktiv oder auch passiv an einer Veranstaltung teilnehmen. Weleche Studierenden dabei jeweils vor Ort sind spielt eine eher untergeordnete Rolle.</p>
-                <p>Alternativ wäre eine gezielte Aufteilung in Gruppen denkbar, welche für jede Gruppe eine bestimmte Präsenzveranstaltung vorsieht aber zu unterschiedlichen Zeiten stattfindet.</p>
-                <p>Auf diese Weise können auch Formate ermöglicht werden, welche ein reales Zusammentreffen erfordern. Dies lässt sich insbesondere gut kombinieren, wenn Input-Phasen für alle Teilnehmenden Online stattfinden, z.B. in Form von Lehrvideos und die Präsenztermine gezielt für Interaktion genutzt werden.</p>
-                <!--<ul>
-                    <li>
-                        <a href="<?= $controller->link_for('assistant/corona_info/howto') ?>" data-dialog="size=640x600">So geht's') ?></a>
-                    </li>
-                    <li>
-                        <a href="<?= $controller->link_for('assistant/corona_info/tips') ?>" data-dialog="size=640x400">Tipps und Tricks') ?></a>
-                    </li>
-                </ul>-->
             </div>
 
         </div>
