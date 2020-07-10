@@ -13,41 +13,67 @@
         </form>
     </section>
 
-    <section class="assistant-section assistant-section-big">
+    <section class="assistant-section">
         <h1>
             Information zur Veranstaltungsform
         </h1>
         <div class="assistant-infobox">
             <div class="course-type-info course-type-info-digital">
                 <header>
-                    Digitale Veranstaltung
+                    Online
                 </header>
-                <p>
-                    lorem ipsum dolor
-                </p>
+                <ul>
+                    <li>Lehre ausschließlich online</li>
+                    <li>Gleiche Bedingungen und Möglichkeiten wie im Sommersemester 2020</li>
+                </ul>
             </div>
             <div class="course-type-info course-type-info-hybrid">
                 <header>
-                    Hybrideveranstaltung
+                    Hybrid
                 </header>
-                <p>
-                    lorem ipsum dolor
+                <ul>
+                    <li>Präsenztermine möglich aber:</li>
+                    <li>Immer nur ein Teil der Studierenden vor Ort</li>
+                    <li>Für nicht anwesende Studierende müssen Alternativen geschaffen werden</li>
+                    <li>Unter Hybrid-Lehre finden Sie Beispielszenarien für eine Hybride Durchführung</li>
+                    <li>Achtung: Technische Anforderungen ggf. höher als bei reiner Online Lehre</li>
+                </ul>
                 </header>
             </div>
             <div class="course-type-info course-type-info-presence">
                 <header>
-                    Präsenzveranstaltung
+                    Präsenz
                 </header>
-                <p>
-                    lorem ipsum dolor
-                </p>
+                <ul>
+                    <li>Präsenzlehre in den Räumen der Universität für alle Teilnehmenden</li>
+                    <li>Nur unter bestimmten Bedingungen erlaubt</li>
+                    <li>Muss explizit von Studiendekanen genehmigt werden</li>
+                </ul>
             </div>
         </div>
     </section>
-</div>
 
-<div class="assistant-container">
-
+    <section class="assistant-section">
+        <h1>
+            <?= Icon::create('question-circle', Icon::ROLE_INFO)->asImg(20, ['style' => 'vertical-align: text-bottom']) ?>
+            Fragen Sie uns...
+        </h1>
+        <div class="assistant-infobox">
+            <p style="text-aling:justify;">
+                Wir haben hier nur die grundlegendsten Szenarien vorgestellt. Mit Stud.IP und anderen Diensten können Sie
+                    Ihre Lehre auf viele weitere Arten unterstützen. Sprechen Sie uns einfach an:
+                <br><br>
+                <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a><br>
+                Tel. 0541/969-6666<br>
+                <a href="https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html" class="link-extern" target="_blank"
+                    >COVID-19: Hinweise zum Einsatz Digitaler Lehre
+                </a><br>
+                <a href="https://www.rz.uni-osnabrueck.de/homeoffice/homeoffice.html" class="link-extern" target="_blank">Homeoffice-Dienste des Rechenzentrums</a>
+            </p>
+        </div>
+        <?= Studip\LinkButton::create(_('Anfrage stellen'),
+                URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
+    </section>
 
     <section class="assistant-section">
         <h1>
@@ -456,28 +482,6 @@ Telefonnummer für Rückfragen:
                 </ul>
             </div>
         </div>
-    </section>
-
-    <section class="assistant-section">
-        <h1>
-            <?= Icon::create('question-circle', Icon::ROLE_INFO)->asImg(20, ['style' => 'vertical-align: text-bottom']) ?>
-            Fragen Sie uns...
-        </h1>
-        <div class="assistant-infobox">
-            <p style="text-aling:justify;">
-                Wir haben hier nur die grundlegendsten Szenarien vorgestellt. Mit Stud.IP und anderen Diensten können Sie
-                    Ihre Lehre auf viele weitere Arten unterstützen. Sprechen Sie uns einfach an:
-                <br><br>
-                <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a><br>
-                Tel. 0541/969-6666<br>
-                <a href="https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html" class="link-extern" target="_blank"
-                    >COVID-19: Hinweise zum Einsatz Digitaler Lehre
-                </a><br>
-                <a href="https://www.rz.uni-osnabrueck.de/homeoffice/homeoffice.html" class="link-extern" target="_blank">Homeoffice-Dienste des Rechenzentrums</a>
-            </p>
-        </div>
-        <?= Studip\LinkButton::create(_('Anfrage stellen'),
-                URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
     </section>
 
 </div>

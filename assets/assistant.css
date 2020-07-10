@@ -62,6 +62,10 @@
     font-weight: 600;
 }
 
+.course-type-info ul {
+    padding-left: 1.5em;
+}
+
 @media only screen and (max-width: 1717px) {
     .assistant-section-big {
         width: 440px;
