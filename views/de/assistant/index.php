@@ -2,14 +2,16 @@
     <section class="assistant-section">
         <h1>
             Einstellungen für die Veranstaltungsform
+            <a href="<?= $controller->link_for('assistant/sem_format_info') ?>" data-dialog="size=640x400;title='Erläuterungen zu den Formaten'">
+                <?= Icon::create('info', 'clickable', ["title" => _('Erläuterungen zu den Formaten')]) ?></a>
         </h1>
         <form class="default assistant-form" action="<?= $controller->link_for('assistant/set_type') ?>" method="POST">
             <?= CSRFProtection::tokenTag() ?>
-                <div class="assistant-infobox">
-                    <?= $datafields['aee5626da96ab9c37976b2fc454d88b4']->getHTML('df') ?>
-                    <?= $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->getHTML('df') ?>
-                </div>
-                <?= Studip\Button::createAccept(_vips('Speichern'), 'save') ?>
+            <div class="assistant-infobox">
+                <?= $datafields['aee5626da96ab9c37976b2fc454d88b4']->getHTML('df') ?>
+                <?= $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->getHTML('df') ?>
+            </div>
+            <?= Studip\Button::createAccept(_vips('Speichern'), 'save') ?>
         </form>
     </section>
 
@@ -55,29 +57,7 @@
 
     <section class="assistant-section">
         <h1>
-            <?= Icon::create('question-circle', Icon::ROLE_INFO)->asImg(20, ['style' => 'vertical-align: text-bottom']) ?>
-            Fragen Sie uns...
-        </h1>
-        <div class="assistant-infobox">
-            <p style="text-aling:justify;">
-                Wir haben hier nur die grundlegendsten Szenarien vorgestellt. Mit Stud.IP und anderen Diensten können Sie
-                    Ihre Lehre auf viele weitere Arten unterstützen. Sprechen Sie uns einfach an:
-                <br><br>
-                <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a><br>
-                Tel. 0541/969-6666<br>
-                <a href="https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html" class="link-extern" target="_blank"
-                    >COVID-19: Hinweise zum Einsatz Digitaler Lehre
-                </a><br>
-                <a href="https://www.rz.uni-osnabrueck.de/homeoffice/homeoffice.html" class="link-extern" target="_blank">Homeoffice-Dienste des Rechenzentrums</a>
-            </p>
-        </div>
-        <?= Studip\LinkButton::create(_('Anfrage stellen'),
-                URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
-    </section>
-
-    <section class="assistant-section">
-        <h1>
-            Zum Einstieg
+            Einstieg Online Lehre
         </h1>
 
         <div class="accordion">
@@ -87,12 +67,12 @@
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Rundmail schreiben'),
-                        URLHelper::getURL('dispatch.php/messages/write', [
-                            'course_id'       => $course_id,
-                            'default_subject' => sprintf('[%s]', Context::get()->Name),
-                            'filter'          => 'all',
-                            'emailrequest'    => 1
-                        ]), ['data-dialog' => '', 'data-action' => 'messages/write_all']) ?>
+                    URLHelper::getURL('dispatch.php/messages/write', [
+                        'course_id'       => $course_id,
+                        'default_subject' => sprintf('[%s]', Context::get()->Name),
+                        'filter'          => 'all',
+                        'emailrequest'    => 1
+                    ]), ['data-dialog' => '', 'data-action' => 'messages/write_all']) ?>
                 <p>Über Stud.IP-Nachrichten können Sie allen eingetragenen Kurs-Teilnehmenden Informationen zukommen lassen.</p>
                 <ul>
                     <li>
@@ -168,7 +148,7 @@
 
     <section class="assistant-section">
         <h1>
-            Hybrid-Lehre
+            Einstieg Hybrid-Lehre
         </h1>
 
         <div class="accordion">
@@ -243,8 +223,8 @@
                 <?= Studip\LinkButton::create(_('Anfrage stellen'),
                     URLHelper::getURL('dispatch.php/messages/write',
                         ['rec_uname' => 'virtuos@studip',
-                        'default_subject' => _('Anfrage Hörsaalaufzeichnung für '.Context::get()->Name),
-                        'default_body' => _('Liebes virtUOS-Team,
+                            'default_subject' => _('Anfrage Hörsaalaufzeichnung für '.Context::get()->Name),
+                            'default_body' => _('Liebes virtUOS-Team,
 ich möchte im Hörsaal aufzeichnen.
 
 Mein Terminwunsch: (Datum/Wochentag, Uhrzeit, einmalig/regelmäßig)
@@ -257,7 +237,7 @@ Telefonnummer für Rückfragen:
 ')]),
                     ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
                 <p>Die Hörsäle der Universität können für Vorlesungen ohne Publikum genutzt werden. Über 20 Räume sind
-                für vollautomatische Videoaufzeichnungen ausgerüstet, Sie müssen nur eine Zeit buchen.</p>
+                    für vollautomatische Videoaufzeichnungen ausgerüstet, Sie müssen nur eine Zeit buchen.</p>
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/lecturehall_info/example') ?>" data-dialog="size=640x675">Beispiel</a>
@@ -282,7 +262,7 @@ Telefonnummer für Rückfragen:
                 </p>
                 <ul>
                     <li><a href="<?= $controller->link_for('assistant/studio_info/selfrecording') ?>" data-dialog="size=640x500">Impressionen aus dem Self-Recording-Studio im Lehrkolleg</a></li>
-                </ul>
+                </ul>s
 
                 <p>
                     Bitte kontaktieren Sie uns mit einer E-Mail an
@@ -291,12 +271,12 @@ Telefonnummer für Rückfragen:
             </div>
 
             <h1>
-                Podcasts und Videos selbst aufzeichnen
+                Podcasts und Videos elbst aufzeichnen
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('opencast_plugin')) ?>
                 <p>Sie möchten Audio- und Video-Aufnahmen am eigenen Rechner erstellen und den Teilnehmenden
-                zur Verfügung stellen? Dafür gibt es verschiedene Werkzeuge:</p>
+                    zur Verfügung stellen? Dafür gibt es verschiedene Werkzeuge:</p>
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/recording_info/opencaststudio') ?>" data-dialog="size=640x600">Opencast Studio (Unsere Empfehlung!)</a>
@@ -484,6 +464,28 @@ Telefonnummer für Rückfragen:
         </div>
     </section>
 
+    <section class="assistant-section">
+        <h1>
+            <?= Icon::create('question-circle', Icon::ROLE_INFO)->asImg(20, ['style' => 'vertical-align: text-bottom']) ?>
+            Fragen Sie uns...
+        </h1>
+        <div class="assistant-infobox">
+            <p style="text-aling:justify;">
+                Wir haben hier nur die grundlegendsten Szenarien vorgestellt. Mit Stud.IP und anderen Diensten können Sie
+                Ihre Lehre auf viele weitere Arten unterstützen. Sprechen Sie uns einfach an:
+                <br><br>
+                <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a><br>
+                Tel. 0541/969-6666<br>
+                <a href="https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html" class="link-extern" target="_blank"
+                >COVID-19: Hinweise zum Einsatz Digitaler Lehre
+                </a><br>
+                <a href="https://www.rz.uni-osnabrueck.de/homeoffice/homeoffice.html" class="link-extern" target="_blank">Homeoffice-Dienste des Rechenzentrums</a>
+            </p>
+        </div>
+        <?= Studip\LinkButton::create(_('Anfrage stellen'),
+            URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
+    </section>
+
 </div>
 
 <script>
@@ -491,19 +493,19 @@ Telefonnummer für Rückfragen:
         collapsible: true,
         active: false
     });
-    
+
     $("input[name='df[aee5626da96ab9c37976b2fc454d88b4]']").on('change',(event)=>{
         $('.course-type-info').hide();
         switch($(event.currentTarget).val()) {
-        case 'Hybridveranstaltung':
-            $('.course-type-info-hybrid').show();
-            break;
-        case 'Digitale Veranstaltung':
-            $('.course-type-info-digital').show();
-            break;
-        case 'Präsenzveranstaltung':
-            $('.course-type-info-presence').show();
-            break;
+            case 'Hybridveranstaltung':
+                $('.course-type-info-hybrid').show();
+                break;
+            case 'Onlineveranstaltung':
+                $('.course-type-info-digital').show();
+                break;
+            case 'Präsenzveranstaltung':
+                $('.course-type-info-presence').show();
+                break;
         }
     });
     $("input[name='df[aee5626da96ab9c37976b2fc454d88b4]']:checked").trigger('change');

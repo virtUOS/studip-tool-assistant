@@ -86,6 +86,11 @@ class AssistantController extends ToolAssistantBaseController
         $this->view = $view;
     }
 
+    public function sem_format_info_action()
+    {
+        $this->view = $view;
+    }
+
     public function files_info_action($view = 'example')
     {
         $this->view = $view;
