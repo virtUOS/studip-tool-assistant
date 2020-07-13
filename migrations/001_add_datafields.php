@@ -57,10 +57,10 @@ class AddDatafields extends Migration
             594213973,
            'all',
            'radio',
-           'Digitale Veranstaltung\r\nHybridveranstaltung\r\nPräsenzveranstaltung',
+           'Onlineveranstaltung\r\nHybridveranstaltung\r\nPräsenzveranstaltung',
             0,
             0,
-           'Digitale Veranstaltung',
+           'Onlineveranstaltung',
            '',
             0);"
         );
