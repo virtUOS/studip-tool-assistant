@@ -1,83 +1,62 @@
 <div class="assistant-container">
     <section class="assistant-section">
         <h1>
-            Einstellungen für die Veranstaltungsform
+            Bevorzugte Veranstaltungsform wählen
+            <a href="<?= $controller->link_for('assistant/sem_format_info') ?>" data-dialog="size=640x400;title='Erläuterungen zu den Formaten'">
+                <?= Icon::create('info-circle', 'clickable', ["title" => _('Erläuterungen zu den Formaten')]) ?></a>
         </h1>
         <form class="default assistant-form" action="<?= $controller->link_for('assistant/set_type') ?>" method="POST">
             <?= CSRFProtection::tokenTag() ?>
-                <div class="assistant-infobox">
-                    <?= $datafields['aee5626da96ab9c37976b2fc454d88b4']->getHTML('df') ?>
-                    <?= $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->getHTML('df') ?>
-                </div>
-                <?= Studip\Button::createAccept(_vips('Speichern'), 'save') ?>
+            <div class="assistant-infobox">
+                <?= $datafields['aee5626da96ab9c37976b2fc454d88b4']->getHTML('df') ?>
+                <?= $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->getHTML('df') ?>
+            </div>
+            <?= Studip\Button::createAccept(_vips('Speichern'), 'save') ?>
+            <?= Studip\LinkButton::create(_('Entscheidungshilfe'),
+                $controller->link_for('assistant/sem_format_info'), ['data-dialog' => "size=640x600;title='Entscheidungshilfe'"]) ?>
         </form>
     </section>
 
     <section class="assistant-section">
         <h1>
-            Information zur Veranstaltungsform
+            Information zum Ablauf
         </h1>
         <div class="assistant-infobox">
-            <div class="course-type-info course-type-info-digital">
+            <div class="course-type-info">
                 <header>
-                    Online
+                    In der Zeit vom 15.07.bis 15.08.2020
                 </header>
                 <ul>
-                    <li>Lehre ausschließlich online</li>
-                    <li>Gleiche Bedingungen und Möglichkeiten wie im Sommersemester 2020</li>
+                    <li>wählen Sie das bevorzugte Format </li>
+                    <li>geben Sie wie gewohnt Terminwünsche an </li>
+                    <li>geben Sie wie gewohnt Raumwünsche an (Hybrid- und Präsenzveranstaltung)</li>
+                    <li>die StudiendakanInnen prüfen Ihre Angaben und geben ggf. Rückmeldung, falls Änderungen nötig sind</li>
                 </ul>
-            </div>
-            <div class="course-type-info course-type-info-hybrid">
                 <header>
-                    Hybrid
+                    Die Raumzuweisungen durch das Dezernat 6 erfolgen bis zum 30.09.2020
+                </header>
+                Sie verfügen anschließend über folgende Informationen:
+                <ul>
+                    <li>Bewilligung oder Anpassung des gewünschten Veranstaltungsformats</li>
+                    <li>Raumgröße d.h. Anzahl der möglichen Präsenzteilnehmer</li>
+                    <li>Raumausstattung </li>
+                </ul>
+                <header>
+                    Weitere Schritte insbesondere im Falle einer Hybridveranstaltung
                 </header>
                 <ul>
-                    <li>Präsenztermine möglich aber:</li>
-                    <li>Immer nur ein Teil der Studierenden vor Ort</li>
-                    <li>Für nicht anwesende Studierende müssen Alternativen geschaffen werden</li>
-                    <li>Unter Hybrid-Lehre finden Sie Beispielszenarien für eine Hybride Durchführung</li>
-                    <li>Achtung: Technische Anforderungen ggf. höher als bei reiner Online Lehre</li>
+                    <li>Nutzen Sie die vom virtUOS bereitgestellten Informationen und Unterstützungsangebote um
+                    optimal vorbereitet zu sein</li>
                 </ul>
-                </header>
-            </div>
-            <div class="course-type-info course-type-info-presence">
-                <header>
-                    Präsenz
-                </header>
-                <ul>
-                    <li>Präsenzlehre in den Räumen der Universität für alle Teilnehmenden</li>
-                    <li>Nur unter bestimmten Bedingungen erlaubt</li>
-                    <li>Muss explizit von Studiendekanen genehmigt werden</li>
-                </ul>
+
+
             </div>
         </div>
     </section>
 
     <section class="assistant-section">
         <h1>
-            <?= Icon::create('question-circle', Icon::ROLE_INFO)->asImg(20, ['style' => 'vertical-align: text-bottom']) ?>
-            Fragen Sie uns...
-        </h1>
-        <div class="assistant-infobox">
-            <p style="text-aling:justify;">
-                Wir haben hier nur die grundlegendsten Szenarien vorgestellt. Mit Stud.IP und anderen Diensten können Sie
-                    Ihre Lehre auf viele weitere Arten unterstützen. Sprechen Sie uns einfach an:
-                <br><br>
-                <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a><br>
-                Tel. 0541/969-6666<br>
-                <a href="https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html" class="link-extern" target="_blank"
-                    >COVID-19: Hinweise zum Einsatz Digitaler Lehre
-                </a><br>
-                <a href="https://www.rz.uni-osnabrueck.de/homeoffice/homeoffice.html" class="link-extern" target="_blank">Homeoffice-Dienste des Rechenzentrums</a>
-            </p>
-        </div>
-        <?= Studip\LinkButton::create(_('Anfrage stellen'),
-                URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
-    </section>
-
-    <section class="assistant-section">
-        <h1>
-            Zum Einstieg
+            Online Lehre: Grundlagen
         </h1>
 
         <div class="accordion">
@@ -87,12 +66,12 @@
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Rundmail schreiben'),
-                        URLHelper::getURL('dispatch.php/messages/write', [
-                            'course_id'       => $course_id,
-                            'default_subject' => sprintf('[%s]', Context::get()->Name),
-                            'filter'          => 'all',
-                            'emailrequest'    => 1
-                        ]), ['data-dialog' => '', 'data-action' => 'messages/write_all']) ?>
+                    URLHelper::getURL('dispatch.php/messages/write', [
+                        'course_id'       => $course_id,
+                        'default_subject' => sprintf('[%s]', Context::get()->Name),
+                        'filter'          => 'all',
+                        'emailrequest'    => 1
+                    ]), ['data-dialog' => '', 'data-action' => 'messages/write_all']) ?>
                 <p>Über Stud.IP-Nachrichten können Sie allen eingetragenen Kurs-Teilnehmenden Informationen zukommen lassen.</p>
                 <ul>
                     <li>
@@ -168,6 +147,70 @@
 
     <section class="assistant-section">
         <h1>
+            Hybrid-Lehre: Einstieg
+        </h1>
+
+        <div class="accordion">
+
+            <h1>
+                Herausforderungen der Hybriden Lehre
+            </h1>
+            <div class="accordion_content">
+                <p>In der Hybriden Lehre werden Elemente der Online Lehre mit Elementen der Präsenzlehre kombiniert.
+                    Je nach Szenarion geschieht dieses ggf. sogar zeitgleich.
+                    Neben technischen Besonderheiten gibt es einige inhaltliche Faktoren zu beachten.
+                    Wir haben Ihnen ein paar Tipps und Hinweise zusammengestellt, um Ihnen den Einstieg zu erleichtern:</p>
+                <ul>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/different_groups') ?>" data-dialog="size=640x400;title='Unterschiedliche Zuhörendengruppen'">Unterschiedliche Zuhörendengruppen einbeziehen</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/attention') ?>" data-dialog="size=640x600;title='Aufnahmefähigkeit'">Reduzierte Aufnahmefähigkeit im digitalen Kanal beachten</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/burden') ?>" data-dialog="size=640x600;title='Teilnehmende gleichmäßig belasten'">Präsenz- und Online-Teilnehmende gleichmäßig belasten</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <h1>
+                Umsetzungsvarianten
+            </h1>
+            <div class="accordion_content">
+                <p>Um die Tatsache, dass nicht alle Teilnehmenden gleichzeitig vor Ort anwesend sein können,
+                    zu kompensieren, bieten sich verschiedene Varianten an:</p>
+                <ul>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/live') ?>" data-dialog="size=640x400;title='Variante 1: Passive (Live-)Zuschaltung'">Variante 1: Passive (Live-)Zuschaltung</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/interactive') ?>" data-dialog="size=640x600;title='Variante 2: Interaktive Live-Zuschaltung'">Variante 2: Interaktive Live-Zuschaltung</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/asynchron') ?>" data-dialog="size=640x600;title='Variante 3: Rotierende Gruppen'">Variante 3: Rotierende Gruppen</a>
+                    </li>
+                </ul>
+            </div>
+
+            <h1>
+                Vorbereitung
+            </h1>
+            <div class="accordion_content">
+                <p>Hinweise zur Vorbereitung </p>
+                <ul>
+                    <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Technik testen'">Technik testen</a></li>
+                    <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Gewähltes Szenario mit Test-TN üben'">Gewähltes Szenario mit Test-TN üben</a></li>
+                    <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Hybride Situation produktiv nutzen'"> Hybride Situation produktiv nutzen</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="assistant-section">
+        <h1>
             Online-Vorträge (z.B. für Vorlesungen)
         </h1>
 
@@ -179,8 +222,8 @@
                 <?= Studip\LinkButton::create(_('Anfrage stellen'),
                     URLHelper::getURL('dispatch.php/messages/write',
                         ['rec_uname' => 'virtuos@studip',
-                        'default_subject' => _('Anfrage Hörsaalaufzeichnung für '.Context::get()->Name),
-                        'default_body' => _('Liebes virtUOS-Team,
+                            'default_subject' => _('Anfrage Hörsaalaufzeichnung für '.Context::get()->Name),
+                            'default_body' => _('Liebes virtUOS-Team,
 ich möchte im Hörsaal aufzeichnen.
 
 Mein Terminwunsch: (Datum/Wochentag, Uhrzeit, einmalig/regelmäßig)
@@ -193,7 +236,7 @@ Telefonnummer für Rückfragen:
 ')]),
                     ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
                 <p>Die Hörsäle der Universität können für Vorlesungen ohne Publikum genutzt werden. Über 20 Räume sind
-                für vollautomatische Videoaufzeichnungen ausgerüstet, Sie müssen nur eine Zeit buchen.</p>
+                    für vollautomatische Videoaufzeichnungen ausgerüstet, Sie müssen nur eine Zeit buchen.</p>
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/lecturehall_info/example') ?>" data-dialog="size=640x675">Beispiel</a>
@@ -218,7 +261,7 @@ Telefonnummer für Rückfragen:
                 </p>
                 <ul>
                     <li><a href="<?= $controller->link_for('assistant/studio_info/selfrecording') ?>" data-dialog="size=640x500">Impressionen aus dem Self-Recording-Studio im Lehrkolleg</a></li>
-                </ul>
+                </ul>s
 
                 <p>
                     Bitte kontaktieren Sie uns mit einer E-Mail an
@@ -232,7 +275,7 @@ Telefonnummer für Rückfragen:
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('opencast_plugin')) ?>
                 <p>Sie möchten Audio- und Video-Aufnahmen am eigenen Rechner erstellen und den Teilnehmenden
-                zur Verfügung stellen? Dafür gibt es verschiedene Werkzeuge:</p>
+                    zur Verfügung stellen? Dafür gibt es verschiedene Werkzeuge:</p>
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/recording_info/opencaststudio') ?>" data-dialog="size=640x600">Opencast Studio (Unsere Empfehlung!)</a>
@@ -420,6 +463,28 @@ Telefonnummer für Rückfragen:
         </div>
     </section>
 
+    <section class="assistant-section">
+        <h1>
+            <?= Icon::create('question-circle', Icon::ROLE_INFO)->asImg(20, ['style' => 'vertical-align: text-bottom']) ?>
+            Fragen Sie uns...
+        </h1>
+        <div class="assistant-infobox">
+            <p style="text-aling:justify;">
+                Wir haben hier nur die grundlegendsten Szenarien vorgestellt. Mit Stud.IP und anderen Diensten können Sie
+                Ihre Lehre auf viele weitere Arten unterstützen. Sprechen Sie uns einfach an:
+                <br><br>
+                <a href="mailto:virtuos@uni-osnabrueck.de">virtuos@uni-osnabrueck.de</a><br>
+                Tel. 0541/969-6666<br>
+                <a href="https://www.virtuos.uni-osnabrueck.de/digitale_lehre/covid_19.html" class="link-extern" target="_blank"
+                >COVID-19: Hinweise zum Einsatz Digitaler Lehre
+                </a><br>
+                <a href="https://www.rz.uni-osnabrueck.de/homeoffice/homeoffice.html" class="link-extern" target="_blank">Homeoffice-Dienste des Rechenzentrums</a>
+            </p>
+        </div>
+        <?= Studip\LinkButton::create(_('Anfrage stellen'),
+            URLHelper::getURL('dispatch.php/messages/write', ['rec_uname' => 'virtuos@studip']), ['data-dialog' => '', 'data-action' => 'messages/write']) ?>
+    </section>
+
 </div>
 
 <script>
@@ -427,21 +492,7 @@ Telefonnummer für Rückfragen:
         collapsible: true,
         active: false
     });
-    
-    $("input[name='df[aee5626da96ab9c37976b2fc454d88b4]']").on('change',(event)=>{
-        $('.course-type-info').hide();
-        switch($(event.currentTarget).val()) {
-        case 'Hybridveranstaltung':
-            $('.course-type-info-hybrid').show();
-            break;
-        case 'Digitale Veranstaltung':
-            $('.course-type-info-digital').show();
-            break;
-        case 'Präsenzveranstaltung':
-            $('.course-type-info-presence').show();
-            break;
-        }
-    });
+
     $("input[name='df[aee5626da96ab9c37976b2fc454d88b4]']:checked").trigger('change');
 
 </script>
