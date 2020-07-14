@@ -1,9 +1,9 @@
 <div class="assistant-container">
     <section class="assistant-section">
         <h1>
-            Einstellungen für die Veranstaltungsform
+            Bevorzugte Veranstaltungsform wählen
             <a href="<?= $controller->link_for('assistant/sem_format_info') ?>" data-dialog="size=640x400;title='Erläuterungen zu den Formaten'">
-                <?= Icon::create('info', 'clickable', ["title" => _('Erläuterungen zu den Formaten')]) ?></a>
+                <?= Icon::create('info-circle', 'clickable', ["title" => _('Erläuterungen zu den Formaten')]) ?></a>
         </h1>
         <form class="default assistant-form" action="<?= $controller->link_for('assistant/set_type') ?>" method="POST">
             <?= CSRFProtection::tokenTag() ?>
@@ -12,52 +12,51 @@
                 <?= $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->getHTML('df') ?>
             </div>
             <?= Studip\Button::createAccept(_vips('Speichern'), 'save') ?>
+            <?= Studip\LinkButton::create(_('Entscheidungshilfe'),
+                $controller->link_for('assistant/sem_format_info'), ['data-dialog' => "size=640x600;title='Entscheidungshilfe'"]) ?>
         </form>
     </section>
 
     <section class="assistant-section">
         <h1>
-            Information zur Veranstaltungsform
+            Information zum Ablauf
         </h1>
         <div class="assistant-infobox">
-            <div class="course-type-info course-type-info-digital">
+            <div class="course-type-info">
                 <header>
-                    Online
+                    In der Zeit vom 15.07.bis 15.08.2020
                 </header>
                 <ul>
-                    <li>Lehre ausschließlich online</li>
-                    <li>Gleiche Bedingungen und Möglichkeiten wie im Sommersemester 2020</li>
+                    <li>wählen Sie das bevorzugte Format </li>
+                    <li>geben Sie wie gewohnt Terminwünsche an </li>
+                    <li>geben Sie wie gewohnt Raumwünsche an (Hybrid- und Präsenzveranstaltung)</li>
+                    <li>die StudiendakanInnen prüfen Ihre Angaben und geben ggf. Rückmeldung, falls Änderungen nötig sind</li>
                 </ul>
-            </div>
-            <div class="course-type-info course-type-info-hybrid">
                 <header>
-                    Hybrid
+                    Die Raumzuweisungen durch das Dezernat 6 erfolgen bis zum 30.09.2020
+                </header>
+                Sie verfügen anschließend über folgende Informationen:
+                <ul>
+                    <li>Bewilligung oder Anpassung des gewünschten Veranstaltungsformats</li>
+                    <li>Raumgröße d.h. Anzahl der möglichen Präsenzteilnehmer</li>
+                    <li>Raumausstattung </li>
+                </ul>
+                <header>
+                    Weitere Schritte insbesondere im Falle einer Hybridveranstaltung
                 </header>
                 <ul>
-                    <li>Präsenztermine möglich aber:</li>
-                    <li>Immer nur ein Teil der Studierenden vor Ort</li>
-                    <li>Für nicht anwesende Studierende müssen Alternativen geschaffen werden</li>
-                    <li>Unter Hybrid-Lehre finden Sie Beispielszenarien für eine Hybride Durchführung</li>
-                    <li>Achtung: Technische Anforderungen ggf. höher als bei reiner Online Lehre</li>
+                    <li>Nutzen Sie die vom virtUOS bereitgestellten Informationen und Unterstützungsangebote um
+                    optimal vorbereitet zu sein</li>
                 </ul>
-                </header>
-            </div>
-            <div class="course-type-info course-type-info-presence">
-                <header>
-                    Präsenz
-                </header>
-                <ul>
-                    <li>Präsenzlehre in den Räumen der Universität für alle Teilnehmenden</li>
-                    <li>Nur unter bestimmten Bedingungen erlaubt</li>
-                    <li>Muss explizit von Studiendekanen genehmigt werden</li>
-                </ul>
+
+
             </div>
         </div>
     </section>
 
     <section class="assistant-section">
         <h1>
-            Einstieg Online Lehre
+            Online Lehre: Grundlagen
         </h1>
 
         <div class="accordion">
@@ -148,7 +147,7 @@
 
     <section class="assistant-section">
         <h1>
-            Einstieg Hybrid-Lehre
+            Hybrid-Lehre: Einstieg
         </h1>
 
         <div class="accordion">
@@ -163,7 +162,7 @@
                     Wir haben Ihnen ein paar Tipps und Hinweise zusammengestellt, um Ihnen den Einstieg zu erleichtern:</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/hybrid_info/different_groups') ?>" data-dialog="size=640x400;title='Unterschiedlichee Zuhörendengruppen'">Zwei unterschiedliche Zuhörendengruppen adäquat bespielen</a>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/different_groups') ?>" data-dialog="size=640x400;title='Unterschiedliche Zuhörendengruppen'">Unterschiedliche Zuhörendengruppen einbeziehen</a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/hybrid_info/attention') ?>" data-dialog="size=640x600;title='Aufnahmefähigkeit'">Reduzierte Aufnahmefähigkeit im digitalen Kanal beachten</a>
@@ -176,20 +175,20 @@
 
 
             <h1>
-                Beispielzenarien
+                Umsetzungsvarianten
             </h1>
             <div class="accordion_content">
-                <p>Unter Berücksichtigung der Prämisse, dass nicht alle Teilnehmenden gleichzeitig vor Ort
-                    anwesend sein können, ergeben sich trotzdem verschiedene Varianten um dies zu kompensieren.</p>
+                <p>Um die Tatsache, dass nicht alle Teilnehmenden gleichzeitig vor Ort anwesend sein können,
+                    zu kompensieren, bieten sich verschiedene Varianten an:</p>
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/szenarien_info/live') ?>" data-dialog="size=640x400;title='Szenario 1: Live-Zuschaltung'">Szenario 1: Live-Zuschaltung</a>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/live') ?>" data-dialog="size=640x400;title='Variante 1: Passive (Live-)Zuschaltung'">Variante 1: Passive (Live-)Zuschaltung</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/szenarien_info/interactive') ?>" data-dialog="size=640x600;title='Szenario 2: Interaktive Live-Zuschaltung'">Szenario 2: Interaktive Live-Zuschaltung</a>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/interactive') ?>" data-dialog="size=640x600;title='Variante 2: Interaktive Live-Zuschaltung'">Variante 2: Interaktive Live-Zuschaltung</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/szenarien_info/asynchron') ?>" data-dialog="size=640x600;title='Szenario 3: Rotierende Gruppen'">Szenario 3: Rotierende Gruppen</a>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/asynchron') ?>" data-dialog="size=640x600;title='Variante 3: Rotierende Gruppen'">Variante 3: Rotierende Gruppen</a>
                     </li>
                 </ul>
             </div>
@@ -271,7 +270,7 @@ Telefonnummer für Rückfragen:
             </div>
 
             <h1>
-                Podcasts und Videos elbst aufzeichnen
+                Podcasts und Videos selbst aufzeichnen
             </h1>
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Kurs dafür einrichten'), $controller->url_for('opencast_plugin')) ?>
@@ -494,20 +493,6 @@ Telefonnummer für Rückfragen:
         active: false
     });
 
-    $("input[name='df[aee5626da96ab9c37976b2fc454d88b4]']").on('change',(event)=>{
-        $('.course-type-info').hide();
-        switch($(event.currentTarget).val()) {
-            case 'Hybridveranstaltung':
-                $('.course-type-info-hybrid').show();
-                break;
-            case 'Onlineveranstaltung':
-                $('.course-type-info-digital').show();
-                break;
-            case 'Präsenzveranstaltung':
-                $('.course-type-info-presence').show();
-                break;
-        }
-    });
     $("input[name='df[aee5626da96ab9c37976b2fc454d88b4]']:checked").trigger('change');
 
 </script>
