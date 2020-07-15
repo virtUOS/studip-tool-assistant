@@ -6,11 +6,45 @@
         <form class="default assistant-form" action="<?= $controller->link_for('assistant/set_type') ?>" method="POST">
             <?= CSRFProtection::tokenTag() ?>
             <div class="assistant-infobox">
-                <?= $datafields['aee5626da96ab9c37976b2fc454d88b4']->getHTML('df') ?>
-                <?= $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->getHTML('df') ?>
+                <? $types = [
+                   'Onlineveranstaltung' => 'Online',
+                   'Hybridveranstaltung' => 'Hybrid',
+                   'Präsenzveranstaltung' => 'Face-to-face'
+                ] ?>
+                <? $audiences = [
+                    'keine Angabe' => 'keine Angabe',
+                    'Erstsemester' => 'Erstsemester',
+                    'internationale Studierende' => 'internationale Studierende',
+                    'Examenskandiaten' => 'Examenskandiaten'
+                ] ?>
+
+                <label>
+                    Format
+                </label>
+                <? foreach ($types as $key => $type): ?>
+                    <label>
+                        <input type="radio" name="df[aee5626da96ab9c37976b2fc454d88b4]" value="<?= htmlReady($key) ?>"
+                               <?= $datafields['aee5626da96ab9c37976b2fc454d88b4']->value === $key ? 'checked' : ''?>>
+                               <?= htmlReady($type) ?>
+                    </label><? endforeach ?>
+
+               <label>
+                 Hauptsächliche Kursbelegung
+                <select name="df[a8af8d7ef4a67cc38d7ca6a21fe1bc73]">
+                      <? foreach ($audiences as $key => $audience): ?>
+                           <option value="<?= htmlReady($key) ?>" <?= $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->value === $key ? 'selected' : ''?>>
+                      <?= htmlReady($audience) ?>
+                          </option>
+                <? endforeach ?>
+                   </select>
+                </label>
+                <label>
+                    Maximum number of participants
+                    <input type="number" name="admission_turnout" value="<?= $course->admission_turnout ?>" min="0">
+                </label>
             </div>
             <?= Studip\Button::createAccept(_vips('Speichern'), 'save') ?>
-            <?= Studip\LinkButton::create(_('Entscheidungshilfe'),
+            <?= Studip\LinkButton::create(_('Decision support'),
                 $controller->link_for('assistant/sem_format_info'), ['data-dialog' => "size=640x600;title='Entscheidungshilfe'"]) ?>
         </form>
     </section>
