@@ -28,7 +28,7 @@
 </p>
 
 <h2>
-    On site (Präsenzveranstaltung)
+    Face-to-face (Präsenzveranstaltung)
 </h2>
 <ul>
     <li>appointments in University rooms for all participants</li>

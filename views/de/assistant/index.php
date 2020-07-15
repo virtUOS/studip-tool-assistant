@@ -6,7 +6,7 @@
         </h1>
         <form class="default assistant-form" action="<?= $controller->link_for('assistant/set_type') ?>" method="POST">
             <?= CSRFProtection::tokenTag() ?>
-            <div class="assistant-infobox">
+            <div class="assistant-infobox assistant-procedure">
                 <?= $datafields['aee5626da96ab9c37976b2fc454d88b4']->getHTML('df') ?>
                 <?= $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->getHTML('df') ?>
                 <label>
@@ -35,7 +35,7 @@
                     </li>
                     <li>Geben Sie die maximale Teilnehmendenzahl an (falls diese beschränkt ist) oder alternativ die von Ihnen erwartete Teilnehmendenzahl
                     </li>
-                    <li>Bzgl. Raum und Terminwünschen verfahren Sie wie in vorherigen Präsenzsemestern</li>
+                    <li>Bzgl. Raum- und Terminvergabe verfahren Sie wie in vorherigen Präsenzsemestern</li>
                     <li>die Studiendekan*innen prüfen Anträge auf Präsenz und Plausibilität der maximalen Teilnehmendenzahl</li>
                     <li>Bei Fragen zum Ablauf wenden Sie sich bite an Ihr Fach</li>
                 </ul>
@@ -189,7 +189,7 @@
                 <p>Um die Tatsache, dass nicht alle Teilnehmenden gleichzeitig vor Ort anwesend sein können,
                     zu kompensieren, bieten sich verschiedene Varianten an:</p>
                 <p><i>Hier folgen Hinweise zur Vorbereitung</i> </p>
-                <!--
+
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/szenarien_info/live') ?>" data-dialog="size=640x400;title='Variante 1: Passive (Live-)Zuschaltung'">Variante 1: Passive (Live-)Zuschaltung</a>
@@ -201,7 +201,7 @@
                         <a href="<?= $controller->link_for('assistant/szenarien_info/asynchron') ?>" data-dialog="size=640x600;title='Variante 3: Rotierende Gruppen'">Variante 3: Rotierende Gruppen</a>
                     </li>
                 </ul>
-                -->
+
             </div>
 
             <h1>
