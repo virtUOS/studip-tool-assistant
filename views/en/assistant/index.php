@@ -145,6 +145,75 @@
 
     <section class="assistant-section">
         <h1>
+            Hybrid-Lehre: Einstieg (English Version coming soon)
+        </h1>
+
+        <div class="accordion">
+
+            <h1>
+                Herausforderungen der Hybriden Lehre
+            </h1>
+            <div class="accordion_content">
+                <p>In der Hybriden Lehre werden Elemente der Online Lehre mit Elementen der Präsenzlehre kombiniert.
+                    Je nach Szenarion geschieht dieses ggf. sogar zeitgleich.
+                    Neben technischen Besonderheiten gibt es einige inhaltliche Faktoren zu beachten.
+                    Wir haben Ihnen ein paar Tipps und Hinweise zusammengestellt, um Ihnen den Einstieg zu erleichtern:</p>
+                <ul>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/different_groups') ?>" data-dialog="size=640x400;title='Unterschiedliche Zuhörendengruppen'">Unterschiedliche Zuhörendengruppen einbeziehen</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/attention') ?>" data-dialog="size=640x600;title='Aufnahmefähigkeit'">Reduzierte Aufnahmefähigkeit im digitalen Kanal beachten</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/burden') ?>" data-dialog="size=640x600;title='Teilnehmende gleichmäßig belasten'">Präsenz- und Online-Teilnehmende gleichmäßig belasten</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <h1>
+                Umsetzungsvarianten
+            </h1>
+            <div class="accordion_content">
+                <p>Um die Tatsache, dass nicht alle Teilnehmenden gleichzeitig vor Ort anwesend sein können,
+                    zu kompensieren, bieten sich verschiedene Varianten an:</p>
+                <p><i>Hier folgen Hinweise zur Vorbereitung</i> </p>
+                <!--
+                <ul>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/live') ?>" data-dialog="size=640x400;title='Variante 1: Passive (Live-)Zuschaltung'">Variante 1: Passive (Live-)Zuschaltung</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/interactive') ?>" data-dialog="size=640x600;title='Variante 2: Interaktive Live-Zuschaltung'">Variante 2: Interaktive Live-Zuschaltung</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/asynchron') ?>" data-dialog="size=640x600;title='Variante 3: Rotierende Gruppen'">Variante 3: Rotierende Gruppen</a>
+                    </li>
+                </ul>
+                -->
+            </div>
+
+            <h1>
+                Vorbereitung
+            </h1>
+            <div class="accordion_content">
+                <p><i>Hier folgen Hinweise zur Vorbereitung</i> </p>
+                <!--
+                <ul>
+                    <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Technik testen'">Technik testen</a></li>
+                    <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Gewähltes Szenario mit Test-TN üben'">Gewähltes Szenario mit Test-TN üben</a></li>
+                    <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Hybride Situation produktiv nutzen'"> Hybride Situation produktiv nutzen</a></li>
+                </ul>
+                -->
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="assistant-section">
+        <h1>
             Online lectures (e.g. for lectures)
         </h1>
 
