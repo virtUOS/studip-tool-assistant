@@ -50,6 +50,7 @@ class AssistantController extends ToolAssistantBaseController
         }
         Sidebar::get()->addWidget($widget);
 
+        $this->course = Course::find($this->course_id);
         $this->datafields = DataFieldEntry::getDataFieldEntries($this->course_id, 'sem');
         $this->folder_id = Folder::findTopFolder($this->course_id)->id;
     }
@@ -69,6 +70,10 @@ class AssistantController extends ToolAssistantBaseController
                 $datafields[$id]->store();
             }
         }
+
+        $course = Course::find($this->course_id);
+        $course->admission_turnout = Request::int('admission_turnout');
+        $course->store();
 
         PageLayout::postSuccess('Die Einstellungen für die Veranstaltungsform wurden gespeichert');
         $this->redirect('assistant');
