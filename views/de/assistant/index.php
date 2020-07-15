@@ -1,15 +1,18 @@
 <div class="assistant-container">
+    <? if ($datafields['aee5626da96ab9c37976b2fc454d88b4'] && $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']): ?>
     <section class="assistant-section">
         <h1>
             Bevorzugte Veranstaltungsform wählen
-            <a href="<?= $controller->link_for('assistant/sem_format_info') ?>" data-dialog="size=640x400;title='Erläuterungen zu den Formaten'">
-                <?= Icon::create('info-circle', 'clickable', ["title" => _('Erläuterungen zu den Formaten')]) ?></a>
         </h1>
         <form class="default assistant-form" action="<?= $controller->link_for('assistant/set_type') ?>" method="POST">
             <?= CSRFProtection::tokenTag() ?>
             <div class="assistant-infobox">
                 <?= $datafields['aee5626da96ab9c37976b2fc454d88b4']->getHTML('df') ?>
                 <?= $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->getHTML('df') ?>
+                <label>
+                    Maximale Teilnehmendenzahl
+                    <input type="number" name="admission_turnout" value="<?= $course->admission_turnout ?>" min="0">
+                 </label>
             </div>
             <?= Studip\Button::createAccept(_vips('Speichern'), 'save') ?>
             <?= Studip\LinkButton::create(_('Entscheidungshilfe'),
@@ -21,24 +24,28 @@
         <h1>
             Information zum Ablauf
         </h1>
-        <div class="assistant-infobox">
+        <div class="assistant-infobox assistant-procedure">
             <div class="course-type-info">
                 <header>
                     In der Zeit vom 15.07.bis 15.08.2020
                 </header>
                 <ul>
                     <li>wählen Sie das bevorzugte Format </li>
-                    <li>geben Sie wie gewohnt Terminwünsche an </li>
-                    <li>geben Sie wie gewohnt Raumwünsche an (Hybrid- und Präsenzveranstaltung)</li>
-                    <li>die StudiendakanInnen prüfen Ihre Angaben und geben ggf. Rückmeldung, falls Änderungen nötig sind</li>
+                    <li>Geben Sie falls zutreffend eine hauptsächliche Kursbelegung z.B. durch Erstsemesterstudierende an
+                    </li>
+                    <li>Geben Sie die maximale Teilnehmendenzahl an (falls diese beschränkt ist) oder alternativ die von Ihnen erwartete Teilnehmendenzahl
+                    </li>
+                    <li>Bzgl. Raum und Terminwünschen verfahren Sie wie in vorherigen Präsenzsemestern</li>
+                    <li>die Studiendekan*innen prüfen Anträge auf Präsenz und Plausibilität der maximalen Teilnehmendenzahl</li>
+                    <li>Bei Fragen zum Ablauf wenden Sie sich bite an Ihr Fach</li>
                 </ul>
                 <header>
                     Die Raumzuweisungen durch das Dezernat 6 erfolgen bis zum 30.09.2020
                 </header>
                 Sie verfügen anschließend über folgende Informationen:
                 <ul>
-                    <li>Bewilligung oder Anpassung des gewünschten Veranstaltungsformats</li>
-                    <li>Raumgröße d.h. Anzahl der möglichen Präsenzteilnehmer</li>
+                    <li>Bewilligung oder Anpassung des von Ihnen gewünschten Veranstaltungsformats</li>
+                    <li>Raumgröße d.h. Anzahl der möglichen Präsenzteilnehmenden</li>
                     <li>Raumausstattung </li>
                 </ul>
                 <header>
@@ -53,6 +60,7 @@
             </div>
         </div>
     </section>
+    <? endif ?>
 
     <section class="assistant-section">
         <h1>
