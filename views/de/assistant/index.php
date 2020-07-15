@@ -188,6 +188,8 @@
             <div class="accordion_content">
                 <p>Um die Tatsache, dass nicht alle Teilnehmenden gleichzeitig vor Ort anwesend sein können,
                     zu kompensieren, bieten sich verschiedene Varianten an:</p>
+                <p><i>Hier folgen Hinweise zur Vorbereitung</i> </p>
+                <!--
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/szenarien_info/live') ?>" data-dialog="size=640x400;title='Variante 1: Passive (Live-)Zuschaltung'">Variante 1: Passive (Live-)Zuschaltung</a>
@@ -199,18 +201,21 @@
                         <a href="<?= $controller->link_for('assistant/szenarien_info/asynchron') ?>" data-dialog="size=640x600;title='Variante 3: Rotierende Gruppen'">Variante 3: Rotierende Gruppen</a>
                     </li>
                 </ul>
+                -->
             </div>
 
             <h1>
                 Vorbereitung
             </h1>
             <div class="accordion_content">
-                <p>Hinweise zur Vorbereitung </p>
+                <p><i>Hier folgen Hinweise zur Vorbereitung</i> </p>
+                <!--
                 <ul>
                     <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Technik testen'">Technik testen</a></li>
                     <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Gewähltes Szenario mit Test-TN üben'">Gewähltes Szenario mit Test-TN üben</a></li>
                     <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Hybride Situation produktiv nutzen'"> Hybride Situation produktiv nutzen</a></li>
                 </ul>
+                -->
 
             </div>
 
