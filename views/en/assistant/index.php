@@ -1,6 +1,58 @@
 <div class="assistant-container">
     <section class="assistant-section">
         <h1>
+            Choose your preferred format
+        </h1>
+        <form class="default assistant-form" action="<?= $controller->link_for('assistant/set_type') ?>" method="POST">
+            <?= CSRFProtection::tokenTag() ?>
+            <div class="assistant-infobox">
+                <?= $datafields['aee5626da96ab9c37976b2fc454d88b4']->getHTML('df') ?>
+                <?= $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->getHTML('df') ?>
+            </div>
+            <?= Studip\Button::createAccept(_vips('Speichern'), 'save') ?>
+            <?= Studip\LinkButton::create(_('Entscheidungshilfe'),
+                $controller->link_for('assistant/sem_format_info'), ['data-dialog' => "size=640x600;title='Entscheidungshilfe'"]) ?>
+        </form>
+    </section>
+
+    <section class="assistant-section">
+        <h1>
+            Information on the procedure
+        </h1>
+        <div class="assistant-infobox assistant-procedure">
+            <div class="course-type-info">
+                <header>
+                    From July 15th to August 15th 2020
+                </header>
+                <ul>
+                    <li>choose your preferred format</li>
+                    <li>If applicable, enter the predominant type of participants, e. g. first semster students.</li>
+                    <li>enter the maximum number of participants (if there is a restriction) or the expected number of participants, respectively</li>
+                    <li>enter your requests concerning the room and appointment times as usual</li>
+                    <li>the Dean of your school will consider your request concerning the format and maximum number of participants</li>
+                    <li>should you have questions concerning the process, please contact your respective institutes</li>
+                </ul>
+                <header>
+                    Rooms will be assigned until September 30th 2020 by department 6.
+                </header>
+                You will then receive the following information:
+                <ul>
+                    <li>Approval of or adjustment made to the chosen course format</li>
+                    <li>Size of the assigned room, i. e. number of participants allowed to attend appointments on site</li>
+                    <li>Equipment of the assigned room</li>
+                </ul>
+                <header>
+                    Next steps, especially in the context of hybrid teaching
+                </header>
+                <ul>
+                    <li>Please avail yourself of the information and support offered by virtUOS to be as well prepared as possible</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="assistant-section">
+        <h1>
             The basics
         </h1>
 
