@@ -12,7 +12,7 @@
     Hybrid (Hybridveranstaltung)
 </h2>
 
-<p>Hybrid teaching once again allows direct contact to your students on site. However, due to hygiene and distance guidelines, only small groups of participants will be allowed to attend appointsments in University rooms at a time. As soon as you are assigned a room on site, you will know how many students are allowed to attend each appointment. The process of assigning seats to students will be supported via Stud.IP. Details on the procedure will follow soon.
+<p>Hybrid teaching once again allows direct contact to your students on site. However, due to hygiene and distance guidelines, only small groups of participants will be allowed to attend appointments in University rooms at a time. As soon as you are assigned a room on site, you will know how many students are allowed to attend each appointment. The process of assigning seats to students will be supported via Stud.IP. Details on the procedure will follow soon.
 </p>
 <p>
     If you choose a hybrid format, please note:
@@ -23,7 +23,7 @@
     <li>only small groups of participants will be allowed to attend appointments on site, alternatives for participants who attend online have to be offered</li>
 </ul>
 <p>
-    Section <b>Hybrid Teaching: Introduction</b> contains information on possible variants for the implementation of hybrid teaching as well as additional information and useful tips.
+    The section <b>Hybrid Teaching: Introduction</b> contains information on possible variants for the implementation of hybrid teaching as well as additional information and useful tips.
     To select participants, who are allowed to attend appointments on site, and for the distribution of seats in University rooms technical solutions will be available via Stud.IP.
 </p>
 
