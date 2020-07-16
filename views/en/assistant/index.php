@@ -1,6 +1,92 @@
 <div class="assistant-container">
     <section class="assistant-section">
         <h1>
+            Choose your preferred format
+        </h1>
+        <form class="default assistant-form" action="<?= $controller->link_for('assistant/set_type') ?>" method="POST">
+            <?= CSRFProtection::tokenTag() ?>
+            <div class="assistant-infobox">
+                <? $types = [
+                   'Onlineveranstaltung' => 'Online',
+                   'Hybridveranstaltung' => 'Hybrid',
+                   'Präsenzveranstaltung' => 'Face-to-face'
+                ] ?>
+                <? $audiences = [
+                    'keine Angabe' => 'keine Angabe',
+                    'Erstsemester' => 'Erstsemester',
+                    'internationale Studierende' => 'internationale Studierende',
+                    'Examenskandiaten' => 'Examenskandiaten'
+                ] ?>
+
+                <label>
+                    Format
+                </label>
+                <? foreach ($types as $key => $type): ?>
+                    <label>
+                        <input type="radio" name="df[aee5626da96ab9c37976b2fc454d88b4]" value="<?= htmlReady($key) ?>"
+                               <?= $datafields['aee5626da96ab9c37976b2fc454d88b4']->value === $key ? 'checked' : ''?>>
+                               <?= htmlReady($type) ?>
+                    </label><? endforeach ?>
+
+               <label>
+                 Hauptsächliche Kursbelegung
+                <select name="df[a8af8d7ef4a67cc38d7ca6a21fe1bc73]">
+                      <? foreach ($audiences as $key => $audience): ?>
+                           <option value="<?= htmlReady($key) ?>" <?= $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->value === $key ? 'selected' : ''?>>
+                      <?= htmlReady($audience) ?>
+                          </option>
+                <? endforeach ?>
+                   </select>
+                </label>
+                <label>
+                    Maximum number of participants
+                    <input type="number" name="admission_turnout" value="<?= $course->admission_turnout ?>" min="0">
+                </label>
+            </div>
+            <?= Studip\Button::createAccept(_vips('Speichern'), 'save') ?>
+            <?= Studip\LinkButton::create(_('Decision support'),
+                $controller->link_for('assistant/sem_format_info'), ['data-dialog' => "size=640x600;title='Entscheidungshilfe'"]) ?>
+        </form>
+    </section>
+
+    <section class="assistant-section">
+        <h1>
+            Information on the procedure
+        </h1>
+        <div class="assistant-infobox assistant-procedure">
+            <div class="course-type-info">
+                <header>
+                    From July 15th to August 15th 2020
+                </header>
+                <ul>
+                    <li>choose your preferred format</li>
+                    <li>If applicable, enter the predominant type of participants, e. g. first semster students.</li>
+                    <li>enter the maximum number of participants (if there is a restriction) or the expected number of participants, respectively</li>
+                    <li>enter your requests concerning the room and appointment times as usual</li>
+                    <li>the Dean of your school will consider your request concerning the format and maximum number of participants</li>
+                    <li>should you have questions concerning the process, please contact your respective institutes</li>
+                </ul>
+                <header>
+                    Rooms will be assigned until September 30th 2020 by department 6.
+                </header>
+                You will then receive the following information:
+                <ul>
+                    <li>Approval of or adjustment made to the chosen course format</li>
+                    <li>Size of the assigned room, i. e. number of participants allowed to attend appointments on site</li>
+                    <li>Equipment of the assigned room</li>
+                </ul>
+                <header>
+                    Next steps, especially in the context of hybrid teaching
+                </header>
+                <ul>
+                    <li>Please avail yourself of the information and support offered by virtUOS to be as well prepared as possible</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="assistant-section">
+        <h1>
             The basics
         </h1>
 
@@ -86,6 +172,75 @@
                         <a href="<?= $controller->link_for('assistant/corona_info/tips') ?>" data-dialog="size=640x400">tips and tricks') ?></a>
                     </li>
                 </ul>-->
+            </div>
+
+        </div>
+    </section>
+
+    <section class="assistant-section">
+        <h1>
+            Hybrid-Lehre: Einstieg (English Version coming soon)
+        </h1>
+
+        <div class="accordion">
+
+            <h1>
+                Herausforderungen der Hybriden Lehre
+            </h1>
+            <div class="accordion_content">
+                <p>In der Hybriden Lehre werden Elemente der Online Lehre mit Elementen der Präsenzlehre kombiniert.
+                    Je nach Szenarion geschieht dieses ggf. sogar zeitgleich.
+                    Neben technischen Besonderheiten gibt es einige inhaltliche Faktoren zu beachten.
+                    Wir haben Ihnen ein paar Tipps und Hinweise zusammengestellt, um Ihnen den Einstieg zu erleichtern:</p>
+                <ul>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/different_groups') ?>" data-dialog="size=640x400;title='Unterschiedliche Zuhörendengruppen'">Unterschiedliche Zuhörendengruppen einbeziehen</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/attention') ?>" data-dialog="size=640x600;title='Aufnahmefähigkeit'">Reduzierte Aufnahmefähigkeit im digitalen Kanal beachten</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/hybrid_info/burden') ?>" data-dialog="size=640x600;title='Teilnehmende gleichmäßig belasten'">Präsenz- und Online-Teilnehmende gleichmäßig belasten</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <h1>
+                Umsetzungsvarianten
+            </h1>
+            <div class="accordion_content">
+                <p>Um die Tatsache, dass nicht alle Teilnehmenden gleichzeitig vor Ort anwesend sein können,
+                    zu kompensieren, bieten sich verschiedene Varianten an:</p>
+                <p><i>Hier folgen Hinweise zur Vorbereitung</i> </p>
+                <!--
+                <ul>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/live') ?>" data-dialog="size=640x400;title='Variante 1: Passive (Live-)Zuschaltung'">Variante 1: Passive (Live-)Zuschaltung</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/interactive') ?>" data-dialog="size=640x600;title='Variante 2: Interaktive Live-Zuschaltung'">Variante 2: Interaktive Live-Zuschaltung</a>
+                    </li>
+                    <li>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/asynchron') ?>" data-dialog="size=640x600;title='Variante 3: Rotierende Gruppen'">Variante 3: Rotierende Gruppen</a>
+                    </li>
+                </ul>
+                -->
+            </div>
+
+            <h1>
+                Vorbereitung
+            </h1>
+            <div class="accordion_content">
+                <p><i>Hier folgen Hinweise zur Vorbereitung</i> </p>
+                <!--
+                <ul>
+                    <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Technik testen'">Technik testen</a></li>
+                    <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Gewähltes Szenario mit Test-TN üben'">Gewähltes Szenario mit Test-TN üben</a></li>
+                    <li><a href="<?= $controller->link_for('assistant/hybrid_info/transport') ?>" data-dialog="size=640x600;title='Hybride Situation produktiv nutzen'"> Hybride Situation produktiv nutzen</a></li>
+                </ul>
+                -->
+
             </div>
 
         </div>

@@ -57,9 +57,15 @@
     border: solid thin #ccc;
     padding: 1em;
     min-height: 186px;
+    max-height: 254px;
 }
 .assistant-infobox header {
     font-weight: 600;
+}
+
+.assistant-procedure {
+    max-height: 254px;
+    overflow-y: scroll;
 }
 
 .course-type-info ul {

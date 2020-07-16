@@ -30,6 +30,7 @@
         </p>
     </div>
 
+        Hinweise:
     <ul>
         <li></li>
     </ul>
