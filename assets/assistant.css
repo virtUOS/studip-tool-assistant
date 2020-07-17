@@ -65,7 +65,7 @@
 
 .assistant-procedure {
     max-height: 254px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .course-type-info ul {
