@@ -23,7 +23,7 @@
         <li>Aufgabenblätter können mit Start- und Enddatum erstellt werden.</li>
         <li>Sowohl Auswahl-Fragen (Multiple-Choice, Lückentexte etc.) als auch Freitext-Aufgaben oder Dateiabgaben sind möglich.</li>
         <li>Studierende können sich selbst zu Gruppen zusammenfinden oder eingeteilt werden. Auch Einzelabgaben sind möglich.</li>
-        <li>Eindeutige Lösungen werden automatisch bewertet, Lehrende und Tutor*innen können immer auch manuell bewerten.</li>
+        <li>Eindeutige Lösungen werden automatisch bewertet, Lehrende und Tutoren können immer auch manuell bewerten.</li>
         <li>Veröffentlichung der Ergebnisse ebenfalls über Vips.</li>
     </ol>
 

@@ -5,7 +5,7 @@
         <li>Primärer Aufmerksamkeitsfokus auf Präsenz-TN ggf. sinnvoll, wenn aktive Beiträge von Präsenz-TN Unterricht beleben</li>
         <li>Ansonsten grds. beide Gruppen gleichmäßig adressieren</li>
         <li>Insbesondere sowohl Studierende in Präsenz als auch die Kamera ausgewogen anblicken</li>
-        <li>Soll Chat als Kommunikationskanal zu Digitalen TN dienen ist es zur Entlastung von Dozent*innen sinnvoll, dass Präsenz-TN die Moderation des Kanals übernehmen</li>
+        <li>Soll Chat als Kommunikationskanal zu Digitalen TN dienen ist es zur Entlastung von Lehrenden sinnvoll, dass Präsenz-TN die Moderation des Kanals übernehmen</li>
     </ul>
 
 
@@ -24,7 +24,7 @@
     <h2>Präsenz- und Online-Teilnehmende gleichmäßig belasten</h2>
     <ul>
         <li>Z.B.: Präsenzteilnehmer leisten Diskussionsbeiträge, Digitale TN bekommen zusätzliche Aufgaben (Protokollanteile, Rechercheaufgaben, Performance Spielräume -Aussenwette-)</li>
-        <li>Z.B.: Bei Kontrollfragen durch Dozent*innen gibt es gleichwertige Fragenblöcke speziell für Präsent-TN und speziell für digitale Kursbeteiligte</li>
+        <li>Z.B.: Bei Kontrollfragen durch Lehrende gibt es gleichwertige Fragenblöcke speziell für Präsent-TN und speziell für digitale Kursbeteiligte</li>
     </ul>
 <? endif ?>
 
