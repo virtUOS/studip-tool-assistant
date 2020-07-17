@@ -192,13 +192,13 @@
 
                 <ul>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/szenarien_info/live') ?>" data-dialog="size=640x400;title='Variante 1: Passive (Live-)Zuschaltung'">Variante 1: Passive (Live-)Zuschaltung</a>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/live') ?>" data-dialog="size=640x400;title='Asynchrone Variante mit Aufzeichnung'">Asynchrone Variante mit Aufzeichnung</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/szenarien_info/interactive') ?>" data-dialog="size=640x600;title='Variante 2: Interaktive Live-Zuschaltung'">Variante 2: Interaktive Live-Zuschaltung</a>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/interactive') ?>" data-dialog="size=640x600;title='Synchrone Varianten mit Bigblue Button oder Streaming'">Synchrone Varianten mit Bigblue Button oder Streaming</a>
                     </li>
                     <li>
-                        <a href="<?= $controller->link_for('assistant/szenarien_info/asynchron') ?>" data-dialog="size=640x600;title='Variante 3: Rotierende Gruppen'">Variante 3: Rotierende Gruppen</a>
+                        <a href="<?= $controller->link_for('assistant/szenarien_info/asynchron') ?>" data-dialog="size=640x600;title='Rotierende Gruppen'">Rotierende Gruppen</a>
                     </li>
                 </ul>
 
