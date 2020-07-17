@@ -14,9 +14,9 @@
                     <input type="number" name="admission_turnout" value="<?= $course->admission_turnout ?>" min="0">
                  </label>
             </div>
-            <?= Studip\Button::createAccept(_vips('Speichern'), 'save') ?>
-            <?= Studip\LinkButton::create(_('Entscheidungshilfe'),
-                $controller->link_for('assistant/sem_format_info'), ['data-dialog' => "size=640x600;title='Entscheidungshilfe'"]) ?>
+            <?= Studip\Button::createAccept('Speichern', 'save') ?>
+            <?= Studip\LinkButton::create('Entscheidungshilfe',
+                $controller->link_for('assistant/sem_format_info'), ['data-dialog' => 'size=900x700']) ?>
         </form>
     </section>
 
@@ -36,7 +36,7 @@
                     <li>Geben Sie die maximale Teilnehmendenzahl an (falls diese beschränkt ist) oder alternativ die von Ihnen erwartete Teilnehmendenzahl
                     </li>
                     <li>Bzgl. Raum- und Terminvergabe verfahren Sie wie in vorherigen Präsenzsemestern</li>
-                    <li>die Studiendekan*innen prüfen Anträge auf Präsenz und Plausibilität der maximalen Teilnehmendenzahl</li>
+                    <li>die Studiendekaninnen/Studiendekane prüfen Anträge auf Präsenz und Plausibilität der maximalen Teilnehmendenzahl</li>
                     <li>Bei Fragen zum Ablauf wenden Sie sich bite an Ihr Fach</li>
                 </ul>
                 <header>
@@ -445,7 +445,7 @@ Telefonnummer für Rückfragen:
             <div class="accordion_content">
                 <?= Studip\LinkButton::create(_('Hausaufgabenorder einrichten'), $controller->url_for('assistant/homework')) ?>
                 <p>Über die Dateiablage von Stud.IP können Sie Hausaufgaben / Dateien von Kurs-Teilnehmenden
-                    einsammeln. Lehrende und Tutor*innen sehen alle Dateien, die Studierenden nur die eigenen.</p>
+                    einsammeln. Lehrende und Tutorinnen/Tutoren sehen alle Dateien, die Studierenden nur die eigenen.</p>
                 <ul>
                     <li>
                         <a href="<?= $controller->link_for('assistant/homework_info/howto') ?>" data-dialog="size=640x500">So geht's</a>
