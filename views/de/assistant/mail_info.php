@@ -41,6 +41,6 @@
         <li>Über die Seite "Teilnehmende" können Sie auch <b>Nachrichten an einzelne Personen oder Gruppen von Personen</b> (alle Lehrenden, alle Tutor/-innen, nur Studierende) schicken. Dazu klicken Sie in der Teilnehmerliste rechts auf die Briefsymbole.<br>&nbsp;</li>
         <li><b>Unter "Übersicht" können Sie Ankündigungen erstellen</b>, die für eine wählbare Zeit für alle Teilnehmenden sichtbar sind. Ankündigungen werden nicht per Mail verschickt, sind aber auch für später in den Kurs kommende zugreifbar. In wichtigen Fällen, bei denen noch mit Kursnachzügler/-innen zu rechnen ist, empfiehlt es sich, sowohl eine Rundmail als auch eine Ankündigung zu schreiben.<br>&nbsp;</li>
         <li>Im Unterpunkt "Gruppen" können Sie auf der Teilnehmenden-Seite <b>eigene Gruppen</b> frei zusammenstellen und diesen Gruppen auch Nachrichten senden.<br>&nbsp;</li>
-        <li>In der Standardeinstellung können nur DozentInnen und TutorInnen der Veranstaltung Nachrichten an alle schicken. Sie können mit der Option <b>"Rundmails von Studierenden erlauben"</b> aber auch allen dieses Recht einräumen.</li>
+        <li>In der Standardeinstellung können nur Lehrende und Tutoren der Veranstaltung Nachrichten an alle schicken. Sie können mit der Option <b>"Rundmails von Studierenden erlauben"</b> aber auch allen dieses Recht einräumen.</li>
     </ul>
 <? endif ?>
