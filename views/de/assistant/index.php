@@ -35,11 +35,12 @@
                     In der Zeit vom 15.07.bis 15.08.2020
                 </header>
                 <ul>
-                    <li>wählen Sie das bevorzugte Format </li>
-                    <li>Geben Sie falls zutreffend eine hauptsächliche Kursbelegung z.B. durch Erstsemesterstudierende an
+                    <li>wählen Sie das von Ihnen bevorzugte <b>Format</b> </li>
+                    <li>Geben Sie falls zutreffend eine <b>hauptsächliche Kursbelegung</b> z.B. durch Erstsemesterstudierende an
                     </li>
-                    <li>Geben Sie die maximale Teilnehmendenzahl an (falls diese beschränkt ist) oder alternativ die von Ihnen erwartete Teilnehmendenzahl
+                    <li>Geben Sie die maximale (erwartete) Zahl der insgesamt zur Veranstaltung angemeldeten Teilnehmenden an.
                     </li>
+                    <li>Die oben genannten <b>Angaben ersetzen nicht die Raumbuchung!</b></li>
                     <li>Bzgl. Raum- und Terminvergabe verfahren Sie wie in vorherigen Präsenzsemestern</li>
                     <li>die Studiendekaninnen/Studiendekane prüfen Anträge auf Präsenz und Plausibilität der maximalen Teilnehmendenzahl</li>
                     <li>Bei Fragen zum Ablauf wenden Sie sich bite an Ihr Fach</li>
