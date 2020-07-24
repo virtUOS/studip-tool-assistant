@@ -12,7 +12,10 @@
                 <? $disabled = !$datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->isEditable() || LockRules::Check($course_id, 'a8af8d7ef4a67cc38d7ca6a21fe1bc73') ? 'disabled' : '' ?>
                 <?= str_replace('name=', $disabled . ' name=', $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->getHTML('df')) ?>
                 <label>
-                    Maximale Teilnehmendenzahl
+                    Maximale Zahl der insgesamt angemeldeten Teilnehmenden
+                    <span class="info" title="Geben Sie hier bitte die Gesamtzahl der für die Veranstaltung erwarteten Teilnehmenden an! Falls Sie bereits wissen, dass Sie nur sehr wenige Plätze für Präsenzsitzungen brauchen werden und vermeiden möchten, dass Ihnen ggf. ein zu großer Raum zugewiesen wird, geben Sie dies bitte bei der Raumbuchung an.">
+                           <?= Icon::create('info-circle', 'clickable') ?>
+                    </span>
                     <input type="number" name="admission_turnout" value="<?= $course->admission_turnout ?>" min="0" <?= LockRules::Check($course_id, 'admission_turnout') ? 'disabled' : ''?>>
                  </label>
             </div>
@@ -276,7 +279,7 @@ Telefonnummer für Rückfragen:
                 </p>
                 <ul>
                     <li><a href="<?= $controller->link_for('assistant/studio_info/selfrecording') ?>" data-dialog="size=640x500">Impressionen aus dem Self-Recording-Studio im Lehrkolleg</a></li>
-                </ul>s
+                </ul>
 
                 <p>
                     Bitte kontaktieren Sie uns mit einer E-Mail an
