@@ -66,14 +66,18 @@ class AssistantController extends ToolAssistantBaseController
         foreach ($ids as $id) {
             $datafields[$id]->setValueFromSubmit($df[$id]);
 
-            if ($datafields[$id]->isValid()) {
+            if ($datafields[$id]->isValid() && $datafields[$id]->isEditable() && !LockRules::Check($this->course_id, $id)) {
                 $datafields[$id]->store();
             }
         }
 
-        $course = Course::find($this->course_id);
-        $course->admission_turnout = Request::int('admission_turnout');
-        $course->store();
+        if (!LockRules::Check($this->course_id, 'admission_turnout')) {
+            $course = Course::find($this->course_id);
+            $course->admission_turnout = Request::int('admission_turnout');
+            $course->store();
+
+            update_admission($this->course_id);
+        }
 
         PageLayout::postSuccess('Die Einstellungen für die Veranstaltungsform wurden gespeichert');
         $this->redirect('assistant');

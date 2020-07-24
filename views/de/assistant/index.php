@@ -7,11 +7,13 @@
         <form class="default assistant-form" action="<?= $controller->link_for('assistant/set_type') ?>" method="POST">
             <?= CSRFProtection::tokenTag() ?>
             <div class="assistant-infobox assistant-procedure">
-                <?= $datafields['aee5626da96ab9c37976b2fc454d88b4']->getHTML('df') ?>
-                <?= $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->getHTML('df') ?>
+                <? $disabled = !$datafields['aee5626da96ab9c37976b2fc454d88b4']->isEditable() || LockRules::Check($course_id, 'aee5626da96ab9c37976b2fc454d88b4') ? 'disabled' : '' ?>
+                <?= str_replace('name=', $disabled . ' name=', $datafields['aee5626da96ab9c37976b2fc454d88b4']->getHTML('df')) ?>
+                <? $disabled = !$datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->isEditable() || LockRules::Check($course_id, 'a8af8d7ef4a67cc38d7ca6a21fe1bc73') ? 'disabled' : '' ?>
+                <?= str_replace('name=', $disabled . ' name=', $datafields['a8af8d7ef4a67cc38d7ca6a21fe1bc73']->getHTML('df')) ?>
                 <label>
                     Maximale Teilnehmendenzahl
-                    <input type="number" name="admission_turnout" value="<?= $course->admission_turnout ?>" min="0">
+                    <input type="number" name="admission_turnout" value="<?= $course->admission_turnout ?>" min="0" <?= LockRules::Check($course_id, 'admission_turnout') ? 'disabled' : ''?>>
                  </label>
             </div>
             <?= Studip\Button::createAccept('Speichern', 'save') ?>
