@@ -43,7 +43,7 @@
                     <li>Die oben genannten <b>Angaben ersetzen nicht die Raumbuchung!</b></li>
                     <li>Bzgl. Raum- und Terminvergabe verfahren Sie wie in vorherigen Präsenzsemestern</li>
                     <li>die Studiendekaninnen/Studiendekane prüfen Anträge auf Präsenz und Plausibilität der maximalen Teilnehmendenzahl</li>
-                    <li>Bei Fragen zum Ablauf wenden Sie sich bite an Ihr Fach</li>
+                    <li>Bei Fragen zum Ablauf wenden Sie sich bitte an Ihr Fach</li>
                 </ul>
                 <header>
                     Die Raumzuweisungen durch das Dezernat 6 erfolgen bis zum 30.09.2020
