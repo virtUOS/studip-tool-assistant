@@ -4,7 +4,7 @@
         <li>Primären Aufmerksamkeitsfokus nicht auf digitale TN legen (langweilt Präsenz-TN)</li>
         <li>Primären Aufmerksamkeitsfokus ggf. auf Präsenz-TN legen, wenn aktive Beiträge von Präsenz-TN den Unterricht beleben, sonst grundsätzlich beide Gruppen gleichmäßig adressieren</li>
         <li>Sowohl Präsenz-TN als auch digitale TN per Kamera ausgewogen anblicken</li>
-        <li>Soll der Chat als Kommunikationskanal mit den digitalen TN dienen, ist es zur Entlastung der Doz</li>
+        <li>Soll der Chat als Kommunikationskanal mit den digitalen TN dienen, ist es zur Entlastung der Dozierenden denkbar Studiernde mit der Moderation des Chats zu beauftragen (Fragen aufgreifen etc.).</li>
     </ul>
 
 
