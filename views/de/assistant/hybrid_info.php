@@ -23,7 +23,7 @@
     <h2>Präsenz- und Online-Teilnehmende gleichmäßig belasten</h2>
     <ul>
         <li>Z. B.: Präsenz-TN leisten Diskussionsbeiträge, digitale TN erhalten zusätzliche Aufgaben (Protokollanteile, Rechercheaufgaben, Performance-Spielräume)</li>
-        <li>Z. B.: Bei Kontrollfragen durch Lehrende jeweils gleichwertige Fragenblöcke speziell für Präsenz-TN und speziell fü digitale TN nutzen</li>
+        <li>Z. B.: Bei Kontrollfragen durch Lehrende jeweils gleichwertige Fragenblöcke speziell für Präsenz-TN und speziell für digitale TN nutzen</li>
     </ul>
 <? endif ?>
 
