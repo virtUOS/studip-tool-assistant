@@ -64,7 +64,6 @@
 }
 
 .assistant-procedure {
-    max-height: 256px;
     overflow-y: auto;
 }
 

@@ -80,6 +80,11 @@ class AssistantController extends ToolAssistantBaseController
         }
 
         PageLayout::postSuccess('Die Einstellungen für die Veranstaltungsform wurden gespeichert');
+
+        if ($datafields[$ids[0]]->value != $datafields[$ids[0]]->model->default_value) {
+            PageLayout::postInfo('Bitte denken Sie daran, dass die gemachten Angaben nicht die Raumbuchung ersetzen!');
+        }
+
         $this->redirect('assistant');
     }
 

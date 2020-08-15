@@ -42,7 +42,8 @@
                     </select>
                 </label>
                 <label>
-                    Maximum number of participants
+                    Maximum number of participants in the course
+                    <?= tooltipIcon('Enter the expected total number of participants in the course. In case there will be only a small number of participants attending on site and you want to avoid getting a large room, you can enter a different number when requesting the room later on.') ?>
                     <input type="number" name="admission_turnout" value="<?= $course->admission_turnout ?>" min="0" <?= LockRules::Check($course_id, 'admission_turnout') ? 'disabled' : ''?>>
                 </label>
             </div>
