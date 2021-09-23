@@ -204,8 +204,8 @@ class AssistantController extends ToolAssistantBaseController
 
             <h2>Kommunikation im Kurs / Communication in the course</h2>
 
-            <p>... Beschreiben Sie hier, wie die Kommunikation im Kurs organisiert sein soll, z.B. in Form regelmäßiger Videokonferenzen, über ein Forum, den Blubber-Chat oder Matrix/Riot (s. "Online-Lehre: Online-Zusammenarbeit"). ...</p>
-            <p>... Describe here how communication in the course will be organised, e.g. in the form of regular video conferences, via a forum, the blubber chat or Matrix/Riot (see "Online teaching: online collaboration"). ...</p>
+            <p>... Beschreiben Sie hier, wie die Kommunikation im Kurs organisiert sein soll, z.B. in Form regelmäßiger Videokonferenzen, über ein Forum, den Blubber-Chat oder Matrix/Element (s. "Online-Lehre: Online-Zusammenarbeit"). ...</p>
+            <p>... Describe here how communication in the course will be organised, e.g. in the form of regular video conferences, via a forum, the blubber chat or Matrix/Element (see "Online teaching: online collaboration"). ...</p>
 
             <h2>Kontakt / Contact</h2>
 

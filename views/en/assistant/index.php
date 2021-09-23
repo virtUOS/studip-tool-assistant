@@ -418,10 +418,10 @@ Phone number for questions:
                     <img src="<?= $plugin->getPluginURL() ?>/assets/studip-riot.jpg" width="160">
                 </div>
                 <p>Fast and low-threshold communication is a common request nowadays, also via an app from mobile devices (like Slack or Whatsapp).
-                    Osnabrück University offers the "Riot" service for this purpose.
+                    Osnabrück University offers the "Element" service for this purpose.
                 <ul>
                     <li>
-                        <a href="https://www.rz.uni-osnabrueck.de/homeoffice/riot.html" class="link-external" target="_blank">Guide: Set up Matrix/Riot (RZ)</a>
+                        <a href="https://www.rz.uni-osnabrueck.de/homeoffice/riot.html" class="link-external" target="_blank">Guide: Set up Matrix/Element (RZ)</a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/messenger_info/blubber') ?>" data-dialog="size=640x500">An alternative in Stud.IP: Blubber chat</a>
