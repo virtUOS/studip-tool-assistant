@@ -412,10 +412,10 @@ Telefonnummer für Rückfragen:
                     <img src="<?= $plugin->getPluginURL() ?>/assets/studip-riot.jpg" width="160">
                 </div>
                 <p>Für Lern- und Arbeitsgruppen wird heute oft eine schnelle und niedrigschwellige Kommunikation gewünscht, auch per App vom Mobilgerät (Vorbild: Slack, Whatsapp).
-                    Die Uni Osnabrück bietet dafür den Dienst "Riot".</p>
+                    Die Uni Osnabrück bietet dafür den Dienst "Element".</p>
                 <ul>
                     <li>
-                        <a href="https://www.rz.uni-osnabrueck.de/homeoffice/riot.html" class="link-extern" target="_blank">So geht's: Matrix/Riot einrichten (RZ)</a>
+                        <a href="https://www.rz.uni-osnabrueck.de/homeoffice/riot.html" class="link-extern" target="_blank">So geht's: Matrix/Element einrichten (RZ)</a>
                     </li>
                     <li>
                         <a href="<?= $controller->link_for('assistant/messenger_info/blubber') ?>" data-dialog="size=640x500">Alternative in Stud.IP: Blubber-Chat</a>

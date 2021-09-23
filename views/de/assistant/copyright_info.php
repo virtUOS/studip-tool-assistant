@@ -1,7 +1,7 @@
 <? if ($view === 'basics'): ?>
     <h2>Urheberrecht beachten: Die absoluten Grundlagen</h2>
     <div style="margin-left:10px;float:right">
-        <iframe width="320" height="180" src="https://www.youtube.com/embed/KxhL5ElJVLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/Bon7fmHC_BE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p style="font-size:66%"><i>ARD-alpha: Schutz vor Ideenklau - das Urheberrecht - so geht MEDIEN</i></p>
     </div>
     <p>
